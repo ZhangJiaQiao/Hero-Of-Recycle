@@ -1,19 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player_Request : MonoBehaviour
-{
-
-	// Use this for initialization
-	void Start ()
-	{
-	
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-	
-	}
+public interface Player_Request {
+	/*
+	 * 将玩家代码所需的请求函数的接口写在这里， 由对应场景控制器实现
+	 * /
 }
 
