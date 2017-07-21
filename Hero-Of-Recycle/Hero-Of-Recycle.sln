@@ -1,7 +1,7 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hero-Of-Recycle", "Assembly-CSharp.csproj", "{4773CCE1-1292-A1DA-92B8-D3B6D9566200}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hero-Of-Recycle", "Hero-Of-Recycle.csproj", "{4D194C5C-491F-3CC7-379E-0F239B8E4A12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +9,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4773CCE1-1292-A1DA-92B8-D3B6D9566200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4773CCE1-1292-A1DA-92B8-D3B6D9566200}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4773CCE1-1292-A1DA-92B8-D3B6D9566200}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4773CCE1-1292-A1DA-92B8-D3B6D9566200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D194C5C-491F-3CC7-379E-0F239B8E4A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D194C5C-491F-3CC7-379E-0F239B8E4A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D194C5C-491F-3CC7-379E-0F239B8E4A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D194C5C-491F-3CC7-379E-0F239B8E4A12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
