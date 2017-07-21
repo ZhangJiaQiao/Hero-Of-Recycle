@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\FirstChapter\UI_Request.cs" />
      <Compile Include="Assets\Scripts\ISceneController.cs" />
      <Compile Include="Assets\Scripts\SSDirector.cs" />
+     <Compile Include="Assets\Scripts\Singleton.cs" />
      <Compile Include="Assets\Scripts\myFactory.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
