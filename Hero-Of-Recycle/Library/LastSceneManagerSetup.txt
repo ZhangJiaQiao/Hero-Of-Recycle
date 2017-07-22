@@ -1,1 +1,4 @@
-sceneSetups: []
+sceneSetups:
+- path: Assets/OtherSources/Town Constructor Pack/Scenes/WebDemoScene.unity
+  isLoaded: 1
+  isActive: 1
