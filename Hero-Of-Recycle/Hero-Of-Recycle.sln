@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hero-Of-Recycle", "Hero-Of-Recycle.csproj", "{4D194C5C-491F-3CC7-379E-0F239B8E4A12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hero-Of-Recycle.Editor", "Hero-Of-Recycle.Editor.csproj", "{80F98B4A-48DA-CA10-D613-898FBAB6EAF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{4D194C5C-491F-3CC7-379E-0F239B8E4A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D194C5C-491F-3CC7-379E-0F239B8E4A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D194C5C-491F-3CC7-379E-0F239B8E4A12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F98B4A-48DA-CA10-D613-898FBAB6EAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F98B4A-48DA-CA10-D613-898FBAB6EAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F98B4A-48DA-CA10-D613-898FBAB6EAF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F98B4A-48DA-CA10-D613-898FBAB6EAF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
