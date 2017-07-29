@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: 0ba5b641c4c8327479b6fc8890d80e66
+timeCreated: 18446744011573954816
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: ' 1'
+    100002: ___006
+    100004: arch19_064_04
+    100006: arch19_064_07
+    100008: arch19_064_09
+    100010: arch19_064_11
+    100012: arch19_064_13
+    100014: arch19_064_15
+    100016: //RootNode
+    100018: Capsule13
+    100020: Capsule14
+    100022: Cylinder015
+    100024: Loft106
+    100026: Loft109
+    100028: Loft110
+    100030: Loft111
+    100032: Loft112
+    100034: Loft113
+    100036: Loft114
+    100038: Object14
+    100040: Object14 1
+    100042: Object15
+    100044: Object16
+    100046: Object17
+    100048: Object18
+    100050: Object19
+    100052: Object20
+    100054: Object21
+    100056: Object22
+    100058: Rectangle16
+    100060: Rectangle566
+    100062: Rectangle566 1
+    100064: Rectangle567
+    100066: Rectangle568
+    100068: Rectangle569
+    100070: Rectangle570
+    100072: Rectangle571
+    100074: Rectangle572
+    100076: Sol01
+    100078: Stol02
+    100080: transform1
+    100082: transform10
+    100084: transform11
+    100086: transform12
+    100088: transform13
+    100090: transform2
+    100092: transform3
+    100094: transform4
+    100096: transform5
+    100098: transform6
+    100100: transform7
+    100102: transform8
+    100104: transform9
+    400000: ' 1'
+    400002: ___006
+    400004: arch19_064_04
+    400006: arch19_064_07
+    400008: arch19_064_09
+    400010: arch19_064_11
+    400012: arch19_064_13
+    400014: arch19_064_15
+    400016: //RootNode
+    400018: Capsule13
+    400020: Capsule14
+    400022: Cylinder015
+    400024: Loft106
+    400026: Loft109
+    400028: Loft110
+    400030: Loft111
+    400032: Loft112
+    400034: Loft113
+    400036: Loft114
+    400038: Object14
+    400040: Object14 1
+    400042: Object15
+    400044: Object16
+    400046: Object17
+    400048: Object18
+    400050: Object19
+    400052: Object20
+    400054: Object21
+    400056: Object22
+    400058: Rectangle16
+    400060: Rectangle566
+    400062: Rectangle566 1
+    400064: Rectangle567
+    400066: Rectangle568
+    400068: Rectangle569
+    400070: Rectangle570
+    400072: Rectangle571
+    400074: Rectangle572
+    400076: Sol01
+    400078: Stol02
+    400080: transform1
+    400082: transform10
+    400084: transform11
+    400086: transform12
+    400088: transform13
+    400090: transform2
+    400092: transform3
+    400094: transform4
+    400096: transform5
+    400098: transform6
+    400100: transform7
+    400102: transform8
+    400104: transform9
+    2300000: ' 1'
+    2300002: arch19_064_04
+    2300004: arch19_064_07
+    2300006: arch19_064_09
+    2300008: arch19_064_11
+    2300010: arch19_064_13
+    2300012: arch19_064_15
+    2300014: Object14
+    2300016: Object15
+    2300018: Object16
+    2300020: Object17
+    2300022: Object18
+    2300024: Object19
+    2300026: Object20
+    2300028: Object21
+    2300030: Object22
+    2300032: Rectangle16
+    2300034: Rectangle566
+    2300036: Rectangle568
+    2300038: Rectangle569
+    2300040: Rectangle570
+    2300042: Rectangle571
+    2300044: Rectangle572
+    2300046: Sol01
+    2300048: Stol02
+    3300000: ' 1'
+    3300002: arch19_064_04
+    3300004: arch19_064_07
+    3300006: arch19_064_09
+    3300008: arch19_064_11
+    3300010: arch19_064_13
+    3300012: arch19_064_15
+    3300014: Object14
+    3300016: Object15
+    3300018: Object16
+    3300020: Object17
+    3300022: Object18
+    3300024: Object19
+    3300026: Object20
+    3300028: Object21
+    3300030: Object22
+    3300032: Rectangle16
+    3300034: Rectangle566
+    3300036: Rectangle568
+    3300038: Rectangle569
+    3300040: Rectangle570
+    3300042: Rectangle571
+    3300044: Rectangle572
+    3300046: Sol01
+    3300048: Stol02
+    4300000: Object15
+    4300002: arch19_064_15
+    4300004: arch19_064_13
+    4300006: arch19_064_11
+    4300008: arch19_064_09
+    4300010: arch19_064_07
+    4300012: arch19_064_04
+    4300016: Sol01
+    4300018: Stol02
+    4300020: Rectangle16
+    4300022: Rectangle566
+    4300024: Rectangle568
+    4300026: Object14
+    4300028: Object16
+    4300030: Object17
+    4300032: Object18
+    4300034: Object19
+    4300036: Object20
+    4300038: Object21
+    4300040: Object22
+    4300042: Rectangle569
+    4300044: Rectangle570
+    4300046: Rectangle571
+    4300048: Rectangle572
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

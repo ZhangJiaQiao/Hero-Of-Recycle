@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 190f7df48a4032e45a955eea74bdc720
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: Base HumanRThigh
     100002: Base HumanHead
@@ -129,6 +129,7 @@ ModelImporter:
     7400002: run fast
     11100000: //RootNode
     13700000: Base HumanPelvis
+    13700002: villager_male_strong_body
     100100000: DataTemplate __Singleton__
   materials:
     importMaterials: 0
@@ -140,6 +141,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -150,6 +153,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
       name: run fast
@@ -185,7 +189,10 @@ ModelImporter:
     globalScale: 0.01
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -201,6 +208,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
