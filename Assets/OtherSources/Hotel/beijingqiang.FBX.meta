@@ -1,8 +1,8 @@
 fileFormatVersion: 2
 guid: f3a595d05e1ef7c43ae696fe399bcfa6
-timeCreated: 18446744011573954816
+timeCreated: 281412841113856
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: ___001
     100002: //RootNode
@@ -88,6 +88,7 @@ ModelImporter:
     100162: transform7
     100164: transform8
     100166: transform9
+    100168: "\u7EC4001"
     400000: ___001
     400002: //RootNode
     400004: Layer:0
@@ -172,6 +173,7 @@ ModelImporter:
     400162: transform7
     400164: transform8
     400166: transform9
+    400168: "\u7EC4001"
     2300000: Layer:0
     2300002: Layer:001
     2300004: Layer:113
@@ -213,7 +215,6 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -221,10 +222,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -240,7 +238,6 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
-    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

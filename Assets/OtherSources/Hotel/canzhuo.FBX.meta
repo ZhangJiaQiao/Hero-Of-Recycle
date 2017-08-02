@@ -1,8 +1,8 @@
 fileFormatVersion: 2
 guid: 0ba5b641c4c8327479b6fc8890d80e66
-timeCreated: 18446744011573954816
+timeCreated: 281412841113856
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: ' 1'
     100002: ___006
@@ -57,6 +57,7 @@ ModelImporter:
     100100: transform7
     100102: transform8
     100104: transform9
+    100106: "\u7EC4006"
     400000: ' 1'
     400002: ___006
     400004: arch19_064_04
@@ -110,6 +111,7 @@ ModelImporter:
     400100: transform7
     400102: transform8
     400104: transform9
+    400106: "\u7EC4006"
     2300000: ' 1'
     2300002: arch19_064_04
     2300004: arch19_064_07
@@ -207,7 +209,6 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -215,10 +216,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -234,7 +232,6 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
-    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

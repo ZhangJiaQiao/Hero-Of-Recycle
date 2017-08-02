@@ -1,8 +1,8 @@
 fileFormatVersion: 2
 guid: 12c3cdf8c311a624089b0e7e80a83e93
-timeCreated: 18446744011573954816
+timeCreated: 281412841113856
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: ___002
     100002: ______003
@@ -14,6 +14,11 @@ ModelImporter:
     100014: Rectangle052
     100016: Rectangle053
     100018: Rectangle054
+    100020: "\u56FE\u5F62003"
+    100022: "\u56FE\u5F62004"
+    100024: "\u56FE\u5F62005"
+    100026: "\u56FE\u5F62006"
+    100028: "\u7EC4002"
     400000: ___002
     400002: ______003
     400004: ______004
@@ -24,6 +29,11 @@ ModelImporter:
     400014: Rectangle052
     400016: Rectangle053
     400018: Rectangle054
+    400020: "\u56FE\u5F62003"
+    400022: "\u56FE\u5F62004"
+    400024: "\u56FE\u5F62005"
+    400026: "\u56FE\u5F62006"
+    400028: "\u7EC4002"
     2300000: Layer:0
     2300002: Rectangle052
     2300004: Rectangle053
@@ -59,7 +69,6 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -67,10 +76,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -86,7 +92,6 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
-    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

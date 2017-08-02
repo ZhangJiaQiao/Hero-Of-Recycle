@@ -1,8 +1,8 @@
 fileFormatVersion: 2
 guid: d054a3cc961ba264fa8b4609a9b55a24
-timeCreated: 18446744011573954816
+timeCreated: 281412841113856
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: ___013
     100002: ______01
@@ -18,6 +18,8 @@ ModelImporter:
     100022: Line2029223158
     100024: Plane2307
     100026: Plane2308
+    100028: "\u5BF9\u8C6101"
+    100030: "\u7EC4013"
     400000: ___013
     400002: ______01
     400004: Box1578957990
@@ -32,6 +34,8 @@ ModelImporter:
     400022: Line2029223158
     400024: Plane2307
     400026: Plane2308
+    400028: "\u5BF9\u8C6101"
+    400030: "\u7EC4013"
     2300000: ______01
     2300002: Box1578957990
     2300004: Layer:0
@@ -41,6 +45,7 @@ ModelImporter:
     2300012: Line2029223158
     2300014: Plane2307
     2300016: Plane2308
+    2300018: "\u5BF9\u8C6101"
     3300000: ______01
     3300002: Box1578957990
     3300004: Layer:0
@@ -50,6 +55,7 @@ ModelImporter:
     3300012: Line2029223158
     3300014: Plane2307
     3300016: Plane2308
+    3300018: "\u5BF9\u8C6101"
     4300000: Layer:0
     4300002: Box1578957990
     4300004: ______01
@@ -59,6 +65,7 @@ ModelImporter:
     4300012: Plane2308
     4300014: Line2029223155
     4300016: Plane2307
+    4300018: "\u5BF9\u8C6101"
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -82,7 +89,6 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -90,10 +96,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -109,7 +112,6 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
-    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

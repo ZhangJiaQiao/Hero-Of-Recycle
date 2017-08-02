@@ -8,7 +8,7 @@ public class SSDirector : System.Object {
 
 	public ISceneController currentSceneController;
 
-	public SSDirector getInstance() {
+	public static SSDirector getInstance() {
 		if (_instance == null) {
 			_instance = new SSDirector ();
 		}

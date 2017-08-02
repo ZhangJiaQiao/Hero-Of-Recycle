@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-/*public class FileManager : MonoBehaviour {
-    private SceneController sceneController;//场记
+public class FileManager : MonoBehaviour {
+    //private FirstController sceneController;//场记
     public AssetBundle role;
     public AssetBundle effect;
     public AssetBundle scene;
@@ -32,8 +32,8 @@ using System.IO;
     // Use this for initialization
     void Awake()
     {
-        sceneController = SSDirector.getInstance().currentScenceController as SceneController;//获取场记
-        sceneController.setFileManager(this);
+        //sceneController = SSDirector.getInstance().currentScenceController as FirstController;//获取场记
+        //sceneController.setFileManager(this);
         IniRoleBundle();
         IniSceneBundle();
         IniEffectBundle();
@@ -86,7 +86,7 @@ using System.IO;
             Debug.Log("Failed to load panel AssetBundle!");
             return;
         }
-    }*/
+    }
 
     /*
     IEnumerator UpdateVersion()
@@ -124,4 +124,4 @@ using System.IO;
         yield return null;
     }
     */
-//}
+}
