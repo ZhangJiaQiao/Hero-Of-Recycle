@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SSDirector : System.Object {
 	private static SSDirector _instance;
@@ -36,6 +37,6 @@ public class SSDirector : System.Object {
 	}
 
 	public void nextScene() {
-		//切换下一场景
+		SceneManager.LoadScene ("Hotel");
 	}
 }

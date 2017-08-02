@@ -14,12 +14,10 @@ Category {
 	SubShader {
 		Pass {
 			ZTest Always Cull Off ZWrite Off
-			Fog { Mode off }
 				
 CGPROGRAM
 #pragma vertex vert
 #pragma fragment frag
-#pragma fragmentoption ARB_precision_hint_fastest 
 #include "UnityCG.cginc"
 
 struct v2f {
@@ -29,12 +27,13 @@ struct v2f {
 
 uniform sampler2D _MainTex;
 uniform sampler2D _AdaptTex;
+half4 _MainTex_ST;
 
 v2f vert (appdata_img v)
 {
 	v2f o;
 	o.pos = UnityObjectToClipPos (v.vertex);
-	o.uv[0] = MultiplyUV (UNITY_MATRIX_TEXTURE0, v.texcoord);
+	o.uv[0] = MultiplyUV (UNITY_MATRIX_TEXTURE0, UnityStereoScreenSpaceUVAdjust(v.texcoord, _MainTex_ST));
 	o.uv[1] = float2(0.5,0.5);
 	return o;
 }

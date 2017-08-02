@@ -19,13 +19,14 @@ CGINCLUDE
 
 	uniform sampler2D _MainTex;
 	uniform float4 _MainTex_TexelSize;
+	half4 _MainTex_ST;
 
 	struct v2f {
 		float4 pos : SV_POSITION;
 		float2 uv : TEXCOORD0;
 	};
 	
-	#define LD( o, dx, dy ) o = tex2D( _MainTex, texCoord + float2( dx, dy ) * _MainTex_TexelSize.xy );
+	#define LD( o, dx, dy ) o = tex2D( _MainTex, UnityStereoScreenSpaceUVAdjust(texCoord + float2( dx, dy ) * _MainTex_TexelSize.xy, _MainTex_ST) );
 	
 	float GetIntensity( float3 col )
 	{
@@ -305,7 +306,6 @@ ENDCG
 SubShader {
 	Pass {
 		ZTest Always Cull Off ZWrite Off
-		Fog { Mode off }
 	
 		CGPROGRAM
 	
@@ -318,7 +318,6 @@ SubShader {
 	
 	Pass {
 		ZTest Always Cull Off ZWrite Off
-		Fog { Mode off }
 	
 		CGPROGRAM
 	
@@ -332,14 +331,12 @@ SubShader {
 
 	Pass {
 		ZTest Always Cull Off ZWrite Off
-		Fog { Mode off }
 	
 		CGPROGRAM
 	
 		#pragma vertex vert
 		#pragma fragment fragThird
 		#pragma target 3.0
-        #pragma exclude_renderers d3d11_9x
 		
 		ENDCG
 	}	

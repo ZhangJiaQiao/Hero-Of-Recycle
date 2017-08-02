@@ -18,10 +18,22 @@ public class myFactory : MonoBehaviour {
 			bulletsUsing.Add (newBullet);
 			return newBullet;
 		} else {
-			GameObject bullet = bulletsFree [0];
+			GameObject bl = bulletsFree [0];
 			bulletsFree.RemoveAt (0);
-			return bullet;
+			bl.SetActive (true);
+			//bl.GetComponent<Rigidbody> ().WakeUp ();
+			//bl.GetComponent<Rigidbody> ().isKinematic = false;
+			return bl;
 		}
+	}
+		
+	public void recycleBullet(GameObject bullet) {
+		bulletsUsing.Remove(bullet);
+		bulletsFree.Add (bullet);
+		//Renderer renderer = bullet.GetComponent<Renderer> ();
+		Rigidbody rb = bullet.GetComponent<Rigidbody> ();
+		rb.velocity = Vector3.zero;
+		bullet.SetActive (false);
 	}
 }
 

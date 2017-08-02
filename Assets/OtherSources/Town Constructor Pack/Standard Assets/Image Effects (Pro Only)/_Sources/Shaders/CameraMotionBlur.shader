@@ -24,6 +24,7 @@
 		_NoiseTex ("-", 2D) = "grey" {}
 		_VelTex ("-", 2D) = "black" {}
 		_NeighbourMaxTex ("-", 2D) = "black" {}
+		_TileTexDebug ("-", 2D) = "" {}
 	}
 
 	CGINCLUDE
@@ -329,7 +330,7 @@
 		float4 sum = cx * weight;
 		
 		float4 jitteredDir = vn.xyxy + noise.xyyz;
-#ifdef SHADER_API_D3D11
+#if defined(SHADER_API_D3D11) || defined(SHADER_API_GLCORE)
 		jitteredDir = max(abs(jitteredDir.xyxy), _MainTex_TexelSize.xyxy * _MaxVelocity * 0.5) * sign(jitteredDir.xyxy)  * float4(1,1,-1,-1);
 #else
 		jitteredDir = max(abs(jitteredDir.xyxy), _MainTex_TexelSize.xyxy * _MaxVelocity * 0.15) * sign(jitteredDir.xyxy)  * float4(1,1,-1,-1);
@@ -359,7 +360,7 @@
 			sum += cy * alphay;
 			weight += alphay;
 
-#ifdef SHADER_API_D3D11
+#if defined(SHADER_API_D3D11) || defined(SHADER_API_GLCORE)
 
 			vy = tex2Dlod(_VelTex, float4(yf.zw,0,0)).xy;
 
@@ -423,13 +424,11 @@ Subshader {
 	// pass 0
 	Pass {
 		ZTest Always Cull Off ZWrite On Blend Off
-		Fog { Mode off }      
 
 		CGPROGRAM
 		#pragma target 3.0
 		#pragma vertex vert
 		#pragma fragment CameraVelocity
-		#pragma exclude_renderers d3d11_9x 
 
 		ENDCG
 	}
@@ -437,13 +436,11 @@ Subshader {
 	// pass 1
 	Pass {
 		ZTest Always Cull Off ZWrite Off Blend Off
-		Fog { Mode off }      
 
 		CGPROGRAM
 		#pragma target 3.0
 		#pragma vertex vert
 		#pragma fragment Debug
-		#pragma exclude_renderers d3d11_9x 
 
 		ENDCG
 	}
@@ -451,13 +448,11 @@ Subshader {
 	// pass 2
 	Pass {
 		ZTest Always Cull Off ZWrite Off Blend Off
-		Fog { Mode off }      
 
 		CGPROGRAM
 		#pragma target 3.0
 		#pragma vertex vert
 		#pragma fragment TileMax
-		#pragma exclude_renderers d3d11_9x       
 
 		ENDCG
 	}
@@ -465,13 +460,11 @@ Subshader {
 	// pass 3
 	Pass {
 		ZTest Always Cull Off ZWrite Off Blend Off
-		Fog { Mode off }      
 
 		CGPROGRAM
 		#pragma target 3.0
 		#pragma vertex vert
 		#pragma fragment NeighbourMax
-		#pragma exclude_renderers d3d11_9x       
 
 		ENDCG
 	}
@@ -479,13 +472,11 @@ Subshader {
 	// pass 4
 	Pass {
 		ZTest Always Cull Off ZWrite Off Blend Off
-		Fog { Mode off }      
 
 		CGPROGRAM
 		#pragma target 3.0
 		#pragma vertex vert 
 		#pragma fragment ReconstructFilterBlur
-		#pragma exclude_renderers d3d11_9x       
 
 		ENDCG
 	}
@@ -493,39 +484,33 @@ Subshader {
 	// pass 5
 	Pass {
 		ZTest Always Cull Off ZWrite Off Blend Off
-		Fog { Mode off }      
 
 		CGPROGRAM
 		#pragma target 3.0
 		#pragma vertex vert
 		#pragma fragment SimpleBlur
-		#pragma exclude_renderers d3d11_9x       
 		ENDCG
 	}
 
   	// pass 6
 	Pass {
 		ZTest Always Cull Off ZWrite Off Blend Off
-		Fog { Mode off }      
 
 		CGPROGRAM
 		#pragma target 3.0
 		#pragma vertex vert
 		#pragma fragment MotionVectorBlur
-		#pragma exclude_renderers d3d11_9x
 		ENDCG
 	}
 
   	// pass 7
 	Pass {
 		ZTest Always Cull Off ZWrite Off Blend Off
-		Fog { Mode off }      
 
 		CGPROGRAM
 		#pragma target 3.0
 		#pragma vertex vert
 		#pragma fragment ReconstructionDiscBlur
-		#pragma exclude_renderers d3d11_9x
 		ENDCG
 	}  	
   }

@@ -11,7 +11,7 @@ public class myCamera : MonoBehaviour {
 	void Update () {
 		float rotationX = transform.localEulerAngles.y;
 		float rotationY = transform.localEulerAngles.x - Input.GetAxis ("Mouse Y");
-		if (rotationY < 3 || rotationY > 350) {
+		if (rotationY < 10 || rotationY > 350) {
 			transform.localEulerAngles = new Vector3 (rotationY, rotationX, 0);		
 		}
 	}
