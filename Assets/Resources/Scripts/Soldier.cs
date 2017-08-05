@@ -6,6 +6,7 @@ public class Soldier : MonoBehaviour {
 	public float maxVelocity = 25;
 	public GameObject gun;
 	private float shootColdTime = 0;
+    private bool isTalking = false;
 
 	void Start () {
 		
@@ -15,9 +16,11 @@ public class Soldier : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Escape)) {
 			Cursor.lockState = CursorLockMode.None;
 		}
-
-		directionCtrl ();
-		move ();
+        if(!isTalking)
+        {
+            directionCtrl();
+            move();
+        }
 	}
 		
 	void directionCtrl() {
@@ -60,5 +63,15 @@ public class Soldier : MonoBehaviour {
 			animator.SetBool("walk", false);
 		}
 	}
+
+    public void BeginTalk()
+    {
+        isTalking = true;
+    }
+    public void StopTalk()
+    {
+        isTalking = false;
+    }
+
 }
  

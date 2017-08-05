@@ -1,0 +1,40 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TalkingPoint : MonoBehaviour {
+    public GameObject Player;
+    public GameObject Villager;
+    public GameObject DialogPanel;
+	// Use this for initialization
+	void Start () {
+        Dialog1.FinishTalkingEvent += FinishTalk;
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.Log("111");
+            Player.GetComponent<Soldier>().BeginTalk();
+            Villager.GetComponent<Villager>().canMove(Player.transform.position);
+        }
+        if(other.gameObject.tag == "Villager")
+        {
+            DialogPanel.GetComponent<Dialog1>().enabled = true;
+            Villager.GetComponent<Villager>().Talk();
+        }
+    }
+    
+    void FinishTalk()
+    {
+        Villager.GetComponent<Villager>().canMove(new Vector3(110, 0.5f, 14.5f));
+        Player.GetComponent<Soldier>().StopTalk();
+        DialogPanel.SetActive(false);
+    }
+}
