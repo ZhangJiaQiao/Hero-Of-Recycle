@@ -20,6 +20,7 @@ public class Soldier : MonoBehaviour {
         {
             directionCtrl();
             move();
+			jump ();
         }
 	}
 		
@@ -64,13 +65,21 @@ public class Soldier : MonoBehaviour {
 		}
 	}
 
+	void jump() {
+		if (Input.GetKeyDown (KeyCode.Space)) {
+			GetComponent<Rigidbody> ().AddForce (transform.up.normalized * 5, ForceMode.Impulse);
+		}
+	}
+
     public void BeginTalk()
     {
         isTalking = true;
+		gun.GetComponent<Gun> ().BeginTalk ();
     }
     public void StopTalk()
     {
         isTalking = false;
+		gun.GetComponent<Gun> ().StopTalk ();
     }
 
 }

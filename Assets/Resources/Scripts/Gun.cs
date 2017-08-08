@@ -9,6 +9,7 @@ public class Gun : MonoBehaviour {
 	public ParticleSystem smoke;
 	private Camera c;
 	private float shootColdTime = 0;
+	private bool isTalking = false;
 
 	void Start () {
 		c = Camera.main;
@@ -16,12 +17,14 @@ public class Gun : MonoBehaviour {
 	}
 
 	void Update () {
-		float rotationX = transform.localEulerAngles.y;
-		float rotationY = transform.localEulerAngles.x - Input.GetAxis ("Mouse Y");
-		if (rotationY < 60 || rotationY > 325) {
-			transform.localEulerAngles = new Vector3 (rotationY, rotationX, 0);		
+		if (!isTalking) {
+			float rotationX = transform.localEulerAngles.y;
+			float rotationY = transform.localEulerAngles.x - Input.GetAxis ("Mouse Y");
+			if (rotationY < 60 || rotationY > 325) {
+				transform.localEulerAngles = new Vector3 (rotationY, rotationX, 0);		
+			}
+			shoot ();
 		}
-		shoot ();
 	}
 
 	void OnGUI() {
@@ -81,5 +84,18 @@ public class Gun : MonoBehaviour {
 			SetSpread (spread);
 			animator.SetBool ("shoot", true);
 		}
+	}
+
+	public void BeginTalk()
+	{
+		isTalking = true;
+		Animator animator = GetComponent<Animator> ();
+		animator.SetBool ("walk", false);
+		animator.SetBool ("shoot", false);
+		muzzleFlash.SetActive (false);
+	}
+	public void StopTalk()
+	{
+		isTalking = false;
 	}
 }
