@@ -1,12 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/Soldier.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/AIResources/sword.cs">
     <Files>
-      <File FileName="Assets/Resources/Scripts/TalkingPoint.cs" Line="24" Column="56" />
-      <File FileName="Assets/Resources/Scripts/Gun.cs" Line="87" Column="3" />
-      <File FileName="Assets/Resources/Scripts/Soldier.cs" Line="17" Column="43" />
+      <File FileName="Assets/Resources/Scripts/Soldier.cs" Line="76" Column="36" />
+      <File FileName="Assets/Resources/Scripts/TalkingPoint.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/Gun.cs" Line="1" Column="1" />
       <File FileName="Assets/Resources/Scripts/ShowHotel.cs" Line="1" Column="1" />
-      <File FileName="Assets/Resources/Scripts/Singleton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/Singleton.cs" Line="10" Column="45" />
+      <File FileName="Assets/Resources/Scripts/HpUISlider.cs" Line="53" Column="2" />
+      <File FileName="Assets/Resources/Scripts/Scene1ToScene2.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/AIResources/bone.cs" Line="91" Column="35" />
+      <File FileName="Assets/Resources/Scripts/Role.cs" Line="20" Column="6" />
+      <File FileName="Assets/Resources/Scripts/HeroPanel.cs" Line="18" Column="1" />
+      <File FileName="Assets/Resources/Scripts/Speak.cs" Line="6" Column="1" />
+      <File FileName="Assets/Resources/Scripts/AIResources/characterProperty.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/AIResources/sword.cs" Line="14" Column="11" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
