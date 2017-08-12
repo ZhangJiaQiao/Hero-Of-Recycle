@@ -262,7 +262,6 @@
      <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\HistogramCompute.compute" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\ReadMe.txt" />
      <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
-     <None Include="Assets\OtherSources\Hotel 1\Ornamental Flower Set\Shaders\Transparent-BumpSpecNoCull.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\EdgeDetectNormals.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseAndGrain.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset2.shader" />

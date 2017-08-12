@@ -5,7 +5,7 @@ using UnityEngine;
 public class Soldier : MonoBehaviour {
 	public float maxVelocity = 25;
 	public GameObject gun;
-	private float shootColdTime = 0;
+	private float jumpColdTime = 0;
     private bool isTalking = false;
 
 	void Start () {
@@ -67,8 +67,15 @@ public class Soldier : MonoBehaviour {
 
 	void jump() {
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			GetComponent<Rigidbody> ().AddForce (transform.up.normalized * 5, ForceMode.Impulse);
-		}
+			if (jumpColdTime <= 0) {
+				GetComponent<Rigidbody> ().AddForce (transform.up.normalized * 7, ForceMode.Impulse);
+				jumpColdTime = 1;
+			} 
+		} else {
+			if (jumpColdTime > 0) {
+				jumpColdTime -= Time.deltaTime;
+			}
+		} 
 	}
 
     public void BeginTalk()

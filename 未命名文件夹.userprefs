@@ -1,9 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/TalkingPoint.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/Scripts/Soldier.cs">
     <Files>
-      <File FileName="Assets/Resources/Scripts/Gun.cs" Line="55" Column="80" />
       <File FileName="Assets/Resources/Scripts/TalkingPoint.cs" Line="24" Column="56" />
+      <File FileName="Assets/Resources/Scripts/Gun.cs" Line="87" Column="3" />
+      <File FileName="Assets/Resources/Scripts/Soldier.cs" Line="17" Column="43" />
+      <File FileName="Assets/Resources/Scripts/ShowHotel.cs" Line="1" Column="1" />
+      <File FileName="Assets/Resources/Scripts/Singleton.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -49,4 +49,8 @@ public class HpUISlider : MonoBehaviour {
     {
         mBar.value = value;//更新UISlider的值
     }
+
+	public float getVal() {
+		return mBar.value;
+	}
 }

@@ -29,6 +29,7 @@ public class bone : MonoBehaviour {
 			animator.SetBool ("dead", true);
 		}
 	}
+
 	void OnCollisionEnter(Collision collision) {
 		Debug.Log ("hit!");
 		if (collision.gameObject.name != "Bullet(Clone)")
