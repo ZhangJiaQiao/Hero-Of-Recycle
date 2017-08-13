@@ -241,6 +241,7 @@
     <Compile Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Resources\Scripts\AIResources\bone.cs" />
     <Compile Include="Assets\Resources\Scripts\AIResources\characterProperty.cs" />
+    <Compile Include="Assets\Resources\Scripts\AIResources\sword.cs" />
     <Compile Include="Assets\Resources\Scripts\Bullet.cs" />
     <Compile Include="Assets\Resources\Scripts\Dialog1.cs" />
     <Compile Include="Assets\Resources\Scripts\FileManager.cs" />
