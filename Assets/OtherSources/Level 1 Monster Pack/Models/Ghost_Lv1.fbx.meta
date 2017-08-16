@@ -30,11 +30,11 @@ ModelImporter:
     400020: TailControl
     400022: TailJoint
     4300000: LV1
-    7400000: ghost_idle
-    7400002: ghost_move
-    7400004: ghost_attack
+    7400000: idle
+    7400002: move
+    7400004: attack
     7400006: ghost_damage
-    7400008: ghost_die
+    7400008: die
     9500000: //RootNode
     13700000: LV1
   materials:
@@ -59,7 +59,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: ghost_idle
+      name: idle
       takeName: Take 001
       firstFrame: 1
       lastFrame: 36
@@ -111,7 +111,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: ghost_move
+      name: move
       takeName: Take 001
       firstFrame: 40
       lastFrame: 70
@@ -163,7 +163,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: ghost_attack
+      name: attack
       takeName: Take 001
       firstFrame: 80
       lastFrame: 100
@@ -267,7 +267,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: ghost_die
+      name: die
       takeName: Take 001
       firstFrame: 140
       lastFrame: 175
@@ -343,6 +343,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -353,7 +354,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: GhostControl
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1

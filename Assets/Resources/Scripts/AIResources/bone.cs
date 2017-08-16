@@ -31,7 +31,6 @@ public class bone : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		Debug.Log ("hit!");
 		if (collision.gameObject.name != "Bullet(Clone)")
 			return;
 		Debug.Log ("hit the bullet!");
@@ -62,7 +61,7 @@ public class bone : MonoBehaviour {
 
 	void directionCtrl() {
 		string currentClip = animator.GetCurrentAnimatorClipInfo (0) [0].clip.name;
-		if (!findThePlayer && currentClip != "Death")
+		if (!findThePlayer && currentClip != "die")
 			return;
 		Vector3 targetDir = player.position - transform.position;
 		float step = 10 * Time.deltaTime;
@@ -73,14 +72,14 @@ public class bone : MonoBehaviour {
 
 	void moveAndAttack() {
 		string currentClip = animator.GetCurrentAnimatorClipInfo (0) [0].clip.name;
-
-		if (!findThePlayer || currentClip == "Death")
+		Debug.Log (currentClip);
+		if (!findThePlayer || currentClip == "die")
 			return;
 		Vector3 v = GetComponent<Rigidbody> ().velocity;
 		if (CloseToTrack () && !closeToAttack ()) {
-			if (currentClip == "Attack")
+			if (currentClip == "attack")
 				return;
-			if (currentClip != "Idle" && currentClip != "Death") {
+			if (currentClip != "idle" && currentClip != "die") {
 				if (v.sqrMagnitude < maxVelocity) {
 					v += CharacterProperty.speed * transform.forward.normalized;
 					GetComponent<Rigidbody> ().velocity = v;	
@@ -94,26 +93,4 @@ public class bone : MonoBehaviour {
 		}
 	}
 
-	/*
-	void shoot() {
-		Animator animator = GetComponent<Animator> ();
-		string currentClip = animator.GetCurrentAnimatorClipInfo (0) [0].clip.name;
-		if (Input.GetKeyDown(KeyCode.Mouse0)) {
-			switch(currentClip) {
-			case "Idle":
-				animator.SetTrigger ("standShoot");
-				break;	 
-			case "Run":
-				animator.SetTrigger ("runShoot");
-				break;
-			} 
-			myFactory mF = Singleton<myFactory>.Instance;
-			GameObject bullet = mF.getBullet ();
-			Vector3 point = c.ScreenToWorldPoint (new Vector3 (Screen.width/2, Screen.height/2, c.nearClipPlane));
-			bullet.transform.position = point + transform.forward * 2;
-			bullet.transform.forward = c.transform.forward;
-			bullet.GetComponent<Rigidbody> ().AddForce (bullet.transform.forward.normalized * 10, ForceMode.Impulse);
-		}
-	}
-	*/
 }
