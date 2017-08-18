@@ -1,6 +1,6 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\AIResources\ghost.cs">
+﻿<Properties StartupItem="Hero-Of-Recycle.Plugins.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\OtherSources\fantasy horde_vilagers\shader\Compressed MaskedShader2sided 5-4 cut out.shader">
     <Files>
       <File FileName="Assets\OtherSources\fantasy horde_vilagers\shader\Compressed MaskedShader2sided 5-4 cut out.shader" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\AIResources\bone.cs" Line="1" Column="1" />
