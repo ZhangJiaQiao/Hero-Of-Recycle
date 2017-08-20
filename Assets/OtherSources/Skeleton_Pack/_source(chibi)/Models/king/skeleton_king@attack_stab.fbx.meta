@@ -112,7 +112,7 @@ ModelImporter:
     2300000: sword
     3300000: sword
     4300000: sword
-    7400000: attack_stab
+    7400000: attack
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -125,12 +125,7 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "Copied Avatar Rig Configuration mis-match. Inbetween
-      bone rotation in copied configuration does not match rotation in animation file\nskeleton_king@attack_stab\nClip
-      'idle' has import animation warnings that might lower retargeting quality:\nNote:
-      Activate translation DOF on avatar to improve retargeting quality.\n\t'Character1_LeftShoulder'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Character1_RightShoulder'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -141,7 +136,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: attack_stab
+      name: attack
       takeName: idle
       firstFrame: 0
       lastFrame: 70

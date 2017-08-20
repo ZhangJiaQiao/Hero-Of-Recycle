@@ -116,7 +116,7 @@ ModelImporter:
     2300000: staff
     3300000: staff
     4300000: staff
-    7400000: run
+    7400000: move
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -128,8 +128,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    animationImportErrors: "Copied Avatar Rig Configuration mis-match. Transform hierarchy
-      does not match:\n\tTransform 'eyes 1' for human bone 'LeftEye' not found\n"
+    animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
@@ -141,7 +140,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: run
+      name: move
       takeName: runAdjusted_KingMage
       firstFrame: 0
       lastFrame: 24
@@ -151,7 +150,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1

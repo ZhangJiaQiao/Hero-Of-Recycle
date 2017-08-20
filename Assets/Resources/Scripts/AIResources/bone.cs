@@ -82,10 +82,12 @@ public class bone : MonoBehaviour {
 			if (currentClip != "idle" && currentClip != "die") {
 				if (v.sqrMagnitude < maxVelocity) {
 					v += CharacterProperty.speed * transform.forward.normalized;
+					Debug.Log ("222" + v);
 					GetComponent<Rigidbody> ().velocity = v;	
 				}
 			}
-			animator.SetBool ("run", true);		
+			animator.SetBool ("run", true);
+			Debug.Log ("333333   run run run");
 		} else if (closeToAttack ()) {
 			animator.SetTrigger ("attack");
 		} else {
