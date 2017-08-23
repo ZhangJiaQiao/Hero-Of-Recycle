@@ -94,11 +94,11 @@ ModelImporter:
     400084: rWingTair2
     400086: rWingTair3
     4300000: Mesh
-    7400000: bat_idle
-    7400002: bat_move
+    7400000: idle
+    7400002: move
     7400004: bat_attack
     7400006: bat_damage
-    7400008: bat_die
+    7400008: die
     9500000: //RootNode
     13700000: Mesh
   materials:
@@ -111,6 +111,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -123,7 +125,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: bat_idle
+      name: idle
       takeName: Take 001
       firstFrame: 1
       lastFrame: 36
@@ -243,7 +245,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: bat_move
+      name: move
       takeName: Take 001
       firstFrame: 40
       lastFrame: 76
@@ -603,7 +605,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: bat_die
+      name: die
       takeName: Take 001
       firstFrame: 130
       lastFrame: 160
@@ -747,6 +749,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -757,7 +760,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: Bat1Control
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1

@@ -40,7 +40,7 @@ public class HpUISlider : MonoBehaviour {
             }
             else c = colors[colors.Length - 1];
         }
-        label.text = string.Format("{0}/{1}", val * 100, MaxHp);
+        label.text = string.Format("{0}/{1}", mBar.value * 100, MaxHp);
         c.a = sprite.color.a;
         sprite.color = c;
     }
@@ -48,6 +48,7 @@ public class HpUISlider : MonoBehaviour {
     public void UpdateVal(float value)
     {
         mBar.value = value;//更新UISlider的值
+        Debug.Log(value);
     }
 
 	public float getVal() {

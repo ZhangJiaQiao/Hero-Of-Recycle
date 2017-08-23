@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class characterProperty : MonoBehaviour {
 	public float speed = 0.5f;
-	public int life = 10;
-	public float damageValue = 2.0f;
+	public float life = 100;
+	public float damageValue = 8f;
 	// Use this for initialization
 	void Start () {
 

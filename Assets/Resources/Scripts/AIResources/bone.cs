@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class bone : MonoBehaviour {
 	public float maxVelocity = 50;
-	//	public Vector3 playerPosition;
-	public Transform player;
+    public UIProgressBar HPBar;
+    //	public Vector3 playerPosition;
+    public Transform player;
 	private bool findThePlayer = false;
 	private Animator animator;
 	public characterProperty CharacterProperty;
@@ -15,7 +16,9 @@ public class bone : MonoBehaviour {
 	}
 
 	void Update () {
-		findPlayer ();						//if the player is close enough to track
+        //Debug.Log(CharacterProperty.life);
+        HPBar.GetComponent<HpUISlider>().UpdateVal(CharacterProperty.life / 100);
+        findPlayer ();						//if the player is close enough to track
 		directionCtrl ();					//trun direction to the player
 		moveAndAttack ();					//move and attack player
 	}
@@ -28,20 +31,24 @@ public class bone : MonoBehaviour {
 		if (CharacterProperty.life <= 0) {
 			animator.SetBool ("dead", true);
 		}
-	}
+        if (CharacterProperty.life >= 100)
+        {
+            CharacterProperty.life = 100;
+        }
+    }
 
 	void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.name != "Bullet(Clone)")
 			return;
-		Debug.Log ("hit the bullet!");
+		//Debug.Log ("hit the bullet!");
 		if (collision.gameObject.tag == this.gameObject.tag) {
 			CharacterProperty.speed -= 0.1f;
-			CharacterProperty.life -= 4;
-			CharacterProperty.damageValue -= 0.5f;
+			CharacterProperty.life -= 40;
+			CharacterProperty.damageValue -= 2f;
 		} else {
 			CharacterProperty.speed += 0.1f;
-			CharacterProperty.life += 4;
-			CharacterProperty.damageValue += 0.5f;			
+			CharacterProperty.life += 40;
+			CharacterProperty.damageValue += 2f;			
 		}
 	}
 
@@ -72,7 +79,7 @@ public class bone : MonoBehaviour {
 
 	void moveAndAttack() {
 		string currentClip = animator.GetCurrentAnimatorClipInfo (0) [0].clip.name;
-		Debug.Log (currentClip);
+		//Debug.Log (currentClip);
 		if (!findThePlayer || currentClip == "die")
 			return;
 		Vector3 v = GetComponent<Rigidbody> ().velocity;
@@ -82,12 +89,12 @@ public class bone : MonoBehaviour {
 			if (currentClip != "idle" && currentClip != "die") {
 				if (v.sqrMagnitude < maxVelocity) {
 					v += CharacterProperty.speed * transform.forward.normalized;
-					Debug.Log ("222" + v);
+					//Debug.Log ("222" + v);
 					GetComponent<Rigidbody> ().velocity = v;	
 				}
 			}
 			animator.SetBool ("run", true);
-			Debug.Log ("333333   run run run");
+			//Debug.Log ("333333   run run run");
 		} else if (closeToAttack ()) {
 			animator.SetTrigger ("attack");
 		} else {

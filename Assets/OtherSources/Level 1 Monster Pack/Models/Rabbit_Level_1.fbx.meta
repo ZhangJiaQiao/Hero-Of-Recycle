@@ -54,11 +54,11 @@ ModelImporter:
     400044: RootJoint
     400046: rToeJoint
     4300000: MESH
-    7400000: rabbit_idle
-    7400002: rabbit_move
+    7400000: idle
+    7400002: move
     7400004: rabbit_attack
     7400006: rabbit_damage
-    7400008: rabbit_die
+    7400008: die
     9500000: //RootNode
     13700000: MESH
   materials:
@@ -71,6 +71,8 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
@@ -83,7 +85,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: rabbit_idle
+      name: idle
       takeName: Take 001
       firstFrame: 1
       lastFrame: 30
@@ -159,7 +161,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: rabbit_move
+      name: move
       takeName: Take 001
       firstFrame: 40
       lastFrame: 70
@@ -387,7 +389,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: rabbit_die
+      name: die
       takeName: Take 001
       firstFrame: 160
       lastFrame: 190
@@ -487,6 +489,7 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -497,7 +500,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: RabbitControl
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1

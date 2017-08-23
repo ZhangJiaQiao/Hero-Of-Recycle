@@ -5,14 +5,19 @@ using UnityEngine;
 public class Soldier : MonoBehaviour {
 	public float maxVelocity = 25;
 	public GameObject gun;
+    public UIProgressBar HPBar;
+    public UIProgressBar MPBar;
+    private Role role;
 	private float jumpColdTime = 0;
     private bool isTalking = false;
 
 	void Start () {
-		
+        role = GetComponent<Role>();
 	}
 
 	void Update () {
+        HPBar.GetComponent<HpUISlider>().UpdateVal(role.hp / 100);
+        MPBar.GetComponent<MpUISlider>().UpdateVal(role.mp / 100);
 		if (Input.GetKey(KeyCode.Escape)) {
 			Cursor.lockState = CursorLockMode.None;
 		}
@@ -89,5 +94,13 @@ public class Soldier : MonoBehaviour {
 		gun.GetComponent<Gun> ().StopTalk ();
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "otherTrash" || collision.gameObject.tag == "recyclableTrash"
+            || collision.gameObject.tag == "foodTrash" || collision.gameObject.tag == "harmfulTrash")
+        {
+            role.hp -= collision.gameObject.GetComponent<characterProperty>().damageValue;
+        }
+    }
 }
  

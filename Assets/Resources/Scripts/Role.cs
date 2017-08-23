@@ -30,4 +30,15 @@ public class Role : MonoBehaviour {
             Mp = value > 100 ? 100 : value;
         }
     }
+
+    private void Update()
+    {
+        if(Hp <= 0)
+        {
+            if(destoryEvent != null)
+            {
+                destoryEvent();
+            }
+        }
+    }
 }

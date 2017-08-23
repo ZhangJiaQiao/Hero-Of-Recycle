@@ -5,7 +5,8 @@ using UnityEngine;
 public class ghost : MonoBehaviour {
 
 	public float maxVelocity = 50;
-	//	public Vector3 playerPosition;
+    //	public Vector3 playerPosition;
+    public UIProgressBar HPBar;
 	public Transform player;
 	private Vector3 targetPosition;
 	private bool findThePlayer = false;
@@ -20,6 +21,7 @@ public class ghost : MonoBehaviour {
 	}
 
 	void Update () {
+        HPBar.GetComponent<HpUISlider>().UpdateVal(CharacterProperty.life / 100);
 		findPlayer ();						//if the player is close enough to track
 
 		if (isAttacking) {
@@ -40,6 +42,10 @@ public class ghost : MonoBehaviour {
 		if (CharacterProperty.life <= 0) {
 			animator.SetBool ("dead", true);
 		}
+        if (CharacterProperty.life >= 100)
+        {
+            CharacterProperty.life = 100;
+        }
 	}
 
 	void OnCollisionEnter(Collision collision) {
@@ -47,12 +53,12 @@ public class ghost : MonoBehaviour {
 			return;
 		if (collision.gameObject.tag == this.gameObject.tag) {
 			CharacterProperty.speed -= 0.1f;
-			CharacterProperty.life -= 4;
-			CharacterProperty.damageValue -= 0.5f;
+			CharacterProperty.life -= 40;
+			CharacterProperty.damageValue -= 5f;
 		} else {
 			CharacterProperty.speed += 0.1f;
-			CharacterProperty.life += 4;
-			CharacterProperty.damageValue += 0.5f;			
+			CharacterProperty.life += 40;
+			CharacterProperty.damageValue += 5f;			
 		}
 	}
 
