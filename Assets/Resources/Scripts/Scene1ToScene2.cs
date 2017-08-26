@@ -12,6 +12,7 @@ public class Scene1ToScene2 : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Player") {
 			SSDirector.getInstance ().nextScene ();
+			Debug.Log ("haha");
 		}
 	}
 }

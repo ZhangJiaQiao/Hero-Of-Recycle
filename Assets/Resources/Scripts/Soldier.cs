@@ -3,16 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Soldier : MonoBehaviour {
-	public float maxVelocity = 25;
+	public float maxVelocity_fb;
+	public float maxVelocity_rl;
 	public GameObject gun;
+	public GameObject doll;
     public UIProgressBar HPBar;
     public UIProgressBar MPBar;
     private Role role;
 	private float jumpColdTime = 0;
     private bool isTalking = false;
+	private bool isDied;
 
 	void Start () {
+		isDied = false;
+		maxVelocity_fb = 8;
+		maxVelocity_rl = 8;
         role = GetComponent<Role>();
+		Role.destoryEvent += die;
+		Renderer r = GetComponent<Renderer> ();
+		r.enabled = false;
 	}
 
 	void Update () {
@@ -30,43 +39,65 @@ public class Soldier : MonoBehaviour {
 	}
 		
 	void directionCtrl() {
-		float rotationX = transform.localEulerAngles.y + Input.GetAxis ("Mouse X") * 5;
-		float rotationY = transform.localEulerAngles.x;
-		transform.localEulerAngles = new Vector3 (rotationY, rotationX, 0);
+		if (!isDied) {
+			float rotationX = transform.localEulerAngles.y + Input.GetAxis ("Mouse X") * 5;
+			float rotationY = transform.localEulerAngles.x;
+			transform.localEulerAngles = new Vector3 (rotationY, rotationX, 0);
+		}
 	}
 
 	void move() {
-		Animator animator = gun.GetComponent<Animator> ();
-		if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
-			Vector3 v = GetComponent<Rigidbody> ().velocity;
-			if (v.sqrMagnitude < maxVelocity) {
-				v += transform.forward.normalized;
-				GetComponent<Rigidbody> ().velocity = v;	
+		if (!isDied) {
+			Animator animator = gun.GetComponent<Animator> ();
+			bool isMoving = false;
+			if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
+				Vector3 v = GetComponent<Rigidbody> ().velocity;
+				Vector3 tmp = transform.forward.normalized;
+				float projection = Vector3.Dot(v, tmp) / tmp.sqrMagnitude;
+				if (Mathf.Abs(projection) < maxVelocity_fb) {
+					v += transform.forward.normalized;
+					GetComponent<Rigidbody> ().velocity = v;	
+				}
+				isMoving = true;
+				animator.SetBool("walk", true);	
+			} 
+			if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
+				Vector3 v = GetComponent<Rigidbody> ().velocity;
+				Vector3 tmp = transform.forward.normalized;
+				float projection = Vector3.Dot(v, tmp * -1) / tmp.sqrMagnitude;
+				if (Mathf.Abs(projection) < maxVelocity_fb) {
+					v -= transform.forward.normalized;
+					GetComponent<Rigidbody> ().velocity = v;	
+				}
+				isMoving = true;
+				animator.SetBool("walk", true);
 			}
-			animator.SetBool("walk", true);	
-		} else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
-			Vector3 v = GetComponent<Rigidbody> ().velocity;
-			if (v.sqrMagnitude < maxVelocity) {
-				v -= transform.forward.normalized;
-				GetComponent<Rigidbody> ().velocity = v;	
-			}
-			animator.SetBool("walk", true);
-		} else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
-			Vector3 v = GetComponent<Rigidbody> ().velocity;
-			if (v.sqrMagnitude < maxVelocity) {
-				v -= transform.right.normalized;
-				GetComponent<Rigidbody> ().velocity = v;	
-			}
-			animator.SetBool("walk", true);	
-		} else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
-			Vector3 v = GetComponent<Rigidbody> ().velocity;
-			if (v.sqrMagnitude < maxVelocity) {
-				v += transform.right.normalized;
-				GetComponent<Rigidbody> ().velocity = v;	
-			}
-			animator.SetBool("walk", true);	
-		} else {
-			animator.SetBool("walk", false);
+			if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
+				Vector3 v = GetComponent<Rigidbody> ().velocity;
+				Vector3 tmp = transform.right.normalized;
+				float projection = Vector3.Dot(v, tmp) / tmp.sqrMagnitude;
+				if (Mathf.Abs(projection) < maxVelocity_rl) {
+					v -= transform.right.normalized;
+					GetComponent<Rigidbody> ().velocity = v;	
+				}
+				isMoving = true;
+				animator.SetBool("walk", true);	
+			} 
+			if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
+				Vector3 v = GetComponent<Rigidbody> ().velocity;
+				Vector3 tmp = transform.right.normalized;
+				float projection = Vector3.Dot(v, tmp * -1) / tmp.sqrMagnitude;
+				if (Mathf.Abs(projection) < maxVelocity_rl) {
+					v += transform.right.normalized;
+					GetComponent<Rigidbody> ().velocity = v;	
+				}
+				isMoving = true;
+				animator.SetBool("walk", true);	
+			} 
+
+			if(!isMoving) {
+				animator.SetBool ("walk", false);
+			} 	
 		}
 	}
 
@@ -94,13 +125,22 @@ public class Soldier : MonoBehaviour {
 		gun.GetComponent<Gun> ().StopTalk ();
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
-        if(collision.gameObject.tag == "otherTrash" || collision.gameObject.tag == "recyclableTrash"
-            || collision.gameObject.tag == "foodTrash" || collision.gameObject.tag == "harmfulTrash")
-        {
-            role.hp -= collision.gameObject.GetComponent<characterProperty>().damageValue;
-        }
+		if (!isDied) {
+			if(collision.gameObject.tag == "otherTrash" || collision.gameObject.tag == "recyclableTrash"
+				|| collision.gameObject.tag == "foodTrash" || collision.gameObject.tag == "harmfulTrash")
+			{
+				pain p = Singleton<pain>.Instance;
+				p.showPain ();
+				role.hp -= collision.gameObject.GetComponent<characterProperty>().damageValue;
+			}
+		}
     }
+	public void die() {
+		this.isDied = true;
+		this.gun.SetActive (false);
+		this.doll.SetActive (true);
+	}
 }
  

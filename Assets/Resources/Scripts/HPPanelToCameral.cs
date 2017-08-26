@@ -11,6 +11,8 @@ public class HPPanelToCameral : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.rotation = Camera.main.transform.rotation;
+		if (Camera.main) {
+			Animator animator = GetComponent<Animator> ();	
+		}
 	}
 }

@@ -94,6 +94,7 @@ public class Gun : MonoBehaviour {
 		animator.SetBool ("shoot", false);
 		muzzleFlash.SetActive (false);
 	}
+
 	public void StopTalk()
 	{
 		isTalking = false;

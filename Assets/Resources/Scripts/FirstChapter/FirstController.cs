@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FirstController : MonoBehaviour, ISceneController, AI_Request, UI_Request, Player_Request {
-
 	// Use this for initialization
 	void Start () {
 		

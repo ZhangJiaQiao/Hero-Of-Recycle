@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class myFactory : MonoBehaviour {
 	public GameObject bullet;
+	private List<string> bullet_types;
+	private int currentBulletType;
 	private List<GameObject> bulletsUsing;
 	private List<GameObject> bulletsFree;
 
@@ -15,17 +17,25 @@ public class myFactory : MonoBehaviour {
 		bulletsUsing = new List<GameObject> ();
 		FirebulletsUsing = new List<GameObject> ();
 		FirebulletsFree = new List<GameObject> ();
+		bullet_types = new List<string> {"foodTrash", "recyclableTrash", "otherTrash", "harmfulTrash"};
+		currentBulletType = 0;
+	}
+		
+	void Update() {
+		setBulletType ();
 	}
 
 	public GameObject getBullet() {
 		if (bulletsFree.Count == 0) {
 			GameObject newBullet = Instantiate<GameObject> (bullet);
+			newBullet.tag = bullet_types[currentBulletType];
 			bulletsUsing.Add (newBullet);
 			return newBullet;
 		} else {
 			GameObject bl = bulletsFree [0];
 			bulletsFree.RemoveAt (0);
 			bl.SetActive (true);
+			bl.tag = bullet_types [currentBulletType];
 			//bl.GetComponent<Rigidbody> ().WakeUp ();
 			//bl.GetComponent<Rigidbody> ().isKinematic = false;
 			return bl;
@@ -54,6 +64,17 @@ public class myFactory : MonoBehaviour {
 			//bl.GetComponent<Rigidbody> ().isKinematic = false;
 			return bl;
 		}
+	}
+
+	private void setBulletType() {
+		if (Input.GetKeyDown(KeyCode.Tab)) {
+			currentBulletType += 1;
+			currentBulletType %= 4;
+		}
+	}
+
+	public string getCurrentBulletType() {
+		return bullet_types[currentBulletType];
 	}
 }
 
