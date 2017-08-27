@@ -133,7 +133,7 @@ public class Soldier : MonoBehaviour {
 			{
 				pain p = Singleton<pain>.Instance;
 				p.showPain ();
-				role.hp -= collision.gameObject.GetComponent<characterProperty>().damageValue;
+				role.hp -= collision.gameObject.GetComponent<Weapon>().damageValue;
 			}
 		}
     }

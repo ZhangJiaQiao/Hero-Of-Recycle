@@ -265,8 +265,12 @@
     <Compile Include="Assets\Resources\Scripts\Speak.cs" />
     <Compile Include="Assets\Resources\Scripts\TalkingPoint.cs" />
     <Compile Include="Assets\Resources\Scripts\Villager.cs" />
+    <Compile Include="Assets\Resources\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Resources\Scripts\bulletType.cs" />
+    <Compile Include="Assets\Resources\Scripts\doll.cs" />
     <Compile Include="Assets\Resources\Scripts\myCamera.cs" />
     <Compile Include="Assets\Resources\Scripts\myFactory.cs" />
+    <Compile Include="Assets\Resources\Scripts\pain.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />

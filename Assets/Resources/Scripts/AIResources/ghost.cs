@@ -107,7 +107,8 @@ public class ghost : MonoBehaviour {
 			isAttacking = true;
 		} else {
 			animator.SetBool ("idle", true);
-		}
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+        }
 		targetPosition = player.position;
 	}
 
