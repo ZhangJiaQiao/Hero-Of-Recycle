@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/WebDemoScene.unity
+- path: Assets/Second.unity
   isLoaded: 1
   isActive: 1
