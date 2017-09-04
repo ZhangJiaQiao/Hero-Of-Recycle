@@ -16,10 +16,10 @@ public class Soldier : MonoBehaviour {
 
 	void Start () {
 		isDied = false;
-		maxVelocity_fb = 8;
-		maxVelocity_rl = 8;
+		maxVelocity_fb = 5;
+		maxVelocity_rl = 5;
         role = GetComponent<Role>();
-		Role.destoryEvent += die;
+		role.destoryEvent += die;
 		Renderer r = GetComponent<Renderer> ();
 		r.enabled = false;
 	}
@@ -40,7 +40,7 @@ public class Soldier : MonoBehaviour {
 		
 	void directionCtrl() {
 		if (!isDied) {
-			float rotationX = transform.localEulerAngles.y + Input.GetAxis ("Mouse X") * 5;
+			float rotationX = transform.localEulerAngles.y + Input.GetAxis ("Mouse X") * 2;
 			float rotationY = transform.localEulerAngles.x;
 			transform.localEulerAngles = new Vector3 (rotationY, rotationX, 0);
 		}
@@ -102,16 +102,18 @@ public class Soldier : MonoBehaviour {
 	}
 
 	void jump() {
-		if (Input.GetKeyDown (KeyCode.Space)) {
-			if (jumpColdTime <= 0) {
-				GetComponent<Rigidbody> ().AddForce (transform.up.normalized * 7, ForceMode.Impulse);
-				jumpColdTime = 1;
-			} 
-		} else {
-			if (jumpColdTime > 0) {
-				jumpColdTime -= Time.deltaTime;
-			}
-		} 
+		if (!isDied) {
+			if (Input.GetKeyDown (KeyCode.Space)) {
+				if (jumpColdTime <= 0) {
+					GetComponent<Rigidbody> ().AddForce (transform.up.normalized * 7, ForceMode.Impulse);
+					jumpColdTime = 1;
+				} 
+			} else {
+				if (jumpColdTime > 0) {
+					jumpColdTime -= Time.deltaTime;
+				}
+			} 	
+		}
 	}
 
     public void BeginTalk()

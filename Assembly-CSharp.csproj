@@ -218,12 +218,14 @@
      <Compile Include="Assets\Resources\Scripts\HPPanelToCameral.cs" />
      <Compile Include="Assets\Resources\Scripts\HpUISlider.cs" />
      <Compile Include="Assets\Resources\Scripts\ISceneController.cs" />
+     <Compile Include="Assets\Resources\Scripts\monstersCreator.cs" />
      <Compile Include="Assets\Resources\Scripts\MpUISlider.cs" />
      <Compile Include="Assets\Resources\Scripts\myCamera.cs" />
      <Compile Include="Assets\Resources\Scripts\myFactory.cs" />
      <Compile Include="Assets\Resources\Scripts\pain.cs" />
      <Compile Include="Assets\Resources\Scripts\Role.cs" />
      <Compile Include="Assets\Resources\Scripts\Scene1ToScene2.cs" />
+     <Compile Include="Assets\Resources\Scripts\Scene2ToScene1.cs" />
      <Compile Include="Assets\Resources\Scripts\ShowHotel.cs" />
      <Compile Include="Assets\Resources\Scripts\Singleton.cs" />
      <Compile Include="Assets\Resources\Scripts\Soldier.cs" />
@@ -231,6 +233,7 @@
      <Compile Include="Assets\Resources\Scripts\SSDirector.cs" />
      <Compile Include="Assets\Resources\Scripts\TalkingPoint.cs" />
      <Compile Include="Assets\Resources\Scripts\Villager.cs" />
+     <Compile Include="Assets\Resources\Scripts\Weapon.cs" />
      <None Include="Assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\OtherSources\AssaultTroop 1\AssaultTroop README.txt" />

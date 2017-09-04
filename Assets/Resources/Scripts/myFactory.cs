@@ -8,6 +8,10 @@ public class myFactory : MonoBehaviour {
 	private int currentBulletType;
 	private List<GameObject> bulletsUsing;
 	private List<GameObject> bulletsFree;
+	public List<GameObject> otherTrash;
+	public List<GameObject> foodTrash;
+	public List<GameObject> recyclableTrash;
+	public List<GameObject> harmfulTrash;
 
 	public GameObject Firebullet;
 	private List<GameObject> FirebulletsUsing;
@@ -75,6 +79,30 @@ public class myFactory : MonoBehaviour {
 
 	public string getCurrentBulletType() {
 		return bullet_types[currentBulletType];
+	}
+
+	public GameObject getMonster(string type) {
+		GameObject monster = null;
+		int index;
+		switch (type) {
+		case "foodTrash": 
+			index = Random.Range (0, foodTrash.Count);
+			monster = Instantiate<GameObject> (foodTrash [index]);
+			break;
+		case "harmfulTrash": 
+			index = Random.Range(0, harmfulTrash.Count);
+			monster = Instantiate<GameObject>(harmfulTrash[index]);
+			break;
+		case "recyclableTrash":
+			index = Random.Range (0, recyclableTrash.Count);
+			monster = Instantiate<GameObject> (recyclableTrash [index]);
+			break;
+		case "otherTrash":
+			index = Random.Range (0, otherTrash.Count);
+			monster = Instantiate<GameObject> (otherTrash [index]);
+			break;
+		}
+		return monster;
 	}
 }
 

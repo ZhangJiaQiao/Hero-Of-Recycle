@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class SSDirector : System.Object {
 	private static SSDirector _instance;
-	private int currentScene = 0;
+	public static int currentScene = 1;
+	public static Vector3 playerPosition = new Vector3(101.67f, 1f, 8.58f);
 
 	public ISceneController currentSceneController;
 
@@ -30,13 +30,5 @@ public class SSDirector : System.Object {
 
 	public void exit() {
 		//退出游戏
-	}
-
-	public int getCurrentScene() {
-		return currentScene;
-	}
-
-	public void nextScene() {
-		SceneManager.LoadScene ("Hotel");
 	}
 }

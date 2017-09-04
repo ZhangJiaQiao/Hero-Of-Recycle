@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Role : MonoBehaviour {
     public delegate void destroy();//死亡毁灭委托
-    public static event destroy destoryEvent;//事件
+    public event destroy destoryEvent;//事件
     private float Hp = 100;//生命值
     private float Mp = 100;//魔法值
     public float hp
@@ -38,6 +38,7 @@ public class Role : MonoBehaviour {
             if(destoryEvent != null)
             {
                 destoryEvent();
+				destoryEvent = null;
             }
         }
     }

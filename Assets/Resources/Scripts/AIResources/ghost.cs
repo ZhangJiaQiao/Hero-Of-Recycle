@@ -14,9 +14,12 @@ public class ghost : MonoBehaviour {
 	public characterProperty CharacterProperty;
 	private bool isAttacking = false;
 	private float countTime = 0.0f;
+	public delegate void destroy();//死亡毁灭委托
+	public event destroy destroyEvent;//事件
 	void Start () {
+		player = SSDirector.getInstance ().currentSceneController.getPlayer ();
 		targetPosition = player.position;
-		CharacterProperty = this.gameObject.GetComponent<characterProperty>();
+		CharacterProperty = GetComponent<characterProperty>();
 		animator = GetComponent<Animator> ();
 	}
 
@@ -29,7 +32,6 @@ public class ghost : MonoBehaviour {
 			attack ();
 			return;
 		}
-		Debug.Log ("should move");
 		directionCtrl ();					//trun direction to the player
 		move ();					//move and attack player
 	}
@@ -40,6 +42,10 @@ public class ghost : MonoBehaviour {
 		if (CharacterProperty.damageValue <= 0.0f)
 			CharacterProperty.damageValue = 0.0f;
 		if (CharacterProperty.life <= 0) {
+			if (destroyEvent != null) {
+				destroyEvent ();
+				destroyEvent = null;
+			}
 			animator.SetBool ("dead", true);
 		}
         if (CharacterProperty.life >= 100)
@@ -94,7 +100,6 @@ public class ghost : MonoBehaviour {
 			return;
 		Vector3 v = GetComponent<Rigidbody> ().velocity;
 		if (CloseToTrack () && !closeToAttack ()) {
-			Debug.Log(currentClip);
 			if (currentClip != "idle" && currentClip != "die") {
 				if (v.sqrMagnitude < maxVelocity) {
 					v +=  CharacterProperty.speed * transform.forward.normalized;
@@ -126,7 +131,6 @@ public class ghost : MonoBehaviour {
 		if (countTime > 2) {
 			isAttacking = false;
 			targetPosition = player.position;
-			Debug.Log ("position " + targetPosition);
 			countTime = 0.0f;
 		}
 	}

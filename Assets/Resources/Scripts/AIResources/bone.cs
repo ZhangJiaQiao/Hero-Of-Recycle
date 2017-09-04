@@ -10,9 +10,13 @@ public class bone : MonoBehaviour {
 	private bool findThePlayer = false;
 	private Animator animator;
 	public characterProperty CharacterProperty;
+	public delegate void destroy();//死亡毁灭委托
+	public event destroy destroyEvent;//事件
+
 	void Start () {
-		CharacterProperty = this.gameObject.GetComponent<characterProperty>();
+		CharacterProperty = GetComponent<characterProperty>();
 		animator = GetComponent<Animator> ();
+		player = SSDirector.getInstance ().currentSceneController.getPlayer ();
 	}
 
 	void Update () {
@@ -30,6 +34,10 @@ public class bone : MonoBehaviour {
 			CharacterProperty.damageValue = 0.0f;
 		if (CharacterProperty.life <= 0) {
 			animator.SetBool ("dead", true);
+			if (destroyEvent != null) {
+				destroyEvent ();
+				destroyEvent = null;
+			}
 		}
         if (CharacterProperty.life >= 100)
         {

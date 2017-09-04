@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class FirstController : MonoBehaviour, ISceneController, AI_Request, UI_Request, Player_Request {
 	// Use this for initialization
-	void Start () {
-		
+	public GameObject player;
+
+	void Awake() {
+		SSDirector director = SSDirector.getInstance ();
+		director.currentSceneController = this;
+	}
+
+	void Start() {
+		player.transform.position = SSDirector.playerPosition;
 	}
 	
 	// Update is called once per frame
@@ -16,5 +23,9 @@ public class FirstController : MonoBehaviour, ISceneController, AI_Request, UI_R
 
 	public void LoadRecourses() {
 		
+	}
+
+	public Transform getPlayer() {
+		return this.player.transform;
 	}
 }
