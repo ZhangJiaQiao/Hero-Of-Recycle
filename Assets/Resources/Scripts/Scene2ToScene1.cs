@@ -16,7 +16,7 @@ public class Scene2ToScene1 : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Player" && mC.totalAmount <= 0) {
-			SSDirector.playerPosition = new Vector3 (-8.59f, 1f, 5.53f);
+			SSDirector.playerPosition = new Vector3 (52.13f, 1f, 14.509f);
 			SSDirector.currentScene++;
 			SceneManager.LoadScene ("WebDemoScene");
 		}

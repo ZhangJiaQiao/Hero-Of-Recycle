@@ -6,15 +6,16 @@ public class Soldier : MonoBehaviour {
 	public float maxVelocity_fb;
 	public float maxVelocity_rl;
 	public GameObject gun;
-	public GameObject doll;
     public UIProgressBar HPBar;
     public UIProgressBar MPBar;
     private Role role;
 	private float jumpColdTime = 0;
     private bool isTalking = false;
 	private bool isDied;
+    public GameObject Doll;
+    private GameObject g;
 
-	void Start () {
+    void Start () {
 		isDied = false;
 		maxVelocity_fb = 5;
 		maxVelocity_rl = 5;
@@ -35,6 +36,10 @@ public class Soldier : MonoBehaviour {
             directionCtrl();
             move();
 			jump ();
+        }
+        if(isDied)
+        {
+            Camera.main.transform.LookAt(g.transform);
         }
 	}
 		
@@ -105,7 +110,7 @@ public class Soldier : MonoBehaviour {
 		if (!isDied) {
 			if (Input.GetKeyDown (KeyCode.Space)) {
 				if (jumpColdTime <= 0) {
-					GetComponent<Rigidbody> ().AddForce (transform.up.normalized * 7, ForceMode.Impulse);
+					GetComponent<Rigidbody> ().AddForce (transform.up.normalized * 8, ForceMode.Impulse);
 					jumpColdTime = 1;
 				} 
 			} else {
@@ -141,8 +146,11 @@ public class Soldier : MonoBehaviour {
     }
 	public void die() {
 		this.isDied = true;
-		this.gun.SetActive (false);
-		this.doll.SetActive (true);
-	}
+        Camera.main.transform.parent = null;
+        this.gun.SetActive(false);
+        g = Instantiate<GameObject>(Doll);
+        g.transform.position = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z + 4);
+        g.transform.forward = transform.forward;
+    }
 }
  

@@ -64,7 +64,7 @@ public class Dialog1 : MonoBehaviour {
         Dialog.Add(new Speak("因为小镇被怪物包围", name2));
         Dialog.Add(new Speak("镇长下令坚守城门", name2));
         Dialog.Add(new Speak("大家都躲起来", name2));
-        Dialog.Add(new Speak("才过了一两天平静的日子", name2));
+        Dialog.Add(new Speak("才一两天平静", name2));
         Dialog.Add(new Speak("酒店准备重新开业", name2));
         Dialog.Add(new Speak("没想到在酒店的垃圾堆",name2));
         Dialog.Add(new Speak("出现很多垃圾怪物", name2));

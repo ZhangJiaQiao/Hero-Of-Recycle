@@ -44,6 +44,7 @@ public class ghost : MonoBehaviour {
 		if (CharacterProperty.life <= 0) {
 			if (destroyEvent != null) {
 				destroyEvent ();
+                destroyItself();
 				destroyEvent = null;
 			}
 			animator.SetBool ("dead", true);
@@ -135,4 +136,14 @@ public class ghost : MonoBehaviour {
 		}
 	}
 
+    void destroyItself()
+    {
+        StartCoroutine("Dispear");
+    }
+
+    IEnumerator Dispear()
+    {
+        yield return new WaitForSeconds(1);
+        this.gameObject.SetActive(false);
+    }
 }

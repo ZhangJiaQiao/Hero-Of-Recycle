@@ -8,7 +8,10 @@ public class TalkingPoint : MonoBehaviour {
     public GameObject DialogPanel;
 	// Use this for initialization
 	void Start () {
-        Dialog1.FinishTalkingEvent += FinishTalk;
+        if(SSDirector.currentScene == 1)
+        {
+            Dialog1.FinishTalkingEvent += FinishTalk;
+        }
 	}
 	
 	// Update is called once per frame
@@ -18,13 +21,12 @@ public class TalkingPoint : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && SSDirector.currentScene == 1)
         {
-            Debug.Log("111");
             Player.GetComponent<Soldier>().BeginTalk();
             Villager.GetComponent<Villager>().canMove(Player.transform.position);
         }
-        if(other.gameObject.tag == "Villager")
+        if(other.gameObject.tag == "Villager" && SSDirector.currentScene == 1)
         {
             DialogPanel.GetComponent<Dialog1>().enabled = true;
             Villager.GetComponent<Villager>().Talk();
@@ -36,5 +38,6 @@ public class TalkingPoint : MonoBehaviour {
         Villager.GetComponent<Villager>().canMove(new Vector3(110, 0.5f, 14.5f));
         Player.GetComponent<Soldier>().StopTalk();
         DialogPanel.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 }

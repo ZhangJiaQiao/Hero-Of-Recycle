@@ -36,6 +36,7 @@ public class bone : MonoBehaviour {
 			animator.SetBool ("dead", true);
 			if (destroyEvent != null) {
 				destroyEvent ();
+                destroyItself();
 				destroyEvent = null;
 			}
 		}
@@ -110,4 +111,14 @@ public class bone : MonoBehaviour {
 		}
 	}
 
+    void destroyItself()
+    {
+        StartCoroutine("Dispear");
+    }
+
+    IEnumerator Dispear()
+    {
+        yield return new WaitForSeconds(1);
+        this.gameObject.SetActive(false);
+    }
 }
