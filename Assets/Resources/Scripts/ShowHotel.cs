@@ -11,9 +11,7 @@ public class ShowHotel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Camera.main) {
-			Animator animator = GetComponent<Animator> ();	
-		}
+        panel.transform.rotation = Camera.main.transform.rotation;
 	}
 
     void Show()
