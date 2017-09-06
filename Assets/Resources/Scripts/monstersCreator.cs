@@ -7,7 +7,7 @@ public class monstersCreator : MonoBehaviour {
 	public List<string> types;
 	public float coldTime;
 	public int totalAmount;
-	private int currentAmount;
+	public int currentAmount;
 	public int max;
 	private bool isCreate;
 

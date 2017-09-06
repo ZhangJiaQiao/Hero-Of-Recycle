@@ -246,6 +246,7 @@
     <Compile Include="Assets\Resources\Scripts\Bullet.cs" />
     <Compile Include="Assets\Resources\Scripts\Dialog1.cs" />
     <Compile Include="Assets\Resources\Scripts\Dialog2.cs" />
+    <Compile Include="Assets\Resources\Scripts\Dialog3.cs" />
     <Compile Include="Assets\Resources\Scripts\FileManager.cs" />
     <Compile Include="Assets\Resources\Scripts\FirstChapter\AI_Request.cs" />
     <Compile Include="Assets\Resources\Scripts\FirstChapter\FirstController.cs" />
@@ -266,6 +267,7 @@
     <Compile Include="Assets\Resources\Scripts\Soldier.cs" />
     <Compile Include="Assets\Resources\Scripts\Speak.cs" />
     <Compile Include="Assets\Resources\Scripts\TalkingPoint.cs" />
+    <Compile Include="Assets\Resources\Scripts\Task.cs" />
     <Compile Include="Assets\Resources\Scripts\Villager.cs" />
     <Compile Include="Assets\Resources\Scripts\Weapon.cs" />
     <Compile Include="Assets\Resources\Scripts\bulletType.cs" />

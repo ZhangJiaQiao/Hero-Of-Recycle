@@ -22,6 +22,7 @@ public class Scene1ToScene2 : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Player" && SSDirector.currentScene == scene) {
 			SSDirector.currentScene++;
+            SSDirector.currentTask = "消灭怪物";
 			SSDirector.playerPosition = new Vector3 (2.81f, 1.06f, 18.03f);
 			SceneManager.LoadScene ("Hotel");
 		}
@@ -31,6 +32,8 @@ public class Scene1ToScene2 : MonoBehaviour {
             Player.GetComponent<Soldier>().BeginTalk();
             Villager.SetActive(false);
             Explosion.SetActive(true);
+            SSDirector.currentTask = "消灭怪物";
+            StartCoroutine("Dispear");
         }
     }
 
@@ -43,7 +46,7 @@ public class Scene1ToScene2 : MonoBehaviour {
 
     IEnumerator Dispear()
     {
-        yield return new WaitForSeconds(3);
-        this.gameObject.SetActive(false);
+        yield return new WaitForSeconds(5);
+        Explosion.SetActive(false);
     }
 }

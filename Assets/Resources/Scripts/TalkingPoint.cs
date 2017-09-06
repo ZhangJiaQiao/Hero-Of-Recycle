@@ -35,6 +35,7 @@ public class TalkingPoint : MonoBehaviour {
     
     void FinishTalk()
     {
+        SSDirector.currentTask = "前往酒店";
         Villager.GetComponent<Villager>().canMove(new Vector3(110, 0.5f, 14.5f));
         Player.GetComponent<Soldier>().StopTalk();
         DialogPanel.SetActive(false);
