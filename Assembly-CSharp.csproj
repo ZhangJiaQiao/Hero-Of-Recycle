@@ -51,47 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AdvancedShooterKit\Content\_DemoScene\Scripts\SecureCam.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Camera\CameraHeadBob.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Camera\PlayerCamera.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Effects\Debris.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Effects\FootstepSFXManager.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Effects\HitEffect.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Effects\Shell.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GameData\DamageInfo.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GameData\Delegates.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GameData\EmptyMono.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GameData\Enums.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GameData\GameSettings.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GameData\Interfaces.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GameData\SurfaceDetector.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GameData\TagsManager.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Combat\DamageHandler.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Combat\DamagePoint.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Combat\Explosion.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Combat\Health.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Combat\Projectile.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\NPC\Character.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Player\Animation\BodyAnimation.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Player\Animation\FirstPersonWeaponSway.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Player\Climbing\Ladder.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Player\Controllers\FirstPersonController.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Player\Inventory\AmmoBackpack.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Player\Inventory\Pickup.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Player\Inventory\WeaponsManager.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Player\PlayerCharacter.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Gameplay\Respawner.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GUI\Hud\HudElements.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GUI\Menu\DropdownElement.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\GUI\Menu\MenuElements.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Input\ASKInputManager.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Input\InputSettings.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Utils\Audio.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Utils\EventHandler.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Utils\LevelCache.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Weapon\abstract\WeaponBase.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Weapon\Firearms.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Weapon\Melee.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -324,7 +283,6 @@
      <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
-     <None Include="Assets\AdvancedShooterKit\Content\_DemoScene\ReadMeToo.txt" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrection3DLut.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />

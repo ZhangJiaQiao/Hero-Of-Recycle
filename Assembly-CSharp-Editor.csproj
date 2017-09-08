@@ -51,29 +51,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\AmmoBackpackEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\ASKSettings\ASKSettingsWindow.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\ASKSettings\GameSettingsTab.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\ASKSettings\InputSettingsTab.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\ASKSettings\SurfaceDetectorTab.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\BodyAnimationEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\CharacterEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\DamagePointEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\ExplosionEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\FirearmsEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\FirstPersonControllerEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\FirstPersonWeaponSwayEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\FootstepSFXManagerEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\HealthEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\Helpers\EditorHelper.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\Helpers\StyleHelper.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\HitEffectEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\MeleeEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\PickupEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\PlayerCharacterEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\ProjectileEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\RespawnerEditor.cs" />
-     <Compile Include="Assets\AdvancedShooterKit\Scripts\Editor\WeaponsManagerEditor.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" />
      <Compile Include="Assets\NGUI\Scripts\Editor\ActiveAnimationEditor.cs" />
@@ -217,7 +194,6 @@
      <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ConvertDepth.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BrightPassFilter2.shader" />
-     <None Include="Assets\AdvancedShooterKit\Content\_DemoScene\ReadMeToo.txt" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrection3DLut.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\MotionBlur.shader" />
      <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlurAndFlares.shader" />
