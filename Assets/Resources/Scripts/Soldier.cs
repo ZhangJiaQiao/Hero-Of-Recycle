@@ -149,7 +149,7 @@ public class Soldier : MonoBehaviour {
         Camera.main.transform.parent = null;
         this.gun.SetActive(false);
         g = Instantiate<GameObject>(Doll);
-        g.transform.position = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z + 4);
+        g.transform.position = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z + 2);
         g.transform.forward = transform.forward;
     }
 }

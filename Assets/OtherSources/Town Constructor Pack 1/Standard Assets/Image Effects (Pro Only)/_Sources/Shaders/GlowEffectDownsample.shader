@@ -7,19 +7,11 @@ Properties {
 	_MainTex ("", 2D) = "white" {}
 }
 
-Subshader { 
-	
-	Pass {
-		ZTest Always Cull Off ZWrite Off Fog { Mode Off }
-		
-CGPROGRAM
-#pragma vertex vert
-#pragma fragment frag
-
+CGINCLUDE
 #include "UnityCG.cginc"
 
 struct v2f {
-	float4 pos : SV_POSITION;
+	float4 pos : POSITION;
 	float4 uv[4] : TEXCOORD0;
 };
 
@@ -46,11 +38,27 @@ v2f vert (appdata_img v)
 	o.uv[3] = uv + float4(-offX, offY,0,1);
 	return o;
 }
+ENDCG
+
+
+Category {
+	ZTest Always Cull Off ZWrite Off Fog { Mode Off }
+	
+	// -----------------------------------------------------------
+	// ARB fragment program
+	
+	Subshader { 
+		Pass {
+		
+CGPROGRAM
+#pragma vertex vert
+#pragma fragment frag
+#pragma fragmentoption ARB_precision_hint_fastest
 
 sampler2D _MainTex;
 fixed4 _Color;
 
-fixed4 frag( v2f i ) : SV_Target
+fixed4 frag( v2f i ) : COLOR
 {
 	fixed4 c;
 	c  = tex2D( _MainTex, i.uv[0].xy );
@@ -65,6 +73,32 @@ fixed4 frag( v2f i ) : SV_Target
 }
 ENDCG
 
+		}
+	}
+			
+	// -----------------------------------------------------------
+	// Radeon 9000
+	
+	Subshader {
+		Pass {
+
+
+CGPROGRAM
+#pragma vertex vert
+#pragma exclude_renderers gles xbox360 ps3
+// use the same vertex program as in FP path
+ENDCG
+
+			
+			// average 2x2 samples
+			SetTexture [_MainTex] {constantColor (0,0,0,0.25) combine texture * constant alpha}
+			SetTexture [_MainTex] {constantColor (0,0,0,0.25) combine texture * constant + previous}
+			SetTexture [_MainTex] {constantColor (0,0,0,0.25) combine texture * constant + previous}
+			SetTexture [_MainTex] {constantColor (0,0,0,0.25) combine texture * constant + previous}
+			// apply glow tint and add additional glow
+			SetTexture [_MainTex] {constantColor[_Color] combine previous * constant, previous + constant}
+			SetTexture [_MainTex] {constantColor (0,0,0,0) combine previous * previous alpha, constant}
+		}
 	}
 }
 

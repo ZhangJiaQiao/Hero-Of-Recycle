@@ -9,6 +9,7 @@ public class Scene1ToScene2 : MonoBehaviour {
     public GameObject DialogPanel;
     public GameObject Explosion;
     public GameObject Villager;
+    public GameObject Des;
     // Use this for initialization
     void Start () {
 		scene = 1;
@@ -32,7 +33,8 @@ public class Scene1ToScene2 : MonoBehaviour {
             Player.GetComponent<Soldier>().BeginTalk();
             Villager.SetActive(false);
             Explosion.SetActive(true);
-            SSDirector.currentTask = "消灭怪物";
+            Des.SetActive(true);
+            SSDirector.currentTask = "前往查看";
             StartCoroutine("Dispear");
         }
     }

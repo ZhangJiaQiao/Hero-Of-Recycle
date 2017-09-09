@@ -1,6 +1,5 @@
 fileFormatVersion: 2
 guid: 6205c27cc031f4e66b8ea90d1bfaa158
-timeCreated: 18446744011573954816
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 4
@@ -11,8 +10,6 @@ TextureImporter:
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
-    mipMapsPreserveCoverage: 0
-    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 2
     mipMapFadeDistanceEnd: 3
   bumpmap:
@@ -28,13 +25,10 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    serializedVersion: 2
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
+    wrapMode: 0
   nPOTScale: 1
   lightmap: 0
   compressionQuality: 50
@@ -66,7 +60,6 @@ TextureImporter:
     serializedVersion: 2
     sprites: []
     outline: []
-    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

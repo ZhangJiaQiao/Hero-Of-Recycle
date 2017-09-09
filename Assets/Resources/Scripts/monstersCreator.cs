@@ -77,6 +77,10 @@ public class monstersCreator : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Player" && SSDirector.currentScene != 1) {
 			isCreate = true;
+            if(SSDirector.currentScene == 3)
+            {
+                SSDirector.currentTask = "消灭怪物";
+            }
 		}
 	}
 

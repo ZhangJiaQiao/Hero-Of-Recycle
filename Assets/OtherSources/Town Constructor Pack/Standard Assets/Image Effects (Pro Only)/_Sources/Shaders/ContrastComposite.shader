@@ -12,7 +12,7 @@ Shader "Hidden/ContrastComposite" {
 	#include "UnityCG.cginc"
 	
 	struct v2f {
-		float4 pos : SV_POSITION;
+		float4 pos : POSITION;
 		float2 uv[2] : TEXCOORD0;
 	};
 	
@@ -20,36 +20,33 @@ Shader "Hidden/ContrastComposite" {
 	sampler2D _MainTexBlurred;
 	
 	float4 _MainTex_TexelSize;
-	half4 _MainTex_ST;
-
-	half4 _MainTexBlurred_ST;
 	
 	float intensity;
-	float threshold;
+	float threshhold;
 		
 	v2f vert( appdata_img v ) {
 		v2f o;
 		o.pos = UnityObjectToClipPos(v.vertex);
 		
-		o.uv[0] = UnityStereoScreenSpaceUVAdjust(v.texcoord.xy, _MainTexBlurred_ST);
-		o.uv[1] = UnityStereoScreenSpaceUVAdjust(v.texcoord.xy, _MainTex_ST);
-		#if UNITY_UV_STARTS_AT_TOP
+		o.uv[0] = v.texcoord.xy;
+		o.uv[1] = v.texcoord.xy;
+		#if SHADER_API_D3D9
 		if (_MainTex_TexelSize.y < 0)
 			o.uv[0].y = 1-o.uv[0].y;
 		#endif			
 		return o;
 	}
 	
-	half4 frag(v2f i) : SV_Target 
+	half4 frag(v2f i) : COLOR 
 	{
 		half4 color = tex2D (_MainTex, i.uv[1]);
 		half4 blurred = tex2D (_MainTexBlurred, (i.uv[0]));
 		
-		half4 difference = color - blurred;
-		half4 signs = sign (difference);
+		half4 difff = color - blurred;
+		half4 signs = sign (difff);
 		
-		half4 enhancement = saturate (abs(difference) - threshold) * signs * 1.0/(1.0-threshold);
-		color += enhancement * intensity;
+		difff = saturate ( (color-blurred) - threshhold) * signs * 1.0/(1.0-threshhold);
+		color += difff * intensity;
 		
 		return color;
 	}
@@ -59,8 +56,10 @@ Shader "Hidden/ContrastComposite" {
 Subshader {
  Pass {
 	  ZTest Always Cull Off ZWrite Off
+	  Fog { Mode off }      
 
       CGPROGRAM
+      #pragma fragmentoption ARB_precision_hint_fastest
       #pragma vertex vert
       #pragma fragment frag
       ENDCG

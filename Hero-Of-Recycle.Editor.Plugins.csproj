@@ -202,6 +202,8 @@
     <None Include="Assets\OtherSources\AssaultTroop 1\AssaultTroop README.txt" />
     <None Include="Assets\OtherSources\FPS Essentials Kit\Shaders\BulletMark.shader" />
     <None Include="Assets\OtherSources\Guns\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+    <None Include="Assets\OtherSources\SF Pack\Scripts Shaders\desaturate\DesaturateEffect.shader" />
+    <None Include="Assets\OtherSources\SF Pack\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders\Glass-Stained-BumpDistort.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack 1\ReadMe.txt" />
     <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\BlurEffectConeTaps.shader" />
@@ -349,7 +351,9 @@
     <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\BokehSplatting.shader" />
     <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\DepthOfField.shader" />
     <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\MedianFilter.shader" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectX.shader" />
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
+    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShift.shader" />
     <None Include="Assets\Standard Assets\Effects\LensAberrations\Resources\LensAberrations.shader" />
     <None Include="Assets\Standard Assets\Effects\ScreenSpaceReflection\Resources\ScreenSpaceRaytrace.cginc" />
     <None Include="Assets\Standard Assets\Effects\ScreenSpaceReflection\Resources\ScreenSpaceReflection.shader" />

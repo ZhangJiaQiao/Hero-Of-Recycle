@@ -1,17 +1,15 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\AIResources\ghost.cs">
+﻿<Properties StartupItem="Hero-Of-Recycle.Plugins.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\Scene2ToScene1.cs">
     <Files>
       <File FileName="Assets\Resources\Scripts\AIResources\bone.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\AIResources\crab.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\AIResources\ghost.cs" Line="16" Column="5" />
-      <File FileName="Assets\Resources\Scripts\Soldier.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\TalkingPoint.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\Scene1ToScene2.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\HPPanelToCameral.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\myFactory.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\monstersCreator.cs" Line="26" Column="5" />
-      <File FileName="Assets\Resources\Scripts\AIResources\boss.cs" Line="53" Column="17" />
+      <File FileName="Assets\Resources\Scripts\monstersCreator.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\AIResources\boss.cs" Line="1" Column="1" />
+      <File FileName="Assets\Resources\Scripts\Scene2ToScene1.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
