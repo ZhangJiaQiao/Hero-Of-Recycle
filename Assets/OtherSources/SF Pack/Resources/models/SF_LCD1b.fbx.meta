@@ -3,7 +3,14 @@ guid: db801c574ba556b40a59a0d2e459204c
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
+    100000: polySurface24
+    100002: //RootNode
+    400000: polySurface24
+    400002: //RootNode
+    2300000: polySurface24
+    3300000: polySurface24
     4300000: polySurface24
+    11100000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -14,8 +21,6 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
