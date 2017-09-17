@@ -4,10 +4,15 @@ using System.Collections.Generic;
 
 public class myFactory : MonoBehaviour {
 	public GameObject bullet;
+	public GameObject grenade;
 	private List<string> bullet_types;
 	private int currentBulletType;
 	private List<GameObject> bulletsUsing;
 	private List<GameObject> bulletsFree;
+
+	private List<GameObject> grenadeUsing;
+	private List<GameObject> grenadeFree;
+
 	public List<GameObject> otherTrash;
 	public List<GameObject> foodTrash;
 	public List<GameObject> recyclableTrash;
@@ -19,12 +24,14 @@ public class myFactory : MonoBehaviour {
 	void Start() {
 		bulletsFree = new List<GameObject> ();
 		bulletsUsing = new List<GameObject> ();
+		grenadeUsing = new List<GameObject> ();
+		grenadeFree = new List<GameObject> ();
 		FirebulletsUsing = new List<GameObject> ();
 		FirebulletsFree = new List<GameObject> ();
 		bullet_types = new List<string> {"foodTrash", "recyclableTrash", "otherTrash", "harmfulTrash"};
 		currentBulletType = 0;
 	}
-		
+
 	void Update() {
 		setBulletType ();
 	}
@@ -45,7 +52,7 @@ public class myFactory : MonoBehaviour {
 			return bl;
 		}
 	}
-		
+
 	public void recycleBullet(GameObject bullet) {
 		bulletsUsing.Remove(bullet);
 		bulletsFree.Add (bullet);
@@ -54,6 +61,32 @@ public class myFactory : MonoBehaviour {
 		rb.velocity = Vector3.zero;
 		bullet.SetActive (false);
 	}
+
+
+
+	public GameObject getGrenade() {
+		if (grenadeFree.Count == 0) {
+			GameObject newGrenade= Instantiate<GameObject> (grenade);
+			grenadeUsing.Add (newGrenade);
+			return newGrenade;
+		} else {
+			GameObject bl = grenadeFree [0];
+			grenadeFree.RemoveAt (0);
+			bl.SetActive (true);
+			return bl;
+		}
+	}
+
+	public void recycleGrenade(GameObject bullet) {
+		//		bullet.GetComponent<SphereCollider> ().radius = 0.06f;
+		grenadeUsing.Remove(bullet);
+		grenadeFree.Add (bullet);
+		//Renderer renderer = bullet.GetComponent<Renderer> ();
+		Rigidbody rb = bullet.GetComponent<Rigidbody> ();
+		rb.velocity = Vector3.zero;
+		bullet.SetActive (false);
+	}
+
 
 	public GameObject getFireBullet() {
 		if (FirebulletsFree.Count == 0) {

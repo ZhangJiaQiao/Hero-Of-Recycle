@@ -15,19 +15,16 @@ public class boss : MonoBehaviour {
 	private float timer = 60.0f;
 	private string[] trashName = { "battery", "bone", "china", "clothe", "dirtypaper", "dusty","fruit", "glass", "greens", "ink", "leave",
 		"light", "medicine", "metal", "milk", "oil", "once", "paper", "pet", "plastic", "rise", "smoke", "tea", "杀虫剂"};
-//	private Dictionary<string,string> dic = new Dictionary<string,string> ();
 	void Start () {
 		CharacterProperty = this.gameObject.GetComponent<characterProperty>();
 		animator = GetComponent<Animator> ();
 	}
 
 	void Update () {
-		//Debug.Log(CharacterProperty.life);
 		useSkill();
 		findPlayer ();						//if the player is close enough to track
 		directionCtrl ();					//trun direction to the player
 		moveAndAttack ();					//move and attack player
-		Debug.Log(GameObject.Find("core").tag);
 	}
 
 	void FixedUpdate() {
@@ -37,6 +34,7 @@ public class boss : MonoBehaviour {
 			CharacterProperty.damageValue = 0.0f;
 		if (CharacterProperty.life <= 0) {
 			animator.SetBool ("dead", true);
+			destroyItself();
 		}
 		if (CharacterProperty.life >= 100)
 		{
@@ -67,8 +65,42 @@ public class boss : MonoBehaviour {
 			int type = Random.Range (0, types.Count);
 			myFactory mF = Singleton<myFactory>.Instance;
 			GameObject monster = mF.getMonster (types [type]);
+			switch (types [type]) {
+			case "foodTrash":
+				{
+					ghost g = monster.GetComponent<ghost> ();
+					if (g != null) {
+						g.destroyEvent += monsterDestroyHandler;
+					} else {
+						crab c = monster.GetComponent<crab> ();
+						c.destroyEvent += monsterDestroyHandler;
+					}
+					break;
+				}
+			case "harmfulTrash":
+				{
+					ghost g = monster.GetComponent<ghost> ();
+					g.destroyEvent += monsterDestroyHandler;
+					break;
+				}
+			case "recyclableTrash":
+				{
+					bone b = monster.GetComponent<bone> ();
+					b.destroyEvent += monsterDestroyHandler;
+					break;
+				}
+			case "otherTrash":
+				{
+					bone b = monster.GetComponent<bone> ();
+					b.destroyEvent += monsterDestroyHandler;
+					break;
+				}
+			}
 			monster.transform.position = this.transform.position + new Vector3 (Random.Range(1, 4), 0, Random.Range(1, 4));
 		}
+	}
+
+	void monsterDestroyHandler() {
 	}
 
 	void findPlayer() {
@@ -89,17 +121,16 @@ public class boss : MonoBehaviour {
 			tag = "foodTrash";
 		else if (nameOfTrash == "china" || nameOfTrash == "dirtypaper" || nameOfTrash == "dusty" || nameOfTrash == "pet" || nameOfTrash == "smoke")
 			tag = "otherTrash";
-		
+
 		Transform PanelOfBoss = this.transform.Find ("Panel");
 		GameObject Label = PanelOfBoss.Find ("Label").gameObject;
 		GameObject Texture = PanelOfBoss.Find ("Texture").gameObject;
 		Label.GetComponent<UILabel>().text = nameOfTrash;
 		UITexture textureComponent = Texture.GetComponent<UITexture> ();
 		textureComponent.mainTexture = Resources.Load ("Texture/label/" + nameOfTrash) as Texture2D;
-//		this.transform.Find ("Bip_master").Find("Bip001 pelvis").Find("Bip001 Spine").Find("Bip001 Spine1").Find("slot_chest/core").gameObject.tag = tag;
 		GameObject.Find("core").tag = tag;					//最好修改一下。
 	}
-		
+
 
 	bool CloseToTrack() {
 		return Vector3.Distance (transform.position, player.position) < 100;
@@ -122,24 +153,20 @@ public class boss : MonoBehaviour {
 
 	void moveAndAttack() {
 		string currentClip = animator.GetCurrentAnimatorClipInfo (0) [0].clip.name;
-		//Debug.Log (currentClip);
 		if (!findThePlayer || currentClip == "n2010_die")
 			return;
 		Vector3 v = GetComponent<Rigidbody> ().velocity;
 		if (CloseToTrack () && !closeToAttack ()) {
-			if (currentClip == "Attack1")
-				return;
-			if (currentClip != "Idle" && currentClip != "n2010_die" && currentClip != "n2010_skill_3") {
+			if (currentClip == "Run") {
 				if (v.sqrMagnitude < maxVelocity) {
 					v += CharacterProperty.speed * transform.forward.normalized;
-					//Debug.Log ("222" + v);
 					GetComponent<Rigidbody> ().velocity = v;	
 				}
 			}
 			animator.SetBool ("run", true);
-			//Debug.Log ("333333   run run run");
 		} else if (closeToAttack ()) {
-			animator.SetTrigger ("attack");
+			int attackType = Random.Range (1, 4);
+			animator.SetTrigger ("attack" + attackType);
 		} else {
 			animator.SetBool ("Idle", true);
 		}
@@ -157,5 +184,16 @@ public class boss : MonoBehaviour {
 		CharacterProperty.life += 40;
 		CharacterProperty.damageValue += 2f;
 		Debug.Log ("add");
+	}
+
+	void destroyItself()
+	{
+		StartCoroutine("Dispear");
+	}
+
+	IEnumerator Dispear()
+	{
+		yield return new WaitForSeconds(5);
+		this.gameObject.SetActive(false);
 	}
 }
