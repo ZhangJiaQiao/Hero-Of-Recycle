@@ -8,17 +8,21 @@ public class boss : MonoBehaviour {
 	public float maxVelocity = 50;
 	//	public Vector3 playerPosition;
 	public Transform player;
+    public GameObject core;
+    public GameObject texture;
+    public GameObject label;
 	private bool findThePlayer = false;
 	private Animator animator;
 	public characterProperty CharacterProperty;
 	private bool readyForSkill = true;
 	private float timer = 60.0f;
 	private string[] trashName = { "battery", "bone", "china", "clothe", "dirtypaper", "dusty","fruit", "glass", "greens", "ink", "leave",
-		"light", "medicine", "metal", "milk", "oil", "once", "paper", "pet", "plastic", "rise", "smoke", "tea", "杀虫剂"};
+		"light", "medicine", "metal", "milk", "oil", "once", "paper", "pet", "plastic", "rise", "smoke", "tea", "pesticide"};
 	void Start () {
 		CharacterProperty = this.gameObject.GetComponent<characterProperty>();
 		animator = GetComponent<Animator> ();
-	}
+        player = SSDirector.getInstance().currentSceneController.getPlayer();
+    }
 
 	void Update () {
 		useSkill();
@@ -113,7 +117,7 @@ public class boss : MonoBehaviour {
 		int randomNum = Random.Range (0, 24);				//所有垃圾的种类数目。
 		string nameOfTrash = trashName[randomNum];
 		string tag = "";
-		if (nameOfTrash == "battery" || nameOfTrash == "ink" || nameOfTrash == "light" || nameOfTrash == "medicine" || nameOfTrash == "oil" || nameOfTrash == "杀虫剂")
+		if (nameOfTrash == "battery" || nameOfTrash == "ink" || nameOfTrash == "light" || nameOfTrash == "medicine" || nameOfTrash == "oil" || nameOfTrash == "pesticide")
 			tag = "harmfulTrash";
 		else if (nameOfTrash == "clothe" || nameOfTrash == "glass" || nameOfTrash == "metal" || nameOfTrash == "milk" || nameOfTrash == "paper" || nameOfTrash == "plastic")
 			tag = "recyclableTrash";
@@ -122,13 +126,11 @@ public class boss : MonoBehaviour {
 		else if (nameOfTrash == "china" || nameOfTrash == "dirtypaper" || nameOfTrash == "dusty" || nameOfTrash == "pet" || nameOfTrash == "smoke")
 			tag = "otherTrash";
 
-		Transform PanelOfBoss = this.transform.Find ("Panel");
-		GameObject Label = PanelOfBoss.Find ("Label").gameObject;
-		GameObject Texture = PanelOfBoss.Find ("Texture").gameObject;
-		Label.GetComponent<UILabel>().text = nameOfTrash;
-		UITexture textureComponent = Texture.GetComponent<UITexture> ();
+		//Transform PanelOfBoss = this.transform.Find ("Panel");
+		label.GetComponent<UILabel>().text = nameOfTrash;
+		UITexture textureComponent = texture.GetComponent<UITexture> ();
 		textureComponent.mainTexture = Resources.Load ("Texture/label/" + nameOfTrash) as Texture2D;
-		GameObject.Find("core").tag = tag;					//最好修改一下。
+		core.tag = tag;
 	}
 
 

@@ -260,11 +260,14 @@
     <Compile Include="Assets\Resources\Scripts\AIResources\core.cs" />
     <Compile Include="Assets\Resources\Scripts\AIResources\crab.cs" />
     <Compile Include="Assets\Resources\Scripts\AIResources\ghost.cs" />
+    <Compile Include="Assets\Resources\Scripts\BackGroundMusic.cs" />
     <Compile Include="Assets\Resources\Scripts\Bullet.cs" />
     <Compile Include="Assets\Resources\Scripts\ControlsHelper.cs" />
+    <Compile Include="Assets\Resources\Scripts\DestroyOneself.cs" />
     <Compile Include="Assets\Resources\Scripts\Dialog1.cs" />
     <Compile Include="Assets\Resources\Scripts\Dialog2.cs" />
     <Compile Include="Assets\Resources\Scripts\Dialog3.cs" />
+    <Compile Include="Assets\Resources\Scripts\ExitScript.cs" />
     <Compile Include="Assets\Resources\Scripts\FileManager.cs" />
     <Compile Include="Assets\Resources\Scripts\FirstChapter\AI_Request.cs" />
     <Compile Include="Assets\Resources\Scripts\FirstChapter\FirstController.cs" />
@@ -276,11 +279,13 @@
     <Compile Include="Assets\Resources\Scripts\HpUISlider.cs" />
     <Compile Include="Assets\Resources\Scripts\ISceneController.cs" />
     <Compile Include="Assets\Resources\Scripts\MpUISlider.cs" />
+    <Compile Include="Assets\Resources\Scripts\PlayScript.cs" />
     <Compile Include="Assets\Resources\Scripts\Role.cs" />
     <Compile Include="Assets\Resources\Scripts\SSDirector.cs" />
     <Compile Include="Assets\Resources\Scripts\Scene1ToScene2.cs" />
     <Compile Include="Assets\Resources\Scripts\Scene2ToScene1.cs" />
     <Compile Include="Assets\Resources\Scripts\ShowHotel.cs" />
+    <Compile Include="Assets\Resources\Scripts\ShowTexture.cs" />
     <Compile Include="Assets\Resources\Scripts\Singleton.cs" />
     <Compile Include="Assets\Resources\Scripts\Soldier.cs" />
     <Compile Include="Assets\Resources\Scripts\Speak.cs" />
@@ -290,11 +295,16 @@
     <Compile Include="Assets\Resources\Scripts\Weapon.cs" />
     <Compile Include="Assets\Resources\Scripts\bulletType.cs" />
     <Compile Include="Assets\Resources\Scripts\doll.cs" />
+    <Compile Include="Assets\Resources\Scripts\grenadeControl.cs" />
     <Compile Include="Assets\Resources\Scripts\missionText.cs" />
     <Compile Include="Assets\Resources\Scripts\monstersCreator.cs" />
     <Compile Include="Assets\Resources\Scripts\myCamera.cs" />
     <Compile Include="Assets\Resources\Scripts\myFactory.cs" />
     <Compile Include="Assets\Resources\Scripts\pain.cs" />
+    <Compile Include="Assets\Resources\Scripts\playMusic.cs" />
+    <Compile Include="Assets\Resources\Scripts\skill.cs" />
+    <Compile Include="Assets\Resources\Scripts\tornadoControl.cs" />
+    <Compile Include="Assets\Resources\Scripts\trashCarControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />

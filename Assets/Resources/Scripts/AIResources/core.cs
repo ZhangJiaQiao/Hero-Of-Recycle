@@ -14,20 +14,14 @@ public class core : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		
-		Debug.Log ("ccc");
-
 
 		if (collision.gameObject.name != "Bullet(Clone)") {
-			Debug.Log ("qqqq");
 			return;
 		}
 			
 		if (collision.gameObject.tag == this.gameObject.tag) {
-			Debug.Log ("aaaa");
 			this.SendMessageUpwards ("substract");
 		} else {
-			Debug.Log ("bbbb");
 			this.SendMessageUpwards ("add");
 		}
 	}

@@ -14,6 +14,8 @@ public class Soldier : MonoBehaviour {
 	private bool isDied;
     public GameObject Doll;
     private GameObject g;
+    private AudioSource _audioSource;
+    public AudioClip footSound;
 
     void Start () {
 		isDied = false;
@@ -23,6 +25,7 @@ public class Soldier : MonoBehaviour {
 		role.destoryEvent += die;
 		Renderer r = GetComponent<Renderer> ();
 		r.enabled = false;
+        _audioSource = this.gameObject.GetComponent<AudioSource>();
 	}
 
 	void Update () {
@@ -41,9 +44,17 @@ public class Soldier : MonoBehaviour {
         {
             Camera.main.transform.LookAt(g.transform);
         }
-	}
-		
-	void directionCtrl() {
+        /*
+        if(gun.GetComponent<Animator>().GetBool("shoot") == true)
+        {
+            _audioSource.clip = gunSound;
+            if(_audioSource.isPlaying && _audioSource.clip.name == "gun") { }
+            else _audioSource.Play();
+        }
+        */
+    }
+
+    void directionCtrl() {
 		if (!isDied) {
 			float rotationX = transform.localEulerAngles.y + Input.GetAxis ("Mouse X") * 2;
 			float rotationY = transform.localEulerAngles.x;
@@ -64,8 +75,11 @@ public class Soldier : MonoBehaviour {
 					GetComponent<Rigidbody> ().velocity = v;	
 				}
 				isMoving = true;
-				animator.SetBool("walk", true);	
-			} 
+				animator.SetBool("walk", true);
+                _audioSource.clip = footSound;
+                if (_audioSource.isPlaying && _audioSource.clip.name == "foot") { }
+                else _audioSource.Play();
+            } 
 			if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
 				Vector3 v = GetComponent<Rigidbody> ().velocity;
 				Vector3 tmp = transform.forward.normalized;
@@ -76,7 +90,10 @@ public class Soldier : MonoBehaviour {
 				}
 				isMoving = true;
 				animator.SetBool("walk", true);
-			}
+                _audioSource.clip = footSound;
+                if (_audioSource.isPlaying && _audioSource.clip.name == "foot") { }
+                else _audioSource.Play();
+            }
 			if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
 				Vector3 v = GetComponent<Rigidbody> ().velocity;
 				Vector3 tmp = transform.right.normalized;
@@ -86,8 +103,11 @@ public class Soldier : MonoBehaviour {
 					GetComponent<Rigidbody> ().velocity = v;	
 				}
 				isMoving = true;
-				animator.SetBool("walk", true);	
-			} 
+				animator.SetBool("walk", true);
+                _audioSource.clip = footSound;
+                if (_audioSource.isPlaying && _audioSource.clip.name == "foot") { }
+                else _audioSource.Play();
+            } 
 			if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
 				Vector3 v = GetComponent<Rigidbody> ().velocity;
 				Vector3 tmp = transform.right.normalized;
@@ -97,8 +117,11 @@ public class Soldier : MonoBehaviour {
 					GetComponent<Rigidbody> ().velocity = v;	
 				}
 				isMoving = true;
-				animator.SetBool("walk", true);	
-			} 
+				animator.SetBool("walk", true);
+                _audioSource.clip = footSound;
+                if (_audioSource.isPlaying && _audioSource.clip.name == "foot") { }
+                else _audioSource.Play();
+            } 
 
 			if(!isMoving) {
 				animator.SetBool ("walk", false);
