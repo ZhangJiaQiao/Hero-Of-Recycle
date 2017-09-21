@@ -74,7 +74,7 @@ public class Gun : MonoBehaviour {
 			bullet.transform.right = c.transform.forward * -1;
 			bullet.transform.position = point + c.transform.forward.normalized;
 			bullet.GetComponent<Rigidbody> ().AddForce (c.transform.forward.normalized * 50, ForceMode.Impulse);
-			shootColdTime = 0.2f;
+			shootColdTime = 0.05f;
 			muzzleFlash.SetActive (true);
 			float size = Random.Range (0.2f, 0.3f);
 			muzzleFlash.transform.localScale = new Vector3 (size, size, 0);
