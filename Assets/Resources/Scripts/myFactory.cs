@@ -5,10 +5,14 @@ using System.Collections.Generic;
 public class myFactory : MonoBehaviour {
 	public GameObject bullet;
 	public GameObject grenade;
-	private List<string> bullet_types;
+    public GameObject bulletSound;
+    private List<string> bullet_types;
 	private int currentBulletType;
 	private List<GameObject> bulletsUsing;
 	private List<GameObject> bulletsFree;
+
+    private List<GameObject> bulletSoundUsing;
+    private List<GameObject> bulletSoundFree;
 
 	private List<GameObject> grenadeUsing;
 	private List<GameObject> grenadeFree;
@@ -24,6 +28,8 @@ public class myFactory : MonoBehaviour {
 	void Start() {
 		bulletsFree = new List<GameObject> ();
 		bulletsUsing = new List<GameObject> ();
+        bulletSoundFree = new List<GameObject>();
+        bulletSoundUsing = new List<GameObject>();
 		grenadeUsing = new List<GameObject> ();
 		grenadeFree = new List<GameObject> ();
 		FirebulletsUsing = new List<GameObject> ();
@@ -37,6 +43,7 @@ public class myFactory : MonoBehaviour {
 	}
 
 	public GameObject getBullet() {
+        getBulletSound();
 		if (bulletsFree.Count == 0) {
 			GameObject newBullet = Instantiate<GameObject> (bullet);
 			newBullet.tag = bullet_types[currentBulletType];
@@ -45,7 +52,8 @@ public class myFactory : MonoBehaviour {
 		} else {
 			GameObject bl = bulletsFree [0];
 			bulletsFree.RemoveAt (0);
-			bl.SetActive (true);
+            bl.SetActive (true);
+            bulletsUsing.Add(bl);
 			bl.tag = bullet_types [currentBulletType];
 			//bl.GetComponent<Rigidbody> ().WakeUp ();
 			//bl.GetComponent<Rigidbody> ().isKinematic = false;
@@ -62,9 +70,35 @@ public class myFactory : MonoBehaviour {
 		bullet.SetActive (false);
 	}
 
+    public GameObject getBulletSound()
+    {
+        if (bulletSoundFree.Count == 0)
+        {
+            GameObject newBullet = Instantiate<GameObject>(bulletSound);
+            bulletSoundUsing.Add(newBullet);
+            return newBullet;
+        }
+        else
+        {
+            GameObject bl = bulletSoundFree[0];
+            bulletSoundFree.RemoveAt(0);
+            bl.SetActive(true);
+            bulletSoundUsing.Add(bl);
+            //bl.GetComponent<Rigidbody> ().WakeUp ();
+            //bl.GetComponent<Rigidbody> ().isKinematic = false;
+            return bl;
+        }
+    }
 
+    public void recycleBulletSound(GameObject bullet)
+    {
+        bulletSoundUsing.Remove(bullet);
+        bulletSoundFree.Add(bullet);
+        //Renderer renderer = bullet.GetComponent<Renderer> ();
+        bullet.SetActive(false);
+    }
 
-	public GameObject getGrenade() {
+    public GameObject getGrenade() {
 		if (grenadeFree.Count == 0) {
 			GameObject newGrenade= Instantiate<GameObject> (grenade);
 			grenadeUsing.Add (newGrenade);
@@ -73,6 +107,7 @@ public class myFactory : MonoBehaviour {
 			GameObject bl = grenadeFree [0];
 			grenadeFree.RemoveAt (0);
 			bl.SetActive (true);
+            grenadeUsing.Add(bl);
 			return bl;
 		}
 	}
@@ -97,6 +132,7 @@ public class myFactory : MonoBehaviour {
 			GameObject bl = FirebulletsFree [0];
 			FirebulletsFree.RemoveAt (0);
 			bl.SetActive (true);
+            FirebulletsUsing.Add(bl);
 			//bl.GetComponent<Rigidbody> ().WakeUp ();
 			//bl.GetComponent<Rigidbody> ().isKinematic = false;
 			return bl;

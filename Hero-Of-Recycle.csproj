@@ -279,11 +279,13 @@
     <Compile Include="Assets\Resources\Scripts\HpUISlider.cs" />
     <Compile Include="Assets\Resources\Scripts\ISceneController.cs" />
     <Compile Include="Assets\Resources\Scripts\MpUISlider.cs" />
+    <Compile Include="Assets\Resources\Scripts\PlayBulletSound.cs" />
     <Compile Include="Assets\Resources\Scripts\PlayScript.cs" />
     <Compile Include="Assets\Resources\Scripts\Role.cs" />
     <Compile Include="Assets\Resources\Scripts\SSDirector.cs" />
     <Compile Include="Assets\Resources\Scripts\Scene1ToScene2.cs" />
     <Compile Include="Assets\Resources\Scripts\Scene2ToScene1.cs" />
+    <Compile Include="Assets\Resources\Scripts\SecondSceneController.cs" />
     <Compile Include="Assets\Resources\Scripts\ShowHotel.cs" />
     <Compile Include="Assets\Resources\Scripts\ShowTexture.cs" />
     <Compile Include="Assets\Resources\Scripts\Singleton.cs" />
@@ -291,6 +293,7 @@
     <Compile Include="Assets\Resources\Scripts\Speak.cs" />
     <Compile Include="Assets\Resources\Scripts\TalkingPoint.cs" />
     <Compile Include="Assets\Resources\Scripts\Task.cs" />
+    <Compile Include="Assets\Resources\Scripts\ThirdSceneController.cs" />
     <Compile Include="Assets\Resources\Scripts\Villager.cs" />
     <Compile Include="Assets\Resources\Scripts\Weapon.cs" />
     <Compile Include="Assets\Resources\Scripts\bulletType.cs" />
@@ -300,6 +303,7 @@
     <Compile Include="Assets\Resources\Scripts\monstersCreator.cs" />
     <Compile Include="Assets\Resources\Scripts\myCamera.cs" />
     <Compile Include="Assets\Resources\Scripts\myFactory.cs" />
+    <Compile Include="Assets\Resources\Scripts\nextScene.cs" />
     <Compile Include="Assets\Resources\Scripts\pain.cs" />
     <Compile Include="Assets\Resources\Scripts\playMusic.cs" />
     <Compile Include="Assets\Resources\Scripts\skill.cs" />
