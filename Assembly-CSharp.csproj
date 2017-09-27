@@ -231,11 +231,13 @@
      <Compile Include="Assets\Resources\Scripts\Dialog3.cs" />
      <Compile Include="Assets\Resources\Scripts\doll.cs" />
      <Compile Include="Assets\Resources\Scripts\ExitScript.cs" />
+     <Compile Include="Assets\Resources\Scripts\FifthSceneController.cs" />
      <Compile Include="Assets\Resources\Scripts\FileManager.cs" />
      <Compile Include="Assets\Resources\Scripts\FirstChapter\AI_Request.cs" />
      <Compile Include="Assets\Resources\Scripts\FirstChapter\FirstController.cs" />
      <Compile Include="Assets\Resources\Scripts\FirstChapter\Player_Request.cs" />
      <Compile Include="Assets\Resources\Scripts\FirstChapter\UI_Request.cs" />
+     <Compile Include="Assets\Resources\Scripts\FourthSceneController.cs" />
      <Compile Include="Assets\Resources\Scripts\grenadeControl.cs" />
      <Compile Include="Assets\Resources\Scripts\Gun.cs" />
      <Compile Include="Assets\Resources\Scripts\HeroPanel.cs" />
@@ -249,6 +251,7 @@
      <Compile Include="Assets\Resources\Scripts\myFactory.cs" />
      <Compile Include="Assets\Resources\Scripts\nextScene.cs" />
      <Compile Include="Assets\Resources\Scripts\pain.cs" />
+     <Compile Include="Assets\Resources\Scripts\PlayBulletSound.cs" />
      <Compile Include="Assets\Resources\Scripts\playMusic.cs" />
      <Compile Include="Assets\Resources\Scripts\PlayScript.cs" />
      <Compile Include="Assets\Resources\Scripts\Role.cs" />
@@ -258,6 +261,7 @@
      <Compile Include="Assets\Resources\Scripts\ShowHotel.cs" />
      <Compile Include="Assets\Resources\Scripts\ShowTexture.cs" />
      <Compile Include="Assets\Resources\Scripts\Singleton.cs" />
+     <Compile Include="Assets\Resources\Scripts\SixthSceneController.cs" />
      <Compile Include="Assets\Resources\Scripts\skill.cs" />
      <Compile Include="Assets\Resources\Scripts\Soldier.cs" />
      <Compile Include="Assets\Resources\Scripts\Speak.cs" />
