@@ -6,6 +6,7 @@ public class Soldier : MonoBehaviour {
 	public float maxVelocity_fb;
 	public float maxVelocity_rl;
 	public GameObject gun;
+    public GameObject gameover;
     public UIProgressBar HPBar;
     public UIProgressBar MPBar;
     private Role role;
@@ -165,6 +166,10 @@ public class Soldier : MonoBehaviour {
 				p.showPain ();
 				role.hp -= collision.gameObject.GetComponent<Weapon>().damageValue;
 			}
+            if(collision.gameObject.tag == "SoS")
+            {
+                role.hp += 5;
+            }
 		}
     }
 	public void die() {
@@ -174,6 +179,7 @@ public class Soldier : MonoBehaviour {
         g = Instantiate<GameObject>(Doll);
         g.transform.position = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z + 2);
         g.transform.forward = transform.forward;
+        gameover.SetActive(true);
     }
 }
  

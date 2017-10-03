@@ -17,5 +17,6 @@ public class ShowHotel : MonoBehaviour {
     void Show()
     {
         panel.SetActive(true);
+        Dialog1.FinishTalkingEvent -= Show;
     }
 }

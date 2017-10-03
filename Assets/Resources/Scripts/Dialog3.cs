@@ -15,37 +15,46 @@ public class Dialog3 : MonoBehaviour {
     private int Time = 0;
     private int Index = 0;
     private int count = 0;
+    private bool beginTalk = false;
     // Use this for initialization
     void Start()
     {
-        IniDialog();
         BillBubbleAni = BillBubble.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(beginTalk)
         {
-            Time = 0;
-            Index = 0;
-            count = 0;
-            StopCoroutine("Next");
-        }
-        if (current < Dialog.Count)
-        {
-            if (Dialog[current].speaker == name1)
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                Talk(BillText);
+                Time = 0;
+                Index = 0;
+                count = 0;
+                StopCoroutine("Next");
+            }
+            if (current < Dialog.Count)
+            {
+                if (Dialog[current].speaker == name1)
+                {
+                    Talk(BillText);
+                }
+            }
+            else
+            {
+                if (FinishTalkingEvent != null)
+                {
+                    FinishTalkingEvent();
+                }
             }
         }
-        else
-        {
-            if (FinishTalkingEvent != null)
-            {
-                FinishTalkingEvent();
-            }
-        }
+    }
+
+    public void SetTalk()
+    {
+        beginTalk = true;
+        IniDialog();
     }
 
     void IniDialog()

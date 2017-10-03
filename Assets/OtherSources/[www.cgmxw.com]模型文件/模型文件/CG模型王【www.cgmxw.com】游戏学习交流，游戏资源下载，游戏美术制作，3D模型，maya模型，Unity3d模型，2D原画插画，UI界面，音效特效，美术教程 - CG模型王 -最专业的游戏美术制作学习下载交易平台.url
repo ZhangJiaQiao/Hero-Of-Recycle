@@ -1,0 +1,11 @@
+[DEFAULT]
+BASEURL=http://www.cgwwo.com/bbs/forum.php?mod=forumdisplay&fid=107&filter=author&orderby=dateline
+[DOC#50]
+BASEURL=http://widget.weibo.com/relationship/followbutton.php?btn=red&style=1&uid=3428921982&width=67&height=24&language=zh_cn
+ORIGURL=http://widget.weibo.com/relationship/followbutton.php?btn=red&style=1&uid=3428921982&width=67&height=24&language=zh_cn
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,2
+[InternetShortcut]
+URL=http://www.cgmxw.com/portal.php
+IDList=
+HotKey=0

@@ -20,7 +20,8 @@ public class nextScene : MonoBehaviour {
 			SSDirector.currentScene++;
 			SSDirector.currentTask = "消灭怪物";
 			SSDirector.playerPosition = nextScenePosition;
-			SceneManager.LoadScene (nextSceneName);
+            Cursor.lockState = CursorLockMode.None;
+            SceneManager.LoadScene (nextSceneName);
 		}
 	}
 }

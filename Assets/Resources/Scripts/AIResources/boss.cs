@@ -11,12 +11,16 @@ public class boss : MonoBehaviour {
     public GameObject core;
     public GameObject texture;
     public GameObject label;
+    public UIProgressBar HPBar; 
 	private bool findThePlayer = false;
 	private Animator animator;
 	public characterProperty CharacterProperty;
 	private bool readyForSkill = true;
 	private float timer = 60.0f;
-	private string[] trashName = { "battery", "bone", "china", "clothe", "dirtypaper", "dusty","fruit", "glass", "greens", "ink", "leave",
+    private int CallNum = 0;
+    public delegate void destroy();//死亡毁灭委托
+    public event destroy destroyEvent;//事件
+    private string[] trashName = { "battery", "bone", "china", "clothe", "dirtypaper", "dusty","fruit", "glass", "greens", "ink", "leave",
 		"light", "medicine", "metal", "milk", "oil", "once", "paper", "pet", "plastic", "rise", "smoke", "tea", "pesticide"};
 	void Start () {
 		CharacterProperty = this.gameObject.GetComponent<characterProperty>();
@@ -25,7 +29,8 @@ public class boss : MonoBehaviour {
     }
 
 	void Update () {
-		useSkill();
+        HPBar.GetComponent<HpUISlider>().UpdateVal(CharacterProperty.life / 100);
+        useSkill();
 		findPlayer ();						//if the player is close enough to track
 		directionCtrl ();					//trun direction to the player
 		moveAndAttack ();					//move and attack player
@@ -38,7 +43,14 @@ public class boss : MonoBehaviour {
 			CharacterProperty.damageValue = 0.0f;
 		if (CharacterProperty.life <= 0) {
 			animator.SetBool ("dead", true);
-			destroyItself();
+            if(destroyEvent != null)
+            {
+                destroyEvent();
+            }
+            if(CallNum == 0)
+            {
+                destroyItself();
+            }
 		}
 		if (CharacterProperty.life >= 100)
 		{
@@ -102,10 +114,17 @@ public class boss : MonoBehaviour {
 			}
 			monster.transform.position = this.transform.position + new Vector3 (Random.Range(1, 4), 0, Random.Range(1, 4));
 		}
+        CallNum += 3;
 	}
 
 	void monsterDestroyHandler() {
+        CallNum -= 1;
 	}
+
+    public int GetCallNum()
+    {
+        return CallNum;
+    }
 
 	void findPlayer() {
 		if (CloseToTrack()) {
@@ -176,16 +195,14 @@ public class boss : MonoBehaviour {
 
 	void substract() {
 		CharacterProperty.speed -= 0.1f;
-		CharacterProperty.life -= 40;
+		CharacterProperty.life -= 5;
 		CharacterProperty.damageValue -= 2f;
-		Debug.Log ("substract");
 	}
 
 	void add() {
 		CharacterProperty.speed += 0.1f;
-		CharacterProperty.life += 40;
+		CharacterProperty.life += 10;
 		CharacterProperty.damageValue += 2f;
-		Debug.Log ("add");
 	}
 
 	void destroyItself()

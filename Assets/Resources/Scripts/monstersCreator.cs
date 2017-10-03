@@ -9,9 +9,13 @@ public class monstersCreator : MonoBehaviour {
 	public int totalAmount;
 	public int currentAmount;
 	public int max;
+    public GameObject SoS;
+    private int num = 0;
 	private bool isCreate;
+    private AudioSource _audioSource;
 
 	void Start() {
+        _audioSource = GetComponent<AudioSource>();
 		GetComponent<Renderer> ().enabled = false;
 		currentAmount = 0;
 		if (types.Count == 0) {
@@ -72,10 +76,20 @@ public class monstersCreator : MonoBehaviour {
 		monster.transform.position = spawnPoints[pos].position;
 		currentAmount++;
 		totalAmount--;
-	}
+        num++;
+        if (num % 3 == 0)
+        {
+            GameObject tempSoS = Instantiate<GameObject>(SoS);
+            tempSoS.transform.position = (SSDirector.getInstance().currentSceneController.getPlayer()).position + new Vector3(Random.Range(2f, 3f), -0.6f, Random.Range(2, 3));
+        }
+    }
 
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.tag == "Player" /*&& SSDirector.currentScene != 1*/) {
+		if (other.gameObject.tag == "Player" && SSDirector.currentScene != 1) {
+            if(!isCreate)
+            {
+                _audioSource.Play();
+            }
 			isCreate = true;
             if(SSDirector.currentScene == 3)
             {

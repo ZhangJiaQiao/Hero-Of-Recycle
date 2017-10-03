@@ -29,7 +29,7 @@ public class Scene1ToScene2 : MonoBehaviour {
 		}
         if (other.gameObject.tag == "Player" && SSDirector.currentScene == 3)
         {
-            DialogPanel.GetComponent<Dialog2>().enabled = true;
+            DialogPanel.GetComponent<Dialog2>().SetTalk();
             Player.GetComponent<Soldier>().BeginTalk();
             Villager.SetActive(false);
             Explosion.SetActive(true);
@@ -43,12 +43,13 @@ public class Scene1ToScene2 : MonoBehaviour {
     {
         DialogPanel.SetActive(false);
         Player.GetComponent<Soldier>().StopTalk();
-        this.gameObject.SetActive(false);
+        Dialog2.FinishTalkingEvent -= FinishTalk;
     }
 
     IEnumerator Dispear()
     {
         yield return new WaitForSeconds(5);
         Explosion.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 }

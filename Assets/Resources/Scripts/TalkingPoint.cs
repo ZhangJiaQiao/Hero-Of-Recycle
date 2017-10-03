@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class TalkingPoint : MonoBehaviour {
     public GameObject Player;
-    public GameObject Villager;
     public GameObject DialogPanel;
+    public GameObject Villager;
 	// Use this for initialization
 	void Start () {
-        if(SSDirector.currentScene == 1)
+        if (SSDirector.currentScene == 1)
         {
             Dialog1.FinishTalkingEvent += FinishTalk;
         }
@@ -28,7 +28,7 @@ public class TalkingPoint : MonoBehaviour {
         }
         if(other.gameObject.tag == "Villager" && SSDirector.currentScene == 1)
         {
-            DialogPanel.GetComponent<Dialog1>().enabled = true;
+            DialogPanel.GetComponent<Dialog1>().SetTalk();
             Villager.GetComponent<Villager>().Talk();
         }
     }
@@ -40,5 +40,6 @@ public class TalkingPoint : MonoBehaviour {
         Player.GetComponent<Soldier>().StopTalk();
         DialogPanel.SetActive(false);
         this.gameObject.SetActive(false);
+        Dialog1.FinishTalkingEvent -= FinishTalk;
     }
 }

@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Scene2ToScene1 : MonoBehaviour {
 	private int scene;
+    private bool addEvents = false;
 	private monstersCreator mC;
+    private bool beginTalk = false;
     public GameObject Player;
     public GameObject Panel;
 	// Use this for initialization
@@ -13,16 +15,24 @@ public class Scene2ToScene1 : MonoBehaviour {
 		scene = 2;
 		GetComponent<Renderer> ().enabled = false;
 		mC = Singleton<monstersCreator>.Instance;
-        Dialog3.FinishTalkingEvent += FinishTalk;
     }
 
     void Update()
     {
         if(mC.currentAmount == 0 && mC.totalAmount == 0)
         {
-            SSDirector.currentTask = "离开酒店";
-            Panel.GetComponent<Dialog3>().enabled = true;
-            Player.GetComponent<Soldier>().BeginTalk();
+            if(!beginTalk)
+            {
+                SSDirector.currentTask = "离开酒店";
+                Panel.GetComponent<Dialog3>().SetTalk();
+                if (!addEvents)
+                {
+                    Dialog3.FinishTalkingEvent += FinishTalk;
+                    addEvents = true;
+                }
+                Player.GetComponent<Soldier>().BeginTalk();
+                beginTalk = true;
+            }
         }
     }
     void OnTriggerEnter(Collider other) {
@@ -36,5 +46,6 @@ public class Scene2ToScene1 : MonoBehaviour {
     void FinishTalk()
     {
         Player.GetComponent<Soldier>().StopTalk();
+        Dialog3.FinishTalkingEvent -= FinishTalk;
     }
 }
