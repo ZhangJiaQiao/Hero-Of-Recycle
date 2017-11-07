@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Hero-Of-Recycle.Plugins.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Resources\Scripts\ShowHotel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader">
     <Files>
       <File FileName="Assets\Resources\Scripts\AIResources\bone.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\AIResources\crab.cs" Line="1" Column="1" />
@@ -15,7 +15,8 @@
       <File FileName="Assets\Resources\Scripts\SecondSceneController.cs" Line="1" Column="1" />
       <File FileName="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\TonemappingEditor.cs" Line="1" Column="1" />
       <File FileName="Assets\Resources\Scripts\Dialog1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Resources\Scripts\ShowHotel.cs" Line="19" Column="1" />
+      <File FileName="Assets\Resources\Scripts\ShowHotel.cs" Line="1" Column="1" />
+      <File FileName="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" Line="56" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -23,7 +23,7 @@ public class Scene2ToScene1 : MonoBehaviour {
         {
             if(!beginTalk)
             {
-                SSDirector.currentTask = "离开酒店";
+                SSDirector.currentTask = "当前任务:离开酒店";
                 Panel.GetComponent<Dialog3>().SetTalk();
                 if (!addEvents)
                 {

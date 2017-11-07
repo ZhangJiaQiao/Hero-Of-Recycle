@@ -6,107 +6,66 @@ using UnityEngine.UI;
 public class Dialog2 : MonoBehaviour {
     public delegate void FinishTalking();
     public static event FinishTalking FinishTalkingEvent;
-    public Image BillBubble;
-    public Text BillText;
     public string name1 = "Bill";
-    private Animator BillBubbleAni;
+    public GameObject TalkingBubble;
+    public Text NameText;
+    public Text DialogText;
     private List<Speak> Dialog = new List<Speak>();
-    private int current = 0;
-    private int Time = 0;
-    private int Index = 0;
-    private int count = 0;
     private bool beginTalk = false;
+    private int current = 0;
     // Use this for initialization
-    void Start () {
-        BillBubbleAni = BillBubble.GetComponent<Animator>();
+    void Start()
+    {
+
     }
-	
-	// Update is called once per frame
-	void Update () {
-        if(beginTalk)
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (beginTalk)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Time = 0;
-                Index = 0;
-                count = 0;
-                StopCoroutine("Next");
-            }
             if (current < Dialog.Count)
             {
-                if (Dialog[current].speaker == name1)
-                {
-                    Talk(BillText);
-                }
+                Talk();
             }
             else
             {
                 if (FinishTalkingEvent != null)
                 {
+                    //Debug.Log("finishEvent");
                     FinishTalkingEvent();
                 }
+                this.enabled = false;
+            }
+
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                current++;
             }
         }
     }
 
     public void SetTalk()
     {
+        TalkingBubble.SetActive(true);
         beginTalk = true;
         IniDialog();
     }
 
     void IniDialog()
     {
-        Dialog.Add(new Speak("为什么前面", name1));
-        Dialog.Add(new Speak("火光冲天", name1));
-        Dialog.Add(new Speak("肯定出事了", name1));
-        Dialog.Add(new Speak("我得去看看", name1));
+        Dialog.Add(new Speak("为什么今天前面火光冲天？前面是...", name1));
+        Dialog.Add(new Speak("不好，前面是工业区，难道垃圾怪物是要去那里吸收工业区能量？我一定得阻止你们", name1));
+        Dialog.Add(new Speak("我决不允许你们破坏我的家乡，这里装载一切我最美好的记忆", name1));
     }
 
-    void Talk(Text TalkText)
+    void Talk()
     {
-        if (Time == 0)
+        if (Dialog[current].speaker == name1)
         {
-            TalkText.text = Dialog[current].content;
-            if (Dialog[current].speaker == name1)
-            {
-                BillBubbleAni.SetBool("Big", true);
-                Time = 1;
-                StartCoroutine("Show");
-            }
+            NameText.text = name1;
         }
-
-        if (Time == -1)
-        {
-            if (Dialog[current].speaker == name1)
-            {
-                BillBubbleAni.SetBool("Big", false);
-            }
-            TalkText.text = "";
-            current++;
-            Time = 2;
-            StartCoroutine("Next");
-        }
-        if (TalkText.text.Length > 5 && count == 70)
-        {
-            Index++;
-            TalkText.text = TalkText.text.Substring(Index);
-            count = 0;
-        }
-        count++;
-    }
-
-    IEnumerator Show()
-    {
-        yield return new WaitForSeconds(3);
-        Time = -1;
-    }
-
-    IEnumerator Next()
-    {
-        yield return new WaitForSeconds(1);
-        Time = 0;
-        Index = 0;
-        count = 0;
+        DialogText.text = Dialog[current].content;
     }
 }

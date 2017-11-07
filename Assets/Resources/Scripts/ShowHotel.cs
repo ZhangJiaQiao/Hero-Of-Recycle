@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ShowHotel : MonoBehaviour {
     public GameObject panel;
+    public GameObject effect;
 	// Use this for initialization
 	void Start () {
         Dialog1.FinishTalkingEvent += Show;
@@ -17,6 +18,7 @@ public class ShowHotel : MonoBehaviour {
     void Show()
     {
         panel.SetActive(true);
+        effect.SetActive(true);
         Dialog1.FinishTalkingEvent -= Show;
     }
 }

@@ -6,7 +6,7 @@ public class SSDirector : System.Object {
 	private static SSDirector _instance;
 	public static int currentScene = 1;
 	public static Vector3 playerPosition = new Vector3(112.1f, 1f, 8.6f);
-    public static string currentTask = "消灭怪物";
+    public static string currentTask = "当前任务:消灭怪物";
     public static int choice = 0;
     public static float volume = 1;
 
