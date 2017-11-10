@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/WebDemoScene.unity
+- path: Assets/menu.unity
   isLoaded: 1
   isActive: 1

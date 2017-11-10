@@ -34,4 +34,14 @@ public class SSDirector : System.Object {
 	public void exit() {
 		//退出游戏
 	}
+
+    public void pause()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void Recover()
+    {
+        Time.timeScale = 1;
+    }
 }

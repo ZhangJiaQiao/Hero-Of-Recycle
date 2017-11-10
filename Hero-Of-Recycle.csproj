@@ -283,6 +283,7 @@
     <Compile Include="Assets\Resources\Scripts\HpUISlider.cs" />
     <Compile Include="Assets\Resources\Scripts\ISceneController.cs" />
     <Compile Include="Assets\Resources\Scripts\MpUISlider.cs" />
+    <Compile Include="Assets\Resources\Scripts\PausePanel.cs" />
     <Compile Include="Assets\Resources\Scripts\PlayBulletSound.cs" />
     <Compile Include="Assets\Resources\Scripts\PlayScript.cs" />
     <Compile Include="Assets\Resources\Scripts\Role.cs" />
