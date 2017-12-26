@@ -29,7 +29,7 @@ public class boss : MonoBehaviour {
     }
 
 	void Update () {
-        HPBar.GetComponent<HpUISlider>().UpdateVal(CharacterProperty.life / 100);
+        HPBar.GetComponent<HpUISlider>().UpdateVal(CharacterProperty.life / 1000);
         useSkill();
 		findPlayer ();						//if the player is close enough to track
 		directionCtrl ();					//trun direction to the player
@@ -52,9 +52,9 @@ public class boss : MonoBehaviour {
                 destroyItself();
             }
 		}
-		if (CharacterProperty.life >= 100)
+		if (CharacterProperty.life >= 1000)
 		{
-			CharacterProperty.life = 100;
+			CharacterProperty.life = 1000;
 		}
 	}
 
@@ -142,7 +142,7 @@ public class boss : MonoBehaviour {
 			tag = "recyclableTrash";
 		else if (nameOfTrash == "bone" || nameOfTrash == "fruit" || nameOfTrash == "greens" || nameOfTrash == "leave" || nameOfTrash == "rise" || nameOfTrash == "tea")
 			tag = "foodTrash";
-		else if (nameOfTrash == "china" || nameOfTrash == "dirtypaper" || nameOfTrash == "dusty" || nameOfTrash == "pet" || nameOfTrash == "smoke")
+		else if (nameOfTrash == "china" || nameOfTrash == "dirtypaper" || nameOfTrash == "dusty" || nameOfTrash == "pet" || nameOfTrash == "smoke" || nameOfTrash == "once")
 			tag = "otherTrash";
 
 		//Transform PanelOfBoss = this.transform.Find ("Panel");

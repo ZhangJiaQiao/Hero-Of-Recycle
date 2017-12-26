@@ -9,8 +9,9 @@ public class SSDirector : System.Object {
     public static string currentTask = "当前任务:消灭怪物";
     public static int choice = 0;
     public static float volume = 1;
+    public static int CurrentWeapon = 1;
 
-	public ISceneController currentSceneController;
+    public ISceneController currentSceneController;
 
 	public static SSDirector getInstance() {
 		if (_instance == null) {

@@ -44,21 +44,33 @@ public class myFactory : MonoBehaviour {
 
 	public GameObject getBullet() {
         getBulletSound();
-		if (bulletsFree.Count == 0) {
-			GameObject newBullet = Instantiate<GameObject> (bullet);
-			newBullet.tag = bullet_types[currentBulletType];
-			bulletsUsing.Add (newBullet);
-			return newBullet;
-		} else {
-			GameObject bl = bulletsFree [0];
-			bulletsFree.RemoveAt (0);
-            bl.SetActive (true);
-            bulletsUsing.Add(bl);
-			bl.tag = bullet_types [currentBulletType];
-			//bl.GetComponent<Rigidbody> ().WakeUp ();
-			//bl.GetComponent<Rigidbody> ().isKinematic = false;
-			return bl;
-		}
+        if(SSDirector.CurrentWeapon != 0)
+        {
+            if (bulletsFree.Count == 0)
+            {
+                GameObject newBullet = Instantiate<GameObject>(bullet);
+                newBullet.tag = bullet_types[currentBulletType];
+                newBullet.GetComponent<Bullet>().SetDamage(SSDirector.CurrentWeapon);
+                bulletsUsing.Add(newBullet);
+                return newBullet;
+            }
+            else
+            {
+                GameObject bl = bulletsFree[0];
+                bulletsFree.RemoveAt(0);
+                bl.SetActive(true);
+                bulletsUsing.Add(bl);
+                bl.tag = bullet_types[currentBulletType];
+                bl.GetComponent<Bullet>().SetDamage(SSDirector.CurrentWeapon);
+                //bl.GetComponent<Rigidbody> ().WakeUp ();
+                //bl.GetComponent<Rigidbody> ().isKinematic = false;
+                return bl;
+            }
+        }
+        else
+        {
+            return null;
+        }
 	}
 
 	public void recycleBullet(GameObject bullet) {
@@ -76,6 +88,7 @@ public class myFactory : MonoBehaviour {
         {
             GameObject newBullet = Instantiate<GameObject>(bulletSound);
             bulletSoundUsing.Add(newBullet);
+            newBullet.GetComponent<PlayBulletSound>().PlaySound();
             return newBullet;
         }
         else
@@ -86,6 +99,7 @@ public class myFactory : MonoBehaviour {
             bulletSoundUsing.Add(bl);
             //bl.GetComponent<Rigidbody> ().WakeUp ();
             //bl.GetComponent<Rigidbody> ().isKinematic = false;
+            bl.GetComponent<PlayBulletSound>().PlaySound();
             return bl;
         }
     }
@@ -140,7 +154,7 @@ public class myFactory : MonoBehaviour {
 	}
 
 	private void setBulletType() {
-		if (Input.GetKeyDown(KeyCode.Tab)) {
+		if (Input.GetKeyDown(KeyCode.Q)) {
 			currentBulletType += 1;
 			currentBulletType %= 4;
 		}

@@ -5,7 +5,8 @@ using UnityEngine;
 public class Soldier : MonoBehaviour {
 	public float maxVelocity_fb;
 	public float maxVelocity_rl;
-	public GameObject gun;
+    public List<GameObject> Weapon;
+    private int CurrentWeapon = 1;
     public GameObject gameover;
     public UIProgressBar HPBar;
     public UIProgressBar MPBar;
@@ -17,6 +18,7 @@ public class Soldier : MonoBehaviour {
     private GameObject g;
     private AudioSource _audioSource;
     public AudioClip footSound;
+    public GameObject WeaponMenu;
 
     void Start () {
 		isDied = false;
@@ -27,7 +29,10 @@ public class Soldier : MonoBehaviour {
 		Renderer r = GetComponent<Renderer> ();
 		r.enabled = false;
         _audioSource = this.gameObject.GetComponent<AudioSource>();
-	}
+        CurrentWeapon = SSDirector.CurrentWeapon;
+        Weapon[CurrentWeapon].SetActive(true);
+        Camera.main.transform.parent = Weapon[CurrentWeapon].transform;
+    }
 
 	void Update () {
         HPBar.GetComponent<HpUISlider>().UpdateVal(role.hp / 100);
@@ -35,6 +40,12 @@ public class Soldier : MonoBehaviour {
 		if (Input.GetKey(KeyCode.Escape)) {
 			Cursor.lockState = CursorLockMode.None;
 		}
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            WeaponMenu.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            BeginTalk();
+        }
         if(!isTalking)
         {
             directionCtrl();
@@ -65,7 +76,8 @@ public class Soldier : MonoBehaviour {
 
 	void move() {
 		if (!isDied) {
-			Animator animator = gun.GetComponent<Animator> ();
+            Animator animator = Weapon[CurrentWeapon].GetComponent<Animator>();
+            //Animator animator = gun.GetComponent<Animator> ();
 			bool isMoving = false;
 			if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
 				Vector3 v = GetComponent<Rigidbody> ().velocity;
@@ -148,12 +160,14 @@ public class Soldier : MonoBehaviour {
     public void BeginTalk()
     {
         isTalking = true;
-		gun.GetComponent<Gun> ().BeginTalk ();
+        Weapon[CurrentWeapon].GetComponent<Gun> ().BeginTalk ();
+        //gun.GetComponent<Gun> ().BeginTalk ();
     }
     public void StopTalk()
     {
         isTalking = false;
-		gun.GetComponent<Gun> ().StopTalk ();
+        Weapon[CurrentWeapon].GetComponent<Gun> ().StopTalk ();
+        //gun.GetComponent<Gun> ().StopTalk ();
     }
 
     void OnTriggerEnter(Collider collision)
@@ -175,11 +189,33 @@ public class Soldier : MonoBehaviour {
 	public void die() {
 		this.isDied = true;
         Camera.main.transform.parent = null;
-        this.gun.SetActive(false);
+        Weapon[CurrentWeapon].SetActive(false);
         g = Instantiate<GameObject>(Doll);
         g.transform.position = new Vector3(transform.position.x, transform.position.y - 1, transform.position.z + 2);
         g.transform.forward = transform.forward;
         gameover.SetActive(true);
+    }
+
+    public void ChooseWeapon(int num)
+    {
+        Camera.main .transform.parent = this.transform;
+        if (isTalking)
+        {
+            Weapon[CurrentWeapon].GetComponent<Gun>().StopTalk();
+        }
+        Weapon[CurrentWeapon].SetActive(false);
+        CurrentWeapon = num;
+        SSDirector.CurrentWeapon = CurrentWeapon;
+        Weapon[CurrentWeapon].SetActive(true);
+        if (isTalking)
+        {
+            Weapon[CurrentWeapon].GetComponent<Gun>().BeginTalk();
+        }
+        Camera.main.transform.parent = Weapon[CurrentWeapon].transform;
+        Camera.main.transform.localPosition = Weapon[CurrentWeapon].GetComponent<Gun>().CameraPosition;
+        Camera.main.transform.localRotation = Quaternion.Euler(Weapon[CurrentWeapon].GetComponent<Gun>().CameraRotation);
+        Weapon[CurrentWeapon].GetComponent<Gun>().SetReload();
+        StopTalk();
     }
 }
  

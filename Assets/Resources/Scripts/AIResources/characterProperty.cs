@@ -6,6 +6,7 @@ public class characterProperty : MonoBehaviour {
 	public float speed = 0.5f;
 	public float life = 100;
 	public float damageValue = 8f;
+    /*
 	// Use this for initialization
 	void Start () {
 
@@ -15,4 +16,5 @@ public class characterProperty : MonoBehaviour {
 	void Update () {
 
 	}
+    */
 }

@@ -116,7 +116,7 @@ ModelImporter:
     400108: RightShoulder
     400110: spine3
     4300000: body
-    7400000: Gun01Reload
+    7400000: Reload
     9500000: //RootNode
     11100000: //RootNode
     13700000: body
@@ -144,7 +144,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Gun01Reload
+      name: Reload
       takeName: Take 001
       firstFrame: 0
       lastFrame: 70

@@ -84,12 +84,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Hero-Of-Recycle.Plugins.csproj">
-      <Project>{1D38D748-33B4-3FC2-0133-533456133B72}</Project>
-      <Name>Hero-Of-Recycle.Plugins</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -256,6 +250,7 @@
     <Compile Include="Assets\OtherSources\Town Constructor Pack 1\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Resources\Scripts\AIResources\bone.cs" />
     <Compile Include="Assets\Resources\Scripts\AIResources\boss.cs" />
+    <Compile Include="Assets\Resources\Scripts\AIResources\boss2.cs" />
     <Compile Include="Assets\Resources\Scripts\AIResources\characterProperty.cs" />
     <Compile Include="Assets\Resources\Scripts\AIResources\core.cs" />
     <Compile Include="Assets\Resources\Scripts\AIResources\crab.cs" />
@@ -266,9 +261,14 @@
     <Compile Include="Assets\Resources\Scripts\Congratulation.cs" />
     <Compile Include="Assets\Resources\Scripts\ControlsHelper.cs" />
     <Compile Include="Assets\Resources\Scripts\DestroyOneself.cs" />
+    <Compile Include="Assets\Resources\Scripts\DetectCollision.cs" />
     <Compile Include="Assets\Resources\Scripts\Dialog1.cs" />
     <Compile Include="Assets\Resources\Scripts\Dialog2.cs" />
     <Compile Include="Assets\Resources\Scripts\Dialog3.cs" />
+    <Compile Include="Assets\Resources\Scripts\Dialog4.cs" />
+    <Compile Include="Assets\Resources\Scripts\Dialog5.cs" />
+    <Compile Include="Assets\Resources\Scripts\Dialog6.cs" />
+    <Compile Include="Assets\Resources\Scripts\EventTriggerListener.cs" />
     <Compile Include="Assets\Resources\Scripts\ExitScript.cs" />
     <Compile Include="Assets\Resources\Scripts\FifthSceneController.cs" />
     <Compile Include="Assets\Resources\Scripts\FileManager.cs" />
@@ -299,10 +299,13 @@
     <Compile Include="Assets\Resources\Scripts\Soldier.cs" />
     <Compile Include="Assets\Resources\Scripts\Speak.cs" />
     <Compile Include="Assets\Resources\Scripts\TalkingPoint.cs" />
+    <Compile Include="Assets\Resources\Scripts\TalkingPoint1.cs" />
     <Compile Include="Assets\Resources\Scripts\Task.cs" />
     <Compile Include="Assets\Resources\Scripts\ThirdSceneController.cs" />
     <Compile Include="Assets\Resources\Scripts\Villager.cs" />
     <Compile Include="Assets\Resources\Scripts\Weapon.cs" />
+    <Compile Include="Assets\Resources\Scripts\WeaponButton.cs" />
+    <Compile Include="Assets\Resources\Scripts\WeaponPanel.cs" />
     <Compile Include="Assets\Resources\Scripts\bulletType.cs" />
     <Compile Include="Assets\Resources\Scripts\doll.cs" />
     <Compile Include="Assets\Resources\Scripts\grenadeControl.cs" />
@@ -463,7 +466,6 @@
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
-    <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
@@ -501,30 +503,6 @@
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
     <None Include="Assets\OtherSources\effect_distortadd noztest.shader" />
     <None Include="Assets\OtherSources\fantasy horde_vilagers\shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
-    <None Include="Assets\Standard Assets\Effects\AmbientOcclusion\Resources\AmbientOcclusion.cginc" />
-    <None Include="Assets\Standard Assets\Effects\AmbientOcclusion\Resources\AmbientOcclusion.shader" />
-    <None Include="Assets\Standard Assets\Effects\AntiAliasing\FXAA\Resources\FXAA.shader" />
-    <None Include="Assets\Standard Assets\Effects\AntiAliasing\FXAA\Resources\FXAA3.cginc" />
-    <None Include="Assets\Standard Assets\Effects\AntiAliasing\SMAA\Resources\SMAA.cginc" />
-    <None Include="Assets\Standard Assets\Effects\AntiAliasing\SMAA\Resources\SMAA.shader" />
-    <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.cginc" />
-    <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.shader" />
-    <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\BokehSplatting.shader" />
-    <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\DepthOfField.shader" />
-    <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\MedianFilter.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectX.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShift.shader" />
-    <None Include="Assets\Standard Assets\Effects\LensAberrations\Resources\LensAberrations.shader" />
-    <None Include="Assets\Standard Assets\Effects\ScreenSpaceReflection\Resources\ScreenSpaceRaytrace.cginc" />
-    <None Include="Assets\Standard Assets\Effects\ScreenSpaceReflection\Resources\ScreenSpaceReflection.shader" />
-    <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\HistogramCompute.compute" />
-    <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\HistogramRender.shader" />
-    <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\TonemappingColorGrading.cginc" />
-    <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\TonemappingColorGrading.shader" />
-    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
-    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
-    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

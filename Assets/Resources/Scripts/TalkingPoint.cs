@@ -39,7 +39,7 @@ public class TalkingPoint : MonoBehaviour {
         Villager.GetComponent<Villager>().canMove(new Vector3(110, 0.5f, 14.5f));
         Player.GetComponent<Soldier>().StopTalk();
         DialogPanel.SetActive(false);
-        this.gameObject.SetActive(false);
         Dialog1.FinishTalkingEvent -= FinishTalk;
+        this.gameObject.SetActive(false);
     }
 }

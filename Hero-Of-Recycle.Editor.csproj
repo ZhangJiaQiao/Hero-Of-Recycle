@@ -132,17 +132,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Hero-Of-Recycle.Plugins.csproj">
-      <Project>{1D38D748-33B4-3FC2-0133-533456133B72}</Project>
-      <Name>Hero-Of-Recycle.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="Hero-Of-Recycle.csproj">
       <Project>{4D194C5C-491F-3CC7-379E-0F239B8E4A12}</Project>
       <Name>Hero-Of-Recycle</Name>
-    </ProjectReference>
-    <ProjectReference Include="Hero-Of-Recycle.Editor.Plugins.csproj">
-      <Project>{0CD59BA2-2BC2-F76A-A62B-047ED948CD5D}</Project>
-      <Name>Hero-Of-Recycle.Editor.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -231,22 +223,6 @@
     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
     <Compile Include="Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\EditorTools.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\AntialiasingEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\BloomEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\CreaseShadingEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\DepthOfFieldEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\EdgeDetectionEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\NoiseAndGrainEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\SunShaftsEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\TonemappingEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
-    <Compile Include="Assets\OtherSources\FPS Essentials Kit\Scripts\Editor\Surface\SurfaceEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
@@ -394,7 +370,6 @@
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderYUV.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\PrepareSunShaftsBlur.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\RadialBlur.shader" />
-    <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SSAOShader.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ScreenSpaceAmbientObscurance.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SepiaToneEffect.shader" />
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
@@ -432,30 +407,6 @@
     <None Include="Assets\OtherSources\Town Constructor Pack\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
     <None Include="Assets\OtherSources\effect_distortadd noztest.shader" />
     <None Include="Assets\OtherSources\fantasy horde_vilagers\shader\Compressed MaskedShader2sided 5-4 cut out.shader" />
-    <None Include="Assets\Standard Assets\Effects\AmbientOcclusion\Resources\AmbientOcclusion.cginc" />
-    <None Include="Assets\Standard Assets\Effects\AmbientOcclusion\Resources\AmbientOcclusion.shader" />
-    <None Include="Assets\Standard Assets\Effects\AntiAliasing\FXAA\Resources\FXAA.shader" />
-    <None Include="Assets\Standard Assets\Effects\AntiAliasing\FXAA\Resources\FXAA3.cginc" />
-    <None Include="Assets\Standard Assets\Effects\AntiAliasing\SMAA\Resources\SMAA.cginc" />
-    <None Include="Assets\Standard Assets\Effects\AntiAliasing\SMAA\Resources\SMAA.shader" />
-    <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.cginc" />
-    <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.shader" />
-    <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\BokehSplatting.shader" />
-    <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\DepthOfField.shader" />
-    <None Include="Assets\Standard Assets\Effects\DepthOfField\Resources\MedianFilter.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectX.shader" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace.cginc" />
-    <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\TiltShift.shader" />
-    <None Include="Assets\Standard Assets\Effects\LensAberrations\Resources\LensAberrations.shader" />
-    <None Include="Assets\Standard Assets\Effects\ScreenSpaceReflection\Resources\ScreenSpaceRaytrace.cginc" />
-    <None Include="Assets\Standard Assets\Effects\ScreenSpaceReflection\Resources\ScreenSpaceReflection.shader" />
-    <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\HistogramCompute.compute" />
-    <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\HistogramRender.shader" />
-    <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\TonemappingColorGrading.cginc" />
-    <None Include="Assets\Standard Assets\Effects\TonemappingColorGrading\Resources\TonemappingColorGrading.shader" />
-    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
-    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
-    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

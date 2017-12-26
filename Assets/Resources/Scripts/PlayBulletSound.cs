@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayBulletSound : MonoBehaviour {
     private AudioSource _audiosource;
+    public List<AudioClip> BulletSound;
 	// Use this for initialization
 	void Start () {
         _audiosource = this.GetComponent<AudioSource>();
@@ -17,4 +18,11 @@ public class PlayBulletSound : MonoBehaviour {
             mF.recycleBulletSound(this.gameObject);
         }
 	}
+
+    public void PlaySound()
+    {
+        _audiosource = this.GetComponent<AudioSource>();
+        _audiosource.clip = BulletSound[SSDirector.CurrentWeapon];
+        _audiosource.Play();
+    }
 }

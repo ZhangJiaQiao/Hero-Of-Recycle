@@ -56,15 +56,21 @@ public class ghost : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		if (collision.gameObject.name != "Bullet(Clone)")
+        if (collision.gameObject.tag == "knife")
+        {
+            CharacterProperty.speed -= 0.15f;
+            CharacterProperty.damageValue -= 2f;
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+        }
+		else if (collision.gameObject.name != "Bullet(Clone)")
 			return;
 		if (collision.gameObject.tag == this.gameObject.tag) {
 			CharacterProperty.speed -= 0.1f;
-			CharacterProperty.life -= 40;
+			CharacterProperty.life -= collision.gameObject.GetComponent<Bullet>().GetDamage(); ;
 			CharacterProperty.damageValue -= 5f;
 		} else {
 			CharacterProperty.speed += 0.1f;
-			CharacterProperty.life += 40;
+			CharacterProperty.life += collision.gameObject.GetComponent<Bullet>().GetDamage();;
 			CharacterProperty.damageValue += 5f;			
 		}
 	}

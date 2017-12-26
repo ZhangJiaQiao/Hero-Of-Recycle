@@ -22,9 +22,9 @@ public class bone : MonoBehaviour {
 	void Update () {
         //Debug.Log(CharacterProperty.life);
         HPBar.GetComponent<HpUISlider>().UpdateVal(CharacterProperty.life / 100);
-        findPlayer ();						//if the player is close enough to track
-		directionCtrl ();					//trun direction to the player
-		moveAndAttack ();					//move and attack player
+        findPlayer();                       //if the player is close enough to track
+        directionCtrl();                    //trun direction to the player
+        moveAndAttack();					//move and attack player
 	}
 
 	void FixedUpdate() {
@@ -47,16 +47,22 @@ public class bone : MonoBehaviour {
     }
 
 	void OnCollisionEnter(Collision collision) {
+        if (collision.gameObject.tag == "knife")
+        {
+            CharacterProperty.speed -= 0.15f;
+            CharacterProperty.damageValue -= 2f;
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+        }
 		if (collision.gameObject.name != "Bullet(Clone)")
 			return;
 		//Debug.Log ("hit the bullet!");
 		if (collision.gameObject.tag == this.gameObject.tag) {
 			CharacterProperty.speed -= 0.1f;
-			CharacterProperty.life -= 40;
+			CharacterProperty.life -= collision.gameObject.GetComponent<Bullet>().GetDamage();
 			CharacterProperty.damageValue -= 2f;
 		} else {
 			CharacterProperty.speed += 0.1f;
-			CharacterProperty.life += 40;
+			CharacterProperty.life += collision.gameObject.GetComponent<Bullet>().GetDamage();
 			CharacterProperty.damageValue += 2f;			
 		}
 	}
@@ -98,12 +104,10 @@ public class bone : MonoBehaviour {
 			if (currentClip != "idle" && currentClip != "die") {
 				if (v.sqrMagnitude < maxVelocity) {
 					v += CharacterProperty.speed * transform.forward.normalized;
-					//Debug.Log ("222" + v);
 					GetComponent<Rigidbody> ().velocity = v;	
 				}
 			}
 			animator.SetBool ("run", true);
-			//Debug.Log ("333333   run run run");
 		} else if (closeToAttack ()) {
 			animator.SetTrigger ("attack");
 		} else {
