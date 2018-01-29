@@ -1,0 +1,2065 @@
+fileFormatVersion: 2
+guid: 40c90223783e22d4f902b6f9f76135e1
+timeCreated: 1517227858
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: default
+    100004: default001detachobj1
+    100006: default001detachobj1 1
+    100008: default001detachobj10
+    100010: default001detachobj10 1
+    100012: default001detachobj100
+    100014: default001detachobj100 1
+    100016: default001detachobj101
+    100018: default001detachobj101 1
+    100020: default001detachobj102
+    100022: default001detachobj102 1
+    100024: default001detachobj103
+    100026: default001detachobj103 1
+    100028: default001detachobj104
+    100030: default001detachobj104 1
+    100032: default001detachobj105
+    100034: default001detachobj105 1
+    100036: default001detachobj106
+    100038: default001detachobj106 1
+    100040: default001detachobj107
+    100042: default001detachobj107 1
+    100044: default001detachobj108
+    100046: default001detachobj108 1
+    100048: default001detachobj109
+    100050: default001detachobj109 1
+    100052: default001detachobj11
+    100054: default001detachobj11 1
+    100056: default001detachobj110
+    100058: default001detachobj110 1
+    100060: default001detachobj111
+    100062: default001detachobj111 1
+    100064: default001detachobj112
+    100066: default001detachobj112 1
+    100068: default001detachobj113
+    100070: default001detachobj113 1
+    100072: default001detachobj114
+    100074: default001detachobj114 1
+    100076: default001detachobj115
+    100078: default001detachobj115 1
+    100080: default001detachobj116
+    100082: default001detachobj116 1
+    100084: default001detachobj117
+    100086: default001detachobj117 1
+    100088: default001detachobj118
+    100090: default001detachobj118 1
+    100092: default001detachobj119
+    100094: default001detachobj119 1
+    100096: default001detachobj12
+    100098: default001detachobj12 1
+    100100: default001detachobj120
+    100102: default001detachobj120 1
+    100104: default001detachobj121
+    100106: default001detachobj121 1
+    100108: default001detachobj122
+    100110: default001detachobj122 1
+    100112: default001detachobj123
+    100114: default001detachobj123 1
+    100116: default001detachobj124
+    100118: default001detachobj124 1
+    100120: default001detachobj125
+    100122: default001detachobj125 1
+    100124: default001detachobj126
+    100126: default001detachobj126 1
+    100128: default001detachobj127
+    100130: default001detachobj127 1
+    100132: default001detachobj128
+    100134: default001detachobj128 1
+    100136: default001detachobj129
+    100138: default001detachobj129 1
+    100140: default001detachobj13
+    100142: default001detachobj13 1
+    100144: default001detachobj130
+    100146: default001detachobj130 1
+    100148: default001detachobj131
+    100150: default001detachobj131 1
+    100152: default001detachobj132
+    100154: default001detachobj132 1
+    100156: default001detachobj133
+    100158: default001detachobj133 1
+    100160: default001detachobj134
+    100162: default001detachobj134 1
+    100164: default001detachobj135
+    100166: default001detachobj135 1
+    100168: default001detachobj136
+    100170: default001detachobj136 1
+    100172: default001detachobj137
+    100174: default001detachobj137 1
+    100176: default001detachobj138
+    100178: default001detachobj138 1
+    100180: default001detachobj139
+    100182: default001detachobj139 1
+    100184: default001detachobj14
+    100186: default001detachobj14 1
+    100188: default001detachobj140
+    100190: default001detachobj140 1
+    100192: default001detachobj141
+    100194: default001detachobj141 1
+    100196: default001detachobj142
+    100198: default001detachobj142 1
+    100200: default001detachobj143
+    100202: default001detachobj143 1
+    100204: default001detachobj144
+    100206: default001detachobj144 1
+    100208: default001detachobj145
+    100210: default001detachobj145 1
+    100212: default001detachobj146
+    100214: default001detachobj146 1
+    100216: default001detachobj147
+    100218: default001detachobj147 1
+    100220: default001detachobj148
+    100222: default001detachobj148 1
+    100224: default001detachobj149
+    100226: default001detachobj149 1
+    100228: default001detachobj15
+    100230: default001detachobj15 1
+    100232: default001detachobj150
+    100234: default001detachobj150 1
+    100236: default001detachobj151
+    100238: default001detachobj151 1
+    100240: default001detachobj152
+    100242: default001detachobj152 1
+    100244: default001detachobj153
+    100246: default001detachobj153 1
+    100248: default001detachobj154
+    100250: default001detachobj154 1
+    100252: default001detachobj155
+    100254: default001detachobj155 1
+    100256: default001detachobj156
+    100258: default001detachobj156 1
+    100260: default001detachobj157
+    100262: default001detachobj157 1
+    100264: default001detachobj158
+    100266: default001detachobj158 1
+    100268: default001detachobj159
+    100270: default001detachobj159 1
+    100272: default001detachobj16
+    100274: default001detachobj16 1
+    100276: default001detachobj160
+    100278: default001detachobj160 1
+    100280: default001detachobj161
+    100282: default001detachobj161 1
+    100284: default001detachobj162
+    100286: default001detachobj162 1
+    100288: default001detachobj163
+    100290: default001detachobj163 1
+    100292: default001detachobj164
+    100294: default001detachobj164 1
+    100296: default001detachobj165
+    100298: default001detachobj165 1
+    100300: default001detachobj166
+    100302: default001detachobj166 1
+    100304: default001detachobj167
+    100306: default001detachobj167 1
+    100308: default001detachobj168
+    100310: default001detachobj168 1
+    100312: default001detachobj169
+    100314: default001detachobj169 1
+    100316: default001detachobj17
+    100318: default001detachobj17 1
+    100320: default001detachobj170
+    100322: default001detachobj170 1
+    100324: default001detachobj171
+    100326: default001detachobj171 1
+    100328: default001detachobj172
+    100330: default001detachobj172 1
+    100332: default001detachobj173
+    100334: default001detachobj173 1
+    100336: default001detachobj174
+    100338: default001detachobj174 1
+    100340: default001detachobj175
+    100342: default001detachobj175 1
+    100344: default001detachobj176
+    100346: default001detachobj176 1
+    100348: default001detachobj177
+    100350: default001detachobj177 1
+    100352: default001detachobj178
+    100354: default001detachobj178 1
+    100356: default001detachobj179
+    100358: default001detachobj179 1
+    100360: default001detachobj18
+    100362: default001detachobj18 1
+    100364: default001detachobj180
+    100366: default001detachobj180 1
+    100368: default001detachobj181
+    100370: default001detachobj181 1
+    100372: default001detachobj182
+    100374: default001detachobj182 1
+    100376: default001detachobj183
+    100378: default001detachobj183 1
+    100380: default001detachobj184
+    100382: default001detachobj184 1
+    100384: default001detachobj185
+    100386: default001detachobj185 1
+    100388: default001detachobj186
+    100390: default001detachobj186 1
+    100392: default001detachobj187
+    100394: default001detachobj187 1
+    100396: default001detachobj188
+    100398: default001detachobj188 1
+    100400: default001detachobj189
+    100402: default001detachobj189 1
+    100404: default001detachobj19
+    100406: default001detachobj19 1
+    100408: default001detachobj190
+    100410: default001detachobj190 1
+    100412: default001detachobj191
+    100414: default001detachobj191 1
+    100416: default001detachobj192
+    100418: default001detachobj192 1
+    100420: default001detachobj193
+    100422: default001detachobj194
+    100424: default001detachobj195
+    100426: default001detachobj196
+    100428: default001detachobj197
+    100430: default001detachobj198
+    100432: default001detachobj199
+    100434: default001detachobj2
+    100436: default001detachobj2 1
+    100438: default001detachobj20
+    100440: default001detachobj20 1
+    100442: default001detachobj200
+    100444: default001detachobj201
+    100446: default001detachobj202
+    100448: default001detachobj203
+    100450: default001detachobj21
+    100452: default001detachobj21 1
+    100454: default001detachobj22
+    100456: default001detachobj22 1
+    100458: default001detachobj23
+    100460: default001detachobj23 1
+    100462: default001detachobj24
+    100464: default001detachobj24 1
+    100466: default001detachobj25
+    100468: default001detachobj25 1
+    100470: default001detachobj26
+    100472: default001detachobj26 1
+    100474: default001detachobj27
+    100476: default001detachobj27 1
+    100478: default001detachobj28
+    100480: default001detachobj28 1
+    100482: default001detachobj29
+    100484: default001detachobj29 1
+    100486: default001detachobj3
+    100488: default001detachobj3 1
+    100490: default001detachobj30
+    100492: default001detachobj30 1
+    100494: default001detachobj31
+    100496: default001detachobj31 1
+    100498: default001detachobj32
+    100500: default001detachobj32 1
+    100502: default001detachobj33
+    100504: default001detachobj33 1
+    100506: default001detachobj34
+    100508: default001detachobj34 1
+    100510: default001detachobj35
+    100512: default001detachobj35 1
+    100514: default001detachobj36
+    100516: default001detachobj36 1
+    100518: default001detachobj37
+    100520: default001detachobj37 1
+    100522: default001detachobj38
+    100524: default001detachobj38 1
+    100526: default001detachobj39
+    100528: default001detachobj39 1
+    100530: default001detachobj4
+    100532: default001detachobj4 1
+    100534: default001detachobj40
+    100536: default001detachobj40 1
+    100538: default001detachobj41
+    100540: default001detachobj41 1
+    100542: default001detachobj42
+    100544: default001detachobj42 1
+    100546: default001detachobj43
+    100548: default001detachobj43 1
+    100550: default001detachobj44
+    100552: default001detachobj44 1
+    100554: default001detachobj45
+    100556: default001detachobj45 1
+    100558: default001detachobj46
+    100560: default001detachobj46 1
+    100562: default001detachobj47
+    100564: default001detachobj47 1
+    100566: default001detachobj48
+    100568: default001detachobj48 1
+    100570: default001detachobj49
+    100572: default001detachobj49 1
+    100574: default001detachobj5
+    100576: default001detachobj5 1
+    100578: default001detachobj50
+    100580: default001detachobj50 1
+    100582: default001detachobj51
+    100584: default001detachobj51 1
+    100586: default001detachobj52
+    100588: default001detachobj52 1
+    100590: default001detachobj53
+    100592: default001detachobj53 1
+    100594: default001detachobj54
+    100596: default001detachobj54 1
+    100598: default001detachobj55
+    100600: default001detachobj55 1
+    100602: default001detachobj56
+    100604: default001detachobj56 1
+    100606: default001detachobj57
+    100608: default001detachobj57 1
+    100610: default001detachobj58
+    100612: default001detachobj58 1
+    100614: default001detachobj59
+    100616: default001detachobj59 1
+    100618: default001detachobj6
+    100620: default001detachobj6 1
+    100622: default001detachobj60
+    100624: default001detachobj60 1
+    100626: default001detachobj61
+    100628: default001detachobj61 1
+    100630: default001detachobj62
+    100632: default001detachobj62 1
+    100634: default001detachobj63
+    100636: default001detachobj63 1
+    100638: default001detachobj64
+    100640: default001detachobj64 1
+    100642: default001detachobj65
+    100644: default001detachobj65 1
+    100646: default001detachobj66
+    100648: default001detachobj66 1
+    100650: default001detachobj67
+    100652: default001detachobj67 1
+    100654: default001detachobj68
+    100656: default001detachobj68 1
+    100658: default001detachobj69
+    100660: default001detachobj69 1
+    100662: default001detachobj7
+    100664: default001detachobj7 1
+    100666: default001detachobj70
+    100668: default001detachobj70 1
+    100670: default001detachobj71
+    100672: default001detachobj71 1
+    100674: default001detachobj72
+    100676: default001detachobj72 1
+    100678: default001detachobj73
+    100680: default001detachobj73 1
+    100682: default001detachobj74
+    100684: default001detachobj74 1
+    100686: default001detachobj75
+    100688: default001detachobj75 1
+    100690: default001detachobj76
+    100692: default001detachobj76 1
+    100694: default001detachobj77
+    100696: default001detachobj77 1
+    100698: default001detachobj78
+    100700: default001detachobj78 1
+    100702: default001detachobj79
+    100704: default001detachobj79 1
+    100706: default001detachobj8
+    100708: default001detachobj8 1
+    100710: default001detachobj80
+    100712: default001detachobj80 1
+    100714: default001detachobj81
+    100716: default001detachobj81 1
+    100718: default001detachobj82
+    100720: default001detachobj82 1
+    100722: default001detachobj83
+    100724: default001detachobj83 1
+    100726: default001detachobj84
+    100728: default001detachobj84 1
+    100730: default001detachobj85
+    100732: default001detachobj85 1
+    100734: default001detachobj86
+    100736: default001detachobj86 1
+    100738: default001detachobj87
+    100740: default001detachobj87 1
+    100742: default001detachobj88
+    100744: default001detachobj88 1
+    100746: default001detachobj89
+    100748: default001detachobj89 1
+    100750: default001detachobj9
+    100752: default001detachobj9 1
+    100754: default001detachobj90
+    100756: default001detachobj90 1
+    100758: default001detachobj91
+    100760: default001detachobj91 1
+    100762: default001detachobj92
+    100764: default001detachobj92 1
+    100766: default001detachobj93
+    100768: default001detachobj93 1
+    100770: default001detachobj94
+    100772: default001detachobj94 1
+    100774: default001detachobj95
+    100776: default001detachobj95 1
+    100778: default001detachobj96
+    100780: default001detachobj96 1
+    100782: default001detachobj97
+    100784: default001detachobj97 1
+    100786: default001detachobj98
+    100788: default001detachobj98 1
+    100790: default001detachobj99
+    100792: default001detachobj99 1
+    100794: Plane001
+    400000: //RootNode
+    400002: default
+    400004: default001detachobj1
+    400006: default001detachobj1 1
+    400008: default001detachobj10
+    400010: default001detachobj10 1
+    400012: default001detachobj100
+    400014: default001detachobj100 1
+    400016: default001detachobj101
+    400018: default001detachobj101 1
+    400020: default001detachobj102
+    400022: default001detachobj102 1
+    400024: default001detachobj103
+    400026: default001detachobj103 1
+    400028: default001detachobj104
+    400030: default001detachobj104 1
+    400032: default001detachobj105
+    400034: default001detachobj105 1
+    400036: default001detachobj106
+    400038: default001detachobj106 1
+    400040: default001detachobj107
+    400042: default001detachobj107 1
+    400044: default001detachobj108
+    400046: default001detachobj108 1
+    400048: default001detachobj109
+    400050: default001detachobj109 1
+    400052: default001detachobj11
+    400054: default001detachobj11 1
+    400056: default001detachobj110
+    400058: default001detachobj110 1
+    400060: default001detachobj111
+    400062: default001detachobj111 1
+    400064: default001detachobj112
+    400066: default001detachobj112 1
+    400068: default001detachobj113
+    400070: default001detachobj113 1
+    400072: default001detachobj114
+    400074: default001detachobj114 1
+    400076: default001detachobj115
+    400078: default001detachobj115 1
+    400080: default001detachobj116
+    400082: default001detachobj116 1
+    400084: default001detachobj117
+    400086: default001detachobj117 1
+    400088: default001detachobj118
+    400090: default001detachobj118 1
+    400092: default001detachobj119
+    400094: default001detachobj119 1
+    400096: default001detachobj12
+    400098: default001detachobj12 1
+    400100: default001detachobj120
+    400102: default001detachobj120 1
+    400104: default001detachobj121
+    400106: default001detachobj121 1
+    400108: default001detachobj122
+    400110: default001detachobj122 1
+    400112: default001detachobj123
+    400114: default001detachobj123 1
+    400116: default001detachobj124
+    400118: default001detachobj124 1
+    400120: default001detachobj125
+    400122: default001detachobj125 1
+    400124: default001detachobj126
+    400126: default001detachobj126 1
+    400128: default001detachobj127
+    400130: default001detachobj127 1
+    400132: default001detachobj128
+    400134: default001detachobj128 1
+    400136: default001detachobj129
+    400138: default001detachobj129 1
+    400140: default001detachobj13
+    400142: default001detachobj13 1
+    400144: default001detachobj130
+    400146: default001detachobj130 1
+    400148: default001detachobj131
+    400150: default001detachobj131 1
+    400152: default001detachobj132
+    400154: default001detachobj132 1
+    400156: default001detachobj133
+    400158: default001detachobj133 1
+    400160: default001detachobj134
+    400162: default001detachobj134 1
+    400164: default001detachobj135
+    400166: default001detachobj135 1
+    400168: default001detachobj136
+    400170: default001detachobj136 1
+    400172: default001detachobj137
+    400174: default001detachobj137 1
+    400176: default001detachobj138
+    400178: default001detachobj138 1
+    400180: default001detachobj139
+    400182: default001detachobj139 1
+    400184: default001detachobj14
+    400186: default001detachobj14 1
+    400188: default001detachobj140
+    400190: default001detachobj140 1
+    400192: default001detachobj141
+    400194: default001detachobj141 1
+    400196: default001detachobj142
+    400198: default001detachobj142 1
+    400200: default001detachobj143
+    400202: default001detachobj143 1
+    400204: default001detachobj144
+    400206: default001detachobj144 1
+    400208: default001detachobj145
+    400210: default001detachobj145 1
+    400212: default001detachobj146
+    400214: default001detachobj146 1
+    400216: default001detachobj147
+    400218: default001detachobj147 1
+    400220: default001detachobj148
+    400222: default001detachobj148 1
+    400224: default001detachobj149
+    400226: default001detachobj149 1
+    400228: default001detachobj15
+    400230: default001detachobj15 1
+    400232: default001detachobj150
+    400234: default001detachobj150 1
+    400236: default001detachobj151
+    400238: default001detachobj151 1
+    400240: default001detachobj152
+    400242: default001detachobj152 1
+    400244: default001detachobj153
+    400246: default001detachobj153 1
+    400248: default001detachobj154
+    400250: default001detachobj154 1
+    400252: default001detachobj155
+    400254: default001detachobj155 1
+    400256: default001detachobj156
+    400258: default001detachobj156 1
+    400260: default001detachobj157
+    400262: default001detachobj157 1
+    400264: default001detachobj158
+    400266: default001detachobj158 1
+    400268: default001detachobj159
+    400270: default001detachobj159 1
+    400272: default001detachobj16
+    400274: default001detachobj16 1
+    400276: default001detachobj160
+    400278: default001detachobj160 1
+    400280: default001detachobj161
+    400282: default001detachobj161 1
+    400284: default001detachobj162
+    400286: default001detachobj162 1
+    400288: default001detachobj163
+    400290: default001detachobj163 1
+    400292: default001detachobj164
+    400294: default001detachobj164 1
+    400296: default001detachobj165
+    400298: default001detachobj165 1
+    400300: default001detachobj166
+    400302: default001detachobj166 1
+    400304: default001detachobj167
+    400306: default001detachobj167 1
+    400308: default001detachobj168
+    400310: default001detachobj168 1
+    400312: default001detachobj169
+    400314: default001detachobj169 1
+    400316: default001detachobj17
+    400318: default001detachobj17 1
+    400320: default001detachobj170
+    400322: default001detachobj170 1
+    400324: default001detachobj171
+    400326: default001detachobj171 1
+    400328: default001detachobj172
+    400330: default001detachobj172 1
+    400332: default001detachobj173
+    400334: default001detachobj173 1
+    400336: default001detachobj174
+    400338: default001detachobj174 1
+    400340: default001detachobj175
+    400342: default001detachobj175 1
+    400344: default001detachobj176
+    400346: default001detachobj176 1
+    400348: default001detachobj177
+    400350: default001detachobj177 1
+    400352: default001detachobj178
+    400354: default001detachobj178 1
+    400356: default001detachobj179
+    400358: default001detachobj179 1
+    400360: default001detachobj18
+    400362: default001detachobj18 1
+    400364: default001detachobj180
+    400366: default001detachobj180 1
+    400368: default001detachobj181
+    400370: default001detachobj181 1
+    400372: default001detachobj182
+    400374: default001detachobj182 1
+    400376: default001detachobj183
+    400378: default001detachobj183 1
+    400380: default001detachobj184
+    400382: default001detachobj184 1
+    400384: default001detachobj185
+    400386: default001detachobj185 1
+    400388: default001detachobj186
+    400390: default001detachobj186 1
+    400392: default001detachobj187
+    400394: default001detachobj187 1
+    400396: default001detachobj188
+    400398: default001detachobj188 1
+    400400: default001detachobj189
+    400402: default001detachobj189 1
+    400404: default001detachobj19
+    400406: default001detachobj19 1
+    400408: default001detachobj190
+    400410: default001detachobj190 1
+    400412: default001detachobj191
+    400414: default001detachobj191 1
+    400416: default001detachobj192
+    400418: default001detachobj192 1
+    400420: default001detachobj193
+    400422: default001detachobj194
+    400424: default001detachobj195
+    400426: default001detachobj196
+    400428: default001detachobj197
+    400430: default001detachobj198
+    400432: default001detachobj199
+    400434: default001detachobj2
+    400436: default001detachobj2 1
+    400438: default001detachobj20
+    400440: default001detachobj20 1
+    400442: default001detachobj200
+    400444: default001detachobj201
+    400446: default001detachobj202
+    400448: default001detachobj203
+    400450: default001detachobj21
+    400452: default001detachobj21 1
+    400454: default001detachobj22
+    400456: default001detachobj22 1
+    400458: default001detachobj23
+    400460: default001detachobj23 1
+    400462: default001detachobj24
+    400464: default001detachobj24 1
+    400466: default001detachobj25
+    400468: default001detachobj25 1
+    400470: default001detachobj26
+    400472: default001detachobj26 1
+    400474: default001detachobj27
+    400476: default001detachobj27 1
+    400478: default001detachobj28
+    400480: default001detachobj28 1
+    400482: default001detachobj29
+    400484: default001detachobj29 1
+    400486: default001detachobj3
+    400488: default001detachobj3 1
+    400490: default001detachobj30
+    400492: default001detachobj30 1
+    400494: default001detachobj31
+    400496: default001detachobj31 1
+    400498: default001detachobj32
+    400500: default001detachobj32 1
+    400502: default001detachobj33
+    400504: default001detachobj33 1
+    400506: default001detachobj34
+    400508: default001detachobj34 1
+    400510: default001detachobj35
+    400512: default001detachobj35 1
+    400514: default001detachobj36
+    400516: default001detachobj36 1
+    400518: default001detachobj37
+    400520: default001detachobj37 1
+    400522: default001detachobj38
+    400524: default001detachobj38 1
+    400526: default001detachobj39
+    400528: default001detachobj39 1
+    400530: default001detachobj4
+    400532: default001detachobj4 1
+    400534: default001detachobj40
+    400536: default001detachobj40 1
+    400538: default001detachobj41
+    400540: default001detachobj41 1
+    400542: default001detachobj42
+    400544: default001detachobj42 1
+    400546: default001detachobj43
+    400548: default001detachobj43 1
+    400550: default001detachobj44
+    400552: default001detachobj44 1
+    400554: default001detachobj45
+    400556: default001detachobj45 1
+    400558: default001detachobj46
+    400560: default001detachobj46 1
+    400562: default001detachobj47
+    400564: default001detachobj47 1
+    400566: default001detachobj48
+    400568: default001detachobj48 1
+    400570: default001detachobj49
+    400572: default001detachobj49 1
+    400574: default001detachobj5
+    400576: default001detachobj5 1
+    400578: default001detachobj50
+    400580: default001detachobj50 1
+    400582: default001detachobj51
+    400584: default001detachobj51 1
+    400586: default001detachobj52
+    400588: default001detachobj52 1
+    400590: default001detachobj53
+    400592: default001detachobj53 1
+    400594: default001detachobj54
+    400596: default001detachobj54 1
+    400598: default001detachobj55
+    400600: default001detachobj55 1
+    400602: default001detachobj56
+    400604: default001detachobj56 1
+    400606: default001detachobj57
+    400608: default001detachobj57 1
+    400610: default001detachobj58
+    400612: default001detachobj58 1
+    400614: default001detachobj59
+    400616: default001detachobj59 1
+    400618: default001detachobj6
+    400620: default001detachobj6 1
+    400622: default001detachobj60
+    400624: default001detachobj60 1
+    400626: default001detachobj61
+    400628: default001detachobj61 1
+    400630: default001detachobj62
+    400632: default001detachobj62 1
+    400634: default001detachobj63
+    400636: default001detachobj63 1
+    400638: default001detachobj64
+    400640: default001detachobj64 1
+    400642: default001detachobj65
+    400644: default001detachobj65 1
+    400646: default001detachobj66
+    400648: default001detachobj66 1
+    400650: default001detachobj67
+    400652: default001detachobj67 1
+    400654: default001detachobj68
+    400656: default001detachobj68 1
+    400658: default001detachobj69
+    400660: default001detachobj69 1
+    400662: default001detachobj7
+    400664: default001detachobj7 1
+    400666: default001detachobj70
+    400668: default001detachobj70 1
+    400670: default001detachobj71
+    400672: default001detachobj71 1
+    400674: default001detachobj72
+    400676: default001detachobj72 1
+    400678: default001detachobj73
+    400680: default001detachobj73 1
+    400682: default001detachobj74
+    400684: default001detachobj74 1
+    400686: default001detachobj75
+    400688: default001detachobj75 1
+    400690: default001detachobj76
+    400692: default001detachobj76 1
+    400694: default001detachobj77
+    400696: default001detachobj77 1
+    400698: default001detachobj78
+    400700: default001detachobj78 1
+    400702: default001detachobj79
+    400704: default001detachobj79 1
+    400706: default001detachobj8
+    400708: default001detachobj8 1
+    400710: default001detachobj80
+    400712: default001detachobj80 1
+    400714: default001detachobj81
+    400716: default001detachobj81 1
+    400718: default001detachobj82
+    400720: default001detachobj82 1
+    400722: default001detachobj83
+    400724: default001detachobj83 1
+    400726: default001detachobj84
+    400728: default001detachobj84 1
+    400730: default001detachobj85
+    400732: default001detachobj85 1
+    400734: default001detachobj86
+    400736: default001detachobj86 1
+    400738: default001detachobj87
+    400740: default001detachobj87 1
+    400742: default001detachobj88
+    400744: default001detachobj88 1
+    400746: default001detachobj89
+    400748: default001detachobj89 1
+    400750: default001detachobj9
+    400752: default001detachobj9 1
+    400754: default001detachobj90
+    400756: default001detachobj90 1
+    400758: default001detachobj91
+    400760: default001detachobj91 1
+    400762: default001detachobj92
+    400764: default001detachobj92 1
+    400766: default001detachobj93
+    400768: default001detachobj93 1
+    400770: default001detachobj94
+    400772: default001detachobj94 1
+    400774: default001detachobj95
+    400776: default001detachobj95 1
+    400778: default001detachobj96
+    400780: default001detachobj96 1
+    400782: default001detachobj97
+    400784: default001detachobj97 1
+    400786: default001detachobj98
+    400788: default001detachobj98 1
+    400790: default001detachobj99
+    400792: default001detachobj99 1
+    400794: Plane001
+    2300000: default
+    2300002: default001detachobj1
+    2300004: default001detachobj1 1
+    2300006: default001detachobj10
+    2300008: default001detachobj10 1
+    2300010: default001detachobj100
+    2300012: default001detachobj100 1
+    2300014: default001detachobj101
+    2300016: default001detachobj101 1
+    2300018: default001detachobj102
+    2300020: default001detachobj102 1
+    2300022: default001detachobj103
+    2300024: default001detachobj103 1
+    2300026: default001detachobj104
+    2300028: default001detachobj104 1
+    2300030: default001detachobj105
+    2300032: default001detachobj105 1
+    2300034: default001detachobj106
+    2300036: default001detachobj106 1
+    2300038: default001detachobj107
+    2300040: default001detachobj107 1
+    2300042: default001detachobj108
+    2300044: default001detachobj108 1
+    2300046: default001detachobj109
+    2300048: default001detachobj109 1
+    2300050: default001detachobj11
+    2300052: default001detachobj11 1
+    2300054: default001detachobj110
+    2300056: default001detachobj110 1
+    2300058: default001detachobj111
+    2300060: default001detachobj111 1
+    2300062: default001detachobj112
+    2300064: default001detachobj112 1
+    2300066: default001detachobj113
+    2300068: default001detachobj113 1
+    2300070: default001detachobj114
+    2300072: default001detachobj114 1
+    2300074: default001detachobj115
+    2300076: default001detachobj115 1
+    2300078: default001detachobj116
+    2300080: default001detachobj116 1
+    2300082: default001detachobj117
+    2300084: default001detachobj117 1
+    2300086: default001detachobj118
+    2300088: default001detachobj118 1
+    2300090: default001detachobj119
+    2300092: default001detachobj119 1
+    2300094: default001detachobj12
+    2300096: default001detachobj12 1
+    2300098: default001detachobj120
+    2300100: default001detachobj120 1
+    2300102: default001detachobj121
+    2300104: default001detachobj121 1
+    2300106: default001detachobj122
+    2300108: default001detachobj122 1
+    2300110: default001detachobj123
+    2300112: default001detachobj123 1
+    2300114: default001detachobj124
+    2300116: default001detachobj124 1
+    2300118: default001detachobj125
+    2300120: default001detachobj125 1
+    2300122: default001detachobj126
+    2300124: default001detachobj126 1
+    2300126: default001detachobj127
+    2300128: default001detachobj127 1
+    2300130: default001detachobj128
+    2300132: default001detachobj128 1
+    2300134: default001detachobj129
+    2300136: default001detachobj129 1
+    2300138: default001detachobj13
+    2300140: default001detachobj13 1
+    2300142: default001detachobj130
+    2300144: default001detachobj130 1
+    2300146: default001detachobj131
+    2300148: default001detachobj131 1
+    2300150: default001detachobj132
+    2300152: default001detachobj132 1
+    2300154: default001detachobj133
+    2300156: default001detachobj133 1
+    2300158: default001detachobj134
+    2300160: default001detachobj134 1
+    2300162: default001detachobj135
+    2300164: default001detachobj135 1
+    2300166: default001detachobj136
+    2300168: default001detachobj136 1
+    2300170: default001detachobj137
+    2300172: default001detachobj137 1
+    2300174: default001detachobj138
+    2300176: default001detachobj138 1
+    2300178: default001detachobj139
+    2300180: default001detachobj139 1
+    2300182: default001detachobj14
+    2300184: default001detachobj14 1
+    2300186: default001detachobj140
+    2300188: default001detachobj140 1
+    2300190: default001detachobj141
+    2300192: default001detachobj141 1
+    2300194: default001detachobj142
+    2300196: default001detachobj142 1
+    2300198: default001detachobj143
+    2300200: default001detachobj143 1
+    2300202: default001detachobj144
+    2300204: default001detachobj144 1
+    2300206: default001detachobj145
+    2300208: default001detachobj145 1
+    2300210: default001detachobj146
+    2300212: default001detachobj146 1
+    2300214: default001detachobj147
+    2300216: default001detachobj147 1
+    2300218: default001detachobj148
+    2300220: default001detachobj148 1
+    2300222: default001detachobj149
+    2300224: default001detachobj149 1
+    2300226: default001detachobj15
+    2300228: default001detachobj15 1
+    2300230: default001detachobj150
+    2300232: default001detachobj150 1
+    2300234: default001detachobj151
+    2300236: default001detachobj151 1
+    2300238: default001detachobj152
+    2300240: default001detachobj152 1
+    2300242: default001detachobj153
+    2300244: default001detachobj153 1
+    2300246: default001detachobj154
+    2300248: default001detachobj154 1
+    2300250: default001detachobj155
+    2300252: default001detachobj155 1
+    2300254: default001detachobj156
+    2300256: default001detachobj156 1
+    2300258: default001detachobj157
+    2300260: default001detachobj157 1
+    2300262: default001detachobj158
+    2300264: default001detachobj158 1
+    2300266: default001detachobj159
+    2300268: default001detachobj159 1
+    2300270: default001detachobj16
+    2300272: default001detachobj16 1
+    2300274: default001detachobj160
+    2300276: default001detachobj160 1
+    2300278: default001detachobj161
+    2300280: default001detachobj161 1
+    2300282: default001detachobj162
+    2300284: default001detachobj162 1
+    2300286: default001detachobj163
+    2300288: default001detachobj163 1
+    2300290: default001detachobj164
+    2300292: default001detachobj164 1
+    2300294: default001detachobj165
+    2300296: default001detachobj165 1
+    2300298: default001detachobj166
+    2300300: default001detachobj166 1
+    2300302: default001detachobj167
+    2300304: default001detachobj167 1
+    2300306: default001detachobj168
+    2300308: default001detachobj168 1
+    2300310: default001detachobj169
+    2300312: default001detachobj169 1
+    2300314: default001detachobj17
+    2300316: default001detachobj17 1
+    2300318: default001detachobj170
+    2300320: default001detachobj170 1
+    2300322: default001detachobj171
+    2300324: default001detachobj171 1
+    2300326: default001detachobj172
+    2300328: default001detachobj172 1
+    2300330: default001detachobj173
+    2300332: default001detachobj173 1
+    2300334: default001detachobj174
+    2300336: default001detachobj174 1
+    2300338: default001detachobj175
+    2300340: default001detachobj175 1
+    2300342: default001detachobj176
+    2300344: default001detachobj176 1
+    2300346: default001detachobj177
+    2300348: default001detachobj177 1
+    2300350: default001detachobj178
+    2300352: default001detachobj178 1
+    2300354: default001detachobj179
+    2300356: default001detachobj179 1
+    2300358: default001detachobj18
+    2300360: default001detachobj18 1
+    2300362: default001detachobj180
+    2300364: default001detachobj180 1
+    2300366: default001detachobj181
+    2300368: default001detachobj181 1
+    2300370: default001detachobj182
+    2300372: default001detachobj182 1
+    2300374: default001detachobj183
+    2300376: default001detachobj183 1
+    2300378: default001detachobj184
+    2300380: default001detachobj184 1
+    2300382: default001detachobj185
+    2300384: default001detachobj185 1
+    2300386: default001detachobj186
+    2300388: default001detachobj186 1
+    2300390: default001detachobj187
+    2300392: default001detachobj187 1
+    2300394: default001detachobj188
+    2300396: default001detachobj188 1
+    2300398: default001detachobj189
+    2300400: default001detachobj189 1
+    2300402: default001detachobj19
+    2300404: default001detachobj19 1
+    2300406: default001detachobj190
+    2300408: default001detachobj190 1
+    2300410: default001detachobj191
+    2300412: default001detachobj191 1
+    2300414: default001detachobj192
+    2300416: default001detachobj192 1
+    2300418: default001detachobj193
+    2300420: default001detachobj194
+    2300422: default001detachobj195
+    2300424: default001detachobj196
+    2300426: default001detachobj197
+    2300428: default001detachobj198
+    2300430: default001detachobj199
+    2300432: default001detachobj2
+    2300434: default001detachobj2 1
+    2300436: default001detachobj20
+    2300438: default001detachobj20 1
+    2300440: default001detachobj200
+    2300442: default001detachobj201
+    2300444: default001detachobj202
+    2300446: default001detachobj203
+    2300448: default001detachobj21
+    2300450: default001detachobj21 1
+    2300452: default001detachobj22
+    2300454: default001detachobj22 1
+    2300456: default001detachobj23
+    2300458: default001detachobj23 1
+    2300460: default001detachobj24
+    2300462: default001detachobj24 1
+    2300464: default001detachobj25
+    2300466: default001detachobj25 1
+    2300468: default001detachobj26
+    2300470: default001detachobj26 1
+    2300472: default001detachobj27
+    2300474: default001detachobj27 1
+    2300476: default001detachobj28
+    2300478: default001detachobj28 1
+    2300480: default001detachobj29
+    2300482: default001detachobj29 1
+    2300484: default001detachobj3
+    2300486: default001detachobj3 1
+    2300488: default001detachobj30
+    2300490: default001detachobj30 1
+    2300492: default001detachobj31
+    2300494: default001detachobj31 1
+    2300496: default001detachobj32
+    2300498: default001detachobj32 1
+    2300500: default001detachobj33
+    2300502: default001detachobj33 1
+    2300504: default001detachobj34
+    2300506: default001detachobj34 1
+    2300508: default001detachobj35
+    2300510: default001detachobj35 1
+    2300512: default001detachobj36
+    2300514: default001detachobj36 1
+    2300516: default001detachobj37
+    2300518: default001detachobj37 1
+    2300520: default001detachobj38
+    2300522: default001detachobj38 1
+    2300524: default001detachobj39
+    2300526: default001detachobj39 1
+    2300528: default001detachobj4
+    2300530: default001detachobj4 1
+    2300532: default001detachobj40
+    2300534: default001detachobj40 1
+    2300536: default001detachobj41
+    2300538: default001detachobj41 1
+    2300540: default001detachobj42
+    2300542: default001detachobj42 1
+    2300544: default001detachobj43
+    2300546: default001detachobj43 1
+    2300548: default001detachobj44
+    2300550: default001detachobj44 1
+    2300552: default001detachobj45
+    2300554: default001detachobj45 1
+    2300556: default001detachobj46
+    2300558: default001detachobj46 1
+    2300560: default001detachobj47
+    2300562: default001detachobj47 1
+    2300564: default001detachobj48
+    2300566: default001detachobj48 1
+    2300568: default001detachobj49
+    2300570: default001detachobj49 1
+    2300572: default001detachobj5
+    2300574: default001detachobj5 1
+    2300576: default001detachobj50
+    2300578: default001detachobj50 1
+    2300580: default001detachobj51
+    2300582: default001detachobj51 1
+    2300584: default001detachobj52
+    2300586: default001detachobj52 1
+    2300588: default001detachobj53
+    2300590: default001detachobj53 1
+    2300592: default001detachobj54
+    2300594: default001detachobj54 1
+    2300596: default001detachobj55
+    2300598: default001detachobj55 1
+    2300600: default001detachobj56
+    2300602: default001detachobj56 1
+    2300604: default001detachobj57
+    2300606: default001detachobj57 1
+    2300608: default001detachobj58
+    2300610: default001detachobj58 1
+    2300612: default001detachobj59
+    2300614: default001detachobj59 1
+    2300616: default001detachobj6
+    2300618: default001detachobj6 1
+    2300620: default001detachobj60
+    2300622: default001detachobj60 1
+    2300624: default001detachobj61
+    2300626: default001detachobj61 1
+    2300628: default001detachobj62
+    2300630: default001detachobj62 1
+    2300632: default001detachobj63
+    2300634: default001detachobj63 1
+    2300636: default001detachobj64
+    2300638: default001detachobj64 1
+    2300640: default001detachobj65
+    2300642: default001detachobj65 1
+    2300644: default001detachobj66
+    2300646: default001detachobj66 1
+    2300648: default001detachobj67
+    2300650: default001detachobj67 1
+    2300652: default001detachobj68
+    2300654: default001detachobj68 1
+    2300656: default001detachobj69
+    2300658: default001detachobj69 1
+    2300660: default001detachobj7
+    2300662: default001detachobj7 1
+    2300664: default001detachobj70
+    2300666: default001detachobj70 1
+    2300668: default001detachobj71
+    2300670: default001detachobj71 1
+    2300672: default001detachobj72
+    2300674: default001detachobj72 1
+    2300676: default001detachobj73
+    2300678: default001detachobj73 1
+    2300680: default001detachobj74
+    2300682: default001detachobj74 1
+    2300684: default001detachobj75
+    2300686: default001detachobj75 1
+    2300688: default001detachobj76
+    2300690: default001detachobj76 1
+    2300692: default001detachobj77
+    2300694: default001detachobj77 1
+    2300696: default001detachobj78
+    2300698: default001detachobj78 1
+    2300700: default001detachobj79
+    2300702: default001detachobj79 1
+    2300704: default001detachobj8
+    2300706: default001detachobj8 1
+    2300708: default001detachobj80
+    2300710: default001detachobj80 1
+    2300712: default001detachobj81
+    2300714: default001detachobj81 1
+    2300716: default001detachobj82
+    2300718: default001detachobj82 1
+    2300720: default001detachobj83
+    2300722: default001detachobj83 1
+    2300724: default001detachobj84
+    2300726: default001detachobj84 1
+    2300728: default001detachobj85
+    2300730: default001detachobj85 1
+    2300732: default001detachobj86
+    2300734: default001detachobj86 1
+    2300736: default001detachobj87
+    2300738: default001detachobj87 1
+    2300740: default001detachobj88
+    2300742: default001detachobj88 1
+    2300744: default001detachobj89
+    2300746: default001detachobj89 1
+    2300748: default001detachobj9
+    2300750: default001detachobj9 1
+    2300752: default001detachobj90
+    2300754: default001detachobj90 1
+    2300756: default001detachobj91
+    2300758: default001detachobj91 1
+    2300760: default001detachobj92
+    2300762: default001detachobj92 1
+    2300764: default001detachobj93
+    2300766: default001detachobj93 1
+    2300768: default001detachobj94
+    2300770: default001detachobj94 1
+    2300772: default001detachobj95
+    2300774: default001detachobj95 1
+    2300776: default001detachobj96
+    2300778: default001detachobj96 1
+    2300780: default001detachobj97
+    2300782: default001detachobj97 1
+    2300784: default001detachobj98
+    2300786: default001detachobj98 1
+    2300788: default001detachobj99
+    2300790: default001detachobj99 1
+    2300792: Plane001
+    3300000: default
+    3300002: default001detachobj1
+    3300004: default001detachobj1 1
+    3300006: default001detachobj10
+    3300008: default001detachobj10 1
+    3300010: default001detachobj100
+    3300012: default001detachobj100 1
+    3300014: default001detachobj101
+    3300016: default001detachobj101 1
+    3300018: default001detachobj102
+    3300020: default001detachobj102 1
+    3300022: default001detachobj103
+    3300024: default001detachobj103 1
+    3300026: default001detachobj104
+    3300028: default001detachobj104 1
+    3300030: default001detachobj105
+    3300032: default001detachobj105 1
+    3300034: default001detachobj106
+    3300036: default001detachobj106 1
+    3300038: default001detachobj107
+    3300040: default001detachobj107 1
+    3300042: default001detachobj108
+    3300044: default001detachobj108 1
+    3300046: default001detachobj109
+    3300048: default001detachobj109 1
+    3300050: default001detachobj11
+    3300052: default001detachobj11 1
+    3300054: default001detachobj110
+    3300056: default001detachobj110 1
+    3300058: default001detachobj111
+    3300060: default001detachobj111 1
+    3300062: default001detachobj112
+    3300064: default001detachobj112 1
+    3300066: default001detachobj113
+    3300068: default001detachobj113 1
+    3300070: default001detachobj114
+    3300072: default001detachobj114 1
+    3300074: default001detachobj115
+    3300076: default001detachobj115 1
+    3300078: default001detachobj116
+    3300080: default001detachobj116 1
+    3300082: default001detachobj117
+    3300084: default001detachobj117 1
+    3300086: default001detachobj118
+    3300088: default001detachobj118 1
+    3300090: default001detachobj119
+    3300092: default001detachobj119 1
+    3300094: default001detachobj12
+    3300096: default001detachobj12 1
+    3300098: default001detachobj120
+    3300100: default001detachobj120 1
+    3300102: default001detachobj121
+    3300104: default001detachobj121 1
+    3300106: default001detachobj122
+    3300108: default001detachobj122 1
+    3300110: default001detachobj123
+    3300112: default001detachobj123 1
+    3300114: default001detachobj124
+    3300116: default001detachobj124 1
+    3300118: default001detachobj125
+    3300120: default001detachobj125 1
+    3300122: default001detachobj126
+    3300124: default001detachobj126 1
+    3300126: default001detachobj127
+    3300128: default001detachobj127 1
+    3300130: default001detachobj128
+    3300132: default001detachobj128 1
+    3300134: default001detachobj129
+    3300136: default001detachobj129 1
+    3300138: default001detachobj13
+    3300140: default001detachobj13 1
+    3300142: default001detachobj130
+    3300144: default001detachobj130 1
+    3300146: default001detachobj131
+    3300148: default001detachobj131 1
+    3300150: default001detachobj132
+    3300152: default001detachobj132 1
+    3300154: default001detachobj133
+    3300156: default001detachobj133 1
+    3300158: default001detachobj134
+    3300160: default001detachobj134 1
+    3300162: default001detachobj135
+    3300164: default001detachobj135 1
+    3300166: default001detachobj136
+    3300168: default001detachobj136 1
+    3300170: default001detachobj137
+    3300172: default001detachobj137 1
+    3300174: default001detachobj138
+    3300176: default001detachobj138 1
+    3300178: default001detachobj139
+    3300180: default001detachobj139 1
+    3300182: default001detachobj14
+    3300184: default001detachobj14 1
+    3300186: default001detachobj140
+    3300188: default001detachobj140 1
+    3300190: default001detachobj141
+    3300192: default001detachobj141 1
+    3300194: default001detachobj142
+    3300196: default001detachobj142 1
+    3300198: default001detachobj143
+    3300200: default001detachobj143 1
+    3300202: default001detachobj144
+    3300204: default001detachobj144 1
+    3300206: default001detachobj145
+    3300208: default001detachobj145 1
+    3300210: default001detachobj146
+    3300212: default001detachobj146 1
+    3300214: default001detachobj147
+    3300216: default001detachobj147 1
+    3300218: default001detachobj148
+    3300220: default001detachobj148 1
+    3300222: default001detachobj149
+    3300224: default001detachobj149 1
+    3300226: default001detachobj15
+    3300228: default001detachobj15 1
+    3300230: default001detachobj150
+    3300232: default001detachobj150 1
+    3300234: default001detachobj151
+    3300236: default001detachobj151 1
+    3300238: default001detachobj152
+    3300240: default001detachobj152 1
+    3300242: default001detachobj153
+    3300244: default001detachobj153 1
+    3300246: default001detachobj154
+    3300248: default001detachobj154 1
+    3300250: default001detachobj155
+    3300252: default001detachobj155 1
+    3300254: default001detachobj156
+    3300256: default001detachobj156 1
+    3300258: default001detachobj157
+    3300260: default001detachobj157 1
+    3300262: default001detachobj158
+    3300264: default001detachobj158 1
+    3300266: default001detachobj159
+    3300268: default001detachobj159 1
+    3300270: default001detachobj16
+    3300272: default001detachobj16 1
+    3300274: default001detachobj160
+    3300276: default001detachobj160 1
+    3300278: default001detachobj161
+    3300280: default001detachobj161 1
+    3300282: default001detachobj162
+    3300284: default001detachobj162 1
+    3300286: default001detachobj163
+    3300288: default001detachobj163 1
+    3300290: default001detachobj164
+    3300292: default001detachobj164 1
+    3300294: default001detachobj165
+    3300296: default001detachobj165 1
+    3300298: default001detachobj166
+    3300300: default001detachobj166 1
+    3300302: default001detachobj167
+    3300304: default001detachobj167 1
+    3300306: default001detachobj168
+    3300308: default001detachobj168 1
+    3300310: default001detachobj169
+    3300312: default001detachobj169 1
+    3300314: default001detachobj17
+    3300316: default001detachobj17 1
+    3300318: default001detachobj170
+    3300320: default001detachobj170 1
+    3300322: default001detachobj171
+    3300324: default001detachobj171 1
+    3300326: default001detachobj172
+    3300328: default001detachobj172 1
+    3300330: default001detachobj173
+    3300332: default001detachobj173 1
+    3300334: default001detachobj174
+    3300336: default001detachobj174 1
+    3300338: default001detachobj175
+    3300340: default001detachobj175 1
+    3300342: default001detachobj176
+    3300344: default001detachobj176 1
+    3300346: default001detachobj177
+    3300348: default001detachobj177 1
+    3300350: default001detachobj178
+    3300352: default001detachobj178 1
+    3300354: default001detachobj179
+    3300356: default001detachobj179 1
+    3300358: default001detachobj18
+    3300360: default001detachobj18 1
+    3300362: default001detachobj180
+    3300364: default001detachobj180 1
+    3300366: default001detachobj181
+    3300368: default001detachobj181 1
+    3300370: default001detachobj182
+    3300372: default001detachobj182 1
+    3300374: default001detachobj183
+    3300376: default001detachobj183 1
+    3300378: default001detachobj184
+    3300380: default001detachobj184 1
+    3300382: default001detachobj185
+    3300384: default001detachobj185 1
+    3300386: default001detachobj186
+    3300388: default001detachobj186 1
+    3300390: default001detachobj187
+    3300392: default001detachobj187 1
+    3300394: default001detachobj188
+    3300396: default001detachobj188 1
+    3300398: default001detachobj189
+    3300400: default001detachobj189 1
+    3300402: default001detachobj19
+    3300404: default001detachobj19 1
+    3300406: default001detachobj190
+    3300408: default001detachobj190 1
+    3300410: default001detachobj191
+    3300412: default001detachobj191 1
+    3300414: default001detachobj192
+    3300416: default001detachobj192 1
+    3300418: default001detachobj193
+    3300420: default001detachobj194
+    3300422: default001detachobj195
+    3300424: default001detachobj196
+    3300426: default001detachobj197
+    3300428: default001detachobj198
+    3300430: default001detachobj199
+    3300432: default001detachobj2
+    3300434: default001detachobj2 1
+    3300436: default001detachobj20
+    3300438: default001detachobj20 1
+    3300440: default001detachobj200
+    3300442: default001detachobj201
+    3300444: default001detachobj202
+    3300446: default001detachobj203
+    3300448: default001detachobj21
+    3300450: default001detachobj21 1
+    3300452: default001detachobj22
+    3300454: default001detachobj22 1
+    3300456: default001detachobj23
+    3300458: default001detachobj23 1
+    3300460: default001detachobj24
+    3300462: default001detachobj24 1
+    3300464: default001detachobj25
+    3300466: default001detachobj25 1
+    3300468: default001detachobj26
+    3300470: default001detachobj26 1
+    3300472: default001detachobj27
+    3300474: default001detachobj27 1
+    3300476: default001detachobj28
+    3300478: default001detachobj28 1
+    3300480: default001detachobj29
+    3300482: default001detachobj29 1
+    3300484: default001detachobj3
+    3300486: default001detachobj3 1
+    3300488: default001detachobj30
+    3300490: default001detachobj30 1
+    3300492: default001detachobj31
+    3300494: default001detachobj31 1
+    3300496: default001detachobj32
+    3300498: default001detachobj32 1
+    3300500: default001detachobj33
+    3300502: default001detachobj33 1
+    3300504: default001detachobj34
+    3300506: default001detachobj34 1
+    3300508: default001detachobj35
+    3300510: default001detachobj35 1
+    3300512: default001detachobj36
+    3300514: default001detachobj36 1
+    3300516: default001detachobj37
+    3300518: default001detachobj37 1
+    3300520: default001detachobj38
+    3300522: default001detachobj38 1
+    3300524: default001detachobj39
+    3300526: default001detachobj39 1
+    3300528: default001detachobj4
+    3300530: default001detachobj4 1
+    3300532: default001detachobj40
+    3300534: default001detachobj40 1
+    3300536: default001detachobj41
+    3300538: default001detachobj41 1
+    3300540: default001detachobj42
+    3300542: default001detachobj42 1
+    3300544: default001detachobj43
+    3300546: default001detachobj43 1
+    3300548: default001detachobj44
+    3300550: default001detachobj44 1
+    3300552: default001detachobj45
+    3300554: default001detachobj45 1
+    3300556: default001detachobj46
+    3300558: default001detachobj46 1
+    3300560: default001detachobj47
+    3300562: default001detachobj47 1
+    3300564: default001detachobj48
+    3300566: default001detachobj48 1
+    3300568: default001detachobj49
+    3300570: default001detachobj49 1
+    3300572: default001detachobj5
+    3300574: default001detachobj5 1
+    3300576: default001detachobj50
+    3300578: default001detachobj50 1
+    3300580: default001detachobj51
+    3300582: default001detachobj51 1
+    3300584: default001detachobj52
+    3300586: default001detachobj52 1
+    3300588: default001detachobj53
+    3300590: default001detachobj53 1
+    3300592: default001detachobj54
+    3300594: default001detachobj54 1
+    3300596: default001detachobj55
+    3300598: default001detachobj55 1
+    3300600: default001detachobj56
+    3300602: default001detachobj56 1
+    3300604: default001detachobj57
+    3300606: default001detachobj57 1
+    3300608: default001detachobj58
+    3300610: default001detachobj58 1
+    3300612: default001detachobj59
+    3300614: default001detachobj59 1
+    3300616: default001detachobj6
+    3300618: default001detachobj6 1
+    3300620: default001detachobj60
+    3300622: default001detachobj60 1
+    3300624: default001detachobj61
+    3300626: default001detachobj61 1
+    3300628: default001detachobj62
+    3300630: default001detachobj62 1
+    3300632: default001detachobj63
+    3300634: default001detachobj63 1
+    3300636: default001detachobj64
+    3300638: default001detachobj64 1
+    3300640: default001detachobj65
+    3300642: default001detachobj65 1
+    3300644: default001detachobj66
+    3300646: default001detachobj66 1
+    3300648: default001detachobj67
+    3300650: default001detachobj67 1
+    3300652: default001detachobj68
+    3300654: default001detachobj68 1
+    3300656: default001detachobj69
+    3300658: default001detachobj69 1
+    3300660: default001detachobj7
+    3300662: default001detachobj7 1
+    3300664: default001detachobj70
+    3300666: default001detachobj70 1
+    3300668: default001detachobj71
+    3300670: default001detachobj71 1
+    3300672: default001detachobj72
+    3300674: default001detachobj72 1
+    3300676: default001detachobj73
+    3300678: default001detachobj73 1
+    3300680: default001detachobj74
+    3300682: default001detachobj74 1
+    3300684: default001detachobj75
+    3300686: default001detachobj75 1
+    3300688: default001detachobj76
+    3300690: default001detachobj76 1
+    3300692: default001detachobj77
+    3300694: default001detachobj77 1
+    3300696: default001detachobj78
+    3300698: default001detachobj78 1
+    3300700: default001detachobj79
+    3300702: default001detachobj79 1
+    3300704: default001detachobj8
+    3300706: default001detachobj8 1
+    3300708: default001detachobj80
+    3300710: default001detachobj80 1
+    3300712: default001detachobj81
+    3300714: default001detachobj81 1
+    3300716: default001detachobj82
+    3300718: default001detachobj82 1
+    3300720: default001detachobj83
+    3300722: default001detachobj83 1
+    3300724: default001detachobj84
+    3300726: default001detachobj84 1
+    3300728: default001detachobj85
+    3300730: default001detachobj85 1
+    3300732: default001detachobj86
+    3300734: default001detachobj86 1
+    3300736: default001detachobj87
+    3300738: default001detachobj87 1
+    3300740: default001detachobj88
+    3300742: default001detachobj88 1
+    3300744: default001detachobj89
+    3300746: default001detachobj89 1
+    3300748: default001detachobj9
+    3300750: default001detachobj9 1
+    3300752: default001detachobj90
+    3300754: default001detachobj90 1
+    3300756: default001detachobj91
+    3300758: default001detachobj91 1
+    3300760: default001detachobj92
+    3300762: default001detachobj92 1
+    3300764: default001detachobj93
+    3300766: default001detachobj93 1
+    3300768: default001detachobj94
+    3300770: default001detachobj94 1
+    3300772: default001detachobj95
+    3300774: default001detachobj95 1
+    3300776: default001detachobj96
+    3300778: default001detachobj96 1
+    3300780: default001detachobj97
+    3300782: default001detachobj97 1
+    3300784: default001detachobj98
+    3300786: default001detachobj98 1
+    3300788: default001detachobj99
+    3300790: default001detachobj99 1
+    3300792: Plane001
+    4300000: default
+    4300002: default001detachobj203
+    4300004: default001detachobj202
+    4300006: default001detachobj201
+    4300008: default001detachobj200
+    4300010: default001detachobj199
+    4300012: default001detachobj198
+    4300014: default001detachobj197
+    4300016: default001detachobj196
+    4300018: default001detachobj195
+    4300020: default001detachobj194
+    4300022: default001detachobj193
+    4300024: default001detachobj192
+    4300026: default001detachobj191
+    4300028: default001detachobj190
+    4300030: default001detachobj189
+    4300032: default001detachobj188
+    4300034: default001detachobj187
+    4300036: default001detachobj186
+    4300038: default001detachobj185
+    4300040: default001detachobj184
+    4300042: default001detachobj183
+    4300044: default001detachobj182
+    4300046: default001detachobj181
+    4300048: default001detachobj180
+    4300050: default001detachobj179
+    4300052: default001detachobj178
+    4300054: default001detachobj177
+    4300056: default001detachobj176
+    4300058: default001detachobj175
+    4300060: default001detachobj174
+    4300062: default001detachobj173
+    4300064: default001detachobj172
+    4300066: default001detachobj171
+    4300068: default001detachobj170
+    4300070: default001detachobj169
+    4300072: default001detachobj168
+    4300074: default001detachobj167
+    4300076: default001detachobj166
+    4300078: default001detachobj165
+    4300080: default001detachobj164
+    4300082: default001detachobj163
+    4300084: default001detachobj162
+    4300086: default001detachobj161
+    4300088: default001detachobj160
+    4300090: default001detachobj159
+    4300092: default001detachobj158
+    4300094: default001detachobj157
+    4300096: default001detachobj156
+    4300098: default001detachobj155
+    4300100: default001detachobj154
+    4300102: default001detachobj153
+    4300104: default001detachobj152
+    4300106: default001detachobj151
+    4300108: default001detachobj150
+    4300110: default001detachobj149
+    4300112: default001detachobj148
+    4300114: default001detachobj147
+    4300116: default001detachobj146
+    4300118: default001detachobj145
+    4300120: default001detachobj144
+    4300122: default001detachobj143
+    4300124: default001detachobj142
+    4300126: default001detachobj141
+    4300128: default001detachobj140
+    4300130: default001detachobj139
+    4300132: default001detachobj138
+    4300134: default001detachobj137
+    4300136: default001detachobj136
+    4300138: default001detachobj135
+    4300140: default001detachobj134
+    4300142: default001detachobj133
+    4300144: default001detachobj132
+    4300146: default001detachobj131
+    4300148: default001detachobj130
+    4300150: default001detachobj129
+    4300152: default001detachobj128
+    4300154: default001detachobj127
+    4300156: default001detachobj126
+    4300158: default001detachobj125
+    4300160: default001detachobj124
+    4300162: default001detachobj123
+    4300164: default001detachobj122
+    4300166: default001detachobj121
+    4300168: default001detachobj120
+    4300170: default001detachobj119
+    4300172: default001detachobj118
+    4300174: default001detachobj117
+    4300176: default001detachobj116
+    4300178: default001detachobj115
+    4300180: default001detachobj114
+    4300182: default001detachobj113
+    4300184: default001detachobj112
+    4300186: default001detachobj111
+    4300188: default001detachobj110
+    4300190: default001detachobj109
+    4300192: default001detachobj108
+    4300194: default001detachobj107
+    4300196: default001detachobj106
+    4300198: default001detachobj105
+    4300200: default001detachobj104
+    4300202: default001detachobj103
+    4300204: default001detachobj102
+    4300206: default001detachobj101
+    4300208: default001detachobj100
+    4300210: default001detachobj99
+    4300212: default001detachobj98
+    4300214: default001detachobj97
+    4300216: default001detachobj96
+    4300218: default001detachobj95
+    4300220: default001detachobj94
+    4300222: default001detachobj93
+    4300224: default001detachobj92
+    4300226: default001detachobj91
+    4300228: default001detachobj90
+    4300230: default001detachobj89
+    4300232: default001detachobj88
+    4300234: default001detachobj87
+    4300236: default001detachobj86
+    4300238: default001detachobj85
+    4300240: default001detachobj84
+    4300242: default001detachobj83
+    4300244: default001detachobj82
+    4300246: default001detachobj81
+    4300248: default001detachobj80
+    4300250: default001detachobj79
+    4300252: default001detachobj78
+    4300254: default001detachobj77
+    4300256: default001detachobj76
+    4300258: default001detachobj75
+    4300260: default001detachobj74
+    4300262: default001detachobj73
+    4300264: default001detachobj72
+    4300266: default001detachobj71
+    4300268: default001detachobj70
+    4300270: default001detachobj69
+    4300272: default001detachobj68
+    4300274: default001detachobj67
+    4300276: default001detachobj66
+    4300278: default001detachobj65
+    4300280: default001detachobj64
+    4300282: default001detachobj63
+    4300284: default001detachobj62
+    4300286: default001detachobj61
+    4300288: default001detachobj60
+    4300290: default001detachobj59
+    4300292: default001detachobj58
+    4300294: default001detachobj57
+    4300296: default001detachobj56
+    4300298: default001detachobj55
+    4300300: default001detachobj54
+    4300302: default001detachobj53
+    4300304: default001detachobj52
+    4300306: default001detachobj51
+    4300308: default001detachobj50
+    4300310: default001detachobj49
+    4300312: default001detachobj48
+    4300314: default001detachobj47
+    4300316: default001detachobj46
+    4300318: default001detachobj45
+    4300320: default001detachobj44
+    4300322: default001detachobj43
+    4300324: default001detachobj42
+    4300326: default001detachobj41
+    4300328: default001detachobj40
+    4300330: default001detachobj39
+    4300332: default001detachobj38
+    4300334: default001detachobj37
+    4300336: default001detachobj36
+    4300338: default001detachobj35
+    4300340: default001detachobj34
+    4300342: default001detachobj33
+    4300344: default001detachobj32
+    4300346: default001detachobj31
+    4300348: default001detachobj30
+    4300350: default001detachobj29
+    4300352: default001detachobj28
+    4300354: default001detachobj27
+    4300356: default001detachobj26
+    4300358: default001detachobj25
+    4300360: default001detachobj24
+    4300362: default001detachobj23
+    4300364: default001detachobj22
+    4300366: default001detachobj21
+    4300368: default001detachobj20
+    4300370: default001detachobj19
+    4300372: default001detachobj18
+    4300374: default001detachobj17
+    4300376: default001detachobj16
+    4300378: default001detachobj15
+    4300380: default001detachobj14
+    4300382: default001detachobj13
+    4300384: default001detachobj12
+    4300386: default001detachobj11
+    4300388: default001detachobj10
+    4300390: default001detachobj9
+    4300392: default001detachobj8
+    4300394: default001detachobj7
+    4300396: default001detachobj6
+    4300398: default001detachobj5
+    4300400: default001detachobj4
+    4300402: default001detachobj3
+    4300404: default001detachobj2
+    4300406: default001detachobj1
+    4300408: default001detachobj192
+    4300410: default001detachobj191
+    4300412: default001detachobj190
+    4300414: default001detachobj189
+    4300416: default001detachobj188
+    4300418: default001detachobj187
+    4300420: default001detachobj186
+    4300422: default001detachobj185
+    4300424: default001detachobj184
+    4300426: default001detachobj183
+    4300428: default001detachobj182
+    4300430: default001detachobj181
+    4300432: default001detachobj180
+    4300434: default001detachobj179
+    4300436: default001detachobj178
+    4300438: default001detachobj177
+    4300440: default001detachobj176
+    4300442: default001detachobj175
+    4300444: default001detachobj174
+    4300446: default001detachobj173
+    4300448: default001detachobj172
+    4300450: default001detachobj171
+    4300452: default001detachobj170
+    4300454: default001detachobj169
+    4300456: default001detachobj168
+    4300458: default001detachobj167
+    4300460: default001detachobj166
+    4300462: default001detachobj165
+    4300464: default001detachobj164
+    4300466: default001detachobj163
+    4300468: default001detachobj162
+    4300470: default001detachobj161
+    4300472: default001detachobj160
+    4300474: default001detachobj159
+    4300476: default001detachobj158
+    4300478: default001detachobj157
+    4300480: default001detachobj156
+    4300482: default001detachobj155
+    4300484: default001detachobj154
+    4300486: default001detachobj153
+    4300488: default001detachobj152
+    4300490: default001detachobj151
+    4300492: default001detachobj150
+    4300494: default001detachobj149
+    4300496: default001detachobj148
+    4300498: default001detachobj147
+    4300500: default001detachobj146
+    4300502: default001detachobj145
+    4300504: default001detachobj144
+    4300506: default001detachobj143
+    4300508: default001detachobj142
+    4300510: default001detachobj141
+    4300512: default001detachobj140
+    4300514: default001detachobj139
+    4300516: default001detachobj138
+    4300518: default001detachobj137
+    4300520: default001detachobj136
+    4300522: default001detachobj135
+    4300524: default001detachobj134
+    4300526: default001detachobj133
+    4300528: default001detachobj132
+    4300530: default001detachobj131
+    4300532: default001detachobj130
+    4300534: default001detachobj129
+    4300536: default001detachobj128
+    4300538: default001detachobj127
+    4300540: default001detachobj126
+    4300542: default001detachobj125
+    4300544: default001detachobj124
+    4300546: default001detachobj123
+    4300548: default001detachobj122
+    4300550: default001detachobj121
+    4300552: default001detachobj120
+    4300554: default001detachobj119
+    4300556: default001detachobj118
+    4300558: default001detachobj117
+    4300560: default001detachobj116
+    4300562: default001detachobj115
+    4300564: default001detachobj114
+    4300566: default001detachobj113
+    4300568: default001detachobj112
+    4300570: default001detachobj111
+    4300572: default001detachobj110
+    4300574: default001detachobj109
+    4300576: default001detachobj108
+    4300578: default001detachobj107
+    4300580: default001detachobj106
+    4300582: default001detachobj105
+    4300584: default001detachobj104
+    4300586: default001detachobj103
+    4300588: default001detachobj102
+    4300590: default001detachobj101
+    4300592: default001detachobj100
+    4300594: default001detachobj99
+    4300596: default001detachobj98
+    4300598: default001detachobj97
+    4300600: default001detachobj96
+    4300602: default001detachobj95
+    4300604: default001detachobj94
+    4300606: default001detachobj93
+    4300608: default001detachobj92
+    4300610: default001detachobj91
+    4300612: default001detachobj90
+    4300614: default001detachobj89
+    4300616: default001detachobj88
+    4300618: default001detachobj87
+    4300620: default001detachobj86
+    4300622: default001detachobj85
+    4300624: default001detachobj84
+    4300626: default001detachobj83
+    4300628: default001detachobj82
+    4300630: default001detachobj81
+    4300632: default001detachobj80
+    4300634: default001detachobj79
+    4300636: default001detachobj78
+    4300638: default001detachobj77
+    4300640: default001detachobj76
+    4300642: default001detachobj75
+    4300644: default001detachobj74
+    4300646: default001detachobj73
+    4300648: default001detachobj72
+    4300650: default001detachobj71
+    4300652: default001detachobj70
+    4300654: default001detachobj69
+    4300656: default001detachobj68
+    4300658: default001detachobj67
+    4300660: default001detachobj66
+    4300662: default001detachobj65
+    4300664: default001detachobj64
+    4300666: default001detachobj63
+    4300668: default001detachobj62
+    4300670: default001detachobj61
+    4300672: default001detachobj60
+    4300674: default001detachobj59
+    4300676: default001detachobj58
+    4300678: default001detachobj57
+    4300680: default001detachobj56
+    4300682: default001detachobj55
+    4300684: default001detachobj54
+    4300686: default001detachobj53
+    4300688: default001detachobj52
+    4300690: default001detachobj51
+    4300692: default001detachobj50
+    4300694: default001detachobj49
+    4300696: default001detachobj48
+    4300698: default001detachobj47
+    4300700: default001detachobj46
+    4300702: default001detachobj45
+    4300704: default001detachobj44
+    4300706: default001detachobj43
+    4300708: default001detachobj42
+    4300710: default001detachobj41
+    4300712: default001detachobj40
+    4300714: default001detachobj39
+    4300716: default001detachobj38
+    4300718: default001detachobj37
+    4300720: default001detachobj36
+    4300722: default001detachobj35
+    4300724: default001detachobj34
+    4300726: default001detachobj33
+    4300728: default001detachobj32
+    4300730: default001detachobj31
+    4300732: default001detachobj30
+    4300734: default001detachobj29
+    4300736: default001detachobj28
+    4300738: default001detachobj27
+    4300740: default001detachobj26
+    4300742: default001detachobj25
+    4300744: default001detachobj24
+    4300746: default001detachobj23
+    4300748: default001detachobj22
+    4300750: default001detachobj21
+    4300752: default001detachobj20
+    4300754: default001detachobj19
+    4300756: default001detachobj18
+    4300758: default001detachobj17
+    4300760: default001detachobj16
+    4300762: default001detachobj15
+    4300764: default001detachobj14
+    4300766: default001detachobj13
+    4300768: default001detachobj12
+    4300770: default001detachobj11
+    4300772: default001detachobj10
+    4300774: default001detachobj9
+    4300776: default001detachobj8
+    4300778: default001detachobj7
+    4300780: default001detachobj6
+    4300782: default001detachobj5
+    4300784: default001detachobj4
+    4300786: default001detachobj3
+    4300788: default001detachobj2
+    4300790: default001detachobj1
+    4300792: Plane001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
