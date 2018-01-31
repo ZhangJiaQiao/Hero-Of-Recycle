@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class grenadeControl : MonoBehaviour {
-	public GameObject explosionCollider;
 	public ParticleSystem smoke;
 	private float explosionRadius;
 	private float exposionForce;
@@ -15,14 +14,6 @@ public class grenadeControl : MonoBehaviour {
 		damageValue = 50;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		checkForCollision ();
-	}
-
-	void checkForCollision () {
-		
-	}
 	void OnCollisionEnter(Collision other) {
 		if (other.gameObject.tag != "Player") {
 			Collider[] objects = Physics.OverlapSphere (transform.position, explosionRadius);

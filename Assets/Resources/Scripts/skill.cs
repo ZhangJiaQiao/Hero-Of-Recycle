@@ -25,7 +25,7 @@ public class skill : MonoBehaviour {
 		if (!isDied && Input.GetKeyDown(KeyCode.Mouse1)) {
 			useSkill ();
 		}
-		addMp ();
+		//addMp ();
 	}
 
 	void useSkill() {
@@ -39,15 +39,15 @@ public class skill : MonoBehaviour {
 		}
 	}
 
-	void addMp() {
-		countTime += Time.fixedDeltaTime;
-		if (countTime > 1) {					
-			role.mp += 1;
-			countTime = 0;
-		}
-	}
+	//void addMp() {
+	//	countTime += Time.fixedDeltaTime;
+	//	if (countTime > 1) {					
+	//		role.mp += 1;
+	//		countTime = 0;
+	//	}
+	//}
+
 	void useTornado () {
-//		GameObject[] TornadoList = Instantiate<GameObject> (tornado) [3];
 		GameObject tornado1 = Instantiate<GameObject> (tornado);
 		GameObject tornado2 = Instantiate<GameObject> (tornado);
 		tornado1.transform.position = this.transform.position + 6* this.transform.forward.normalized + 3* this.transform.right.normalized;

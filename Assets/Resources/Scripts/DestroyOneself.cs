@@ -22,7 +22,7 @@ public class DestroyOneself : MonoBehaviour {
 	IEnumerator Dispear()
 	{
 		yield return new WaitForSeconds(DestroyTime);
-		Debug.Log ("I should be destroyed");
+		//Debug.Log ("I should be destroyed");
 		GameObject.Destroy (this.gameObject);
 	}
 }

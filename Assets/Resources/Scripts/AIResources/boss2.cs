@@ -126,7 +126,7 @@ public class boss2 : MonoBehaviour {
             {
                 if (info.normalizedTime > 1.0f)
                 {
-                    Debug.Log("Finish");
+                    //Debug.Log("Finish");
                     finishAttack = true;
                     animator.SetBool("Attack1", false);
                     animator.SetBool("Attack2", false);
