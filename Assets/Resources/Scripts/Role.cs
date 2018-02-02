@@ -8,7 +8,7 @@ public class Role : MonoBehaviour {
     private float Hp = 100;//生命值
     private float Mp = 100;//魔法值
     private int count = 0;//用于计时
-    private int recoverTime;//魔法值恢复时间
+    private int recoverTime = 120;//魔法值恢复时间
     public float hp
     {
         get

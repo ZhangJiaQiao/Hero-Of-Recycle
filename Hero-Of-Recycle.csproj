@@ -359,6 +359,7 @@
     <Compile Include="Assets\Resources\Scripts\NetScripts\LobbyManager.cs" />
     <Compile Include="Assets\Resources\Scripts\NetScripts\NetBullet.cs" />
     <Compile Include="Assets\Resources\Scripts\NetScripts\NetBulletType.cs" />
+    <Compile Include="Assets\Resources\Scripts\NetScripts\NetGrenade.cs" />
     <Compile Include="Assets\Resources\Scripts\NetScripts\NetSceneScontroller.cs" />
     <Compile Include="Assets\Resources\Scripts\NetScripts\PlayerManager.cs" />
     <Compile Include="Assets\Resources\Scripts\NetScripts\RoomManager.cs" />

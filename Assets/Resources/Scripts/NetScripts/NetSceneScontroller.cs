@@ -21,7 +21,6 @@ public class NetSceneScontroller : PunBehaviour {
         localPlayer.transform.rotation = Quaternion.Euler(0, 90, 0);
         //int index = PhotonNetwork.player.GetRoomIndex();
         localPlayer.transform.Find("U3DMesh").GetComponent<SkinnedMeshRenderer>().material.color = PlayerColors[0];
-        _audioSource = this.gameObject.GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame

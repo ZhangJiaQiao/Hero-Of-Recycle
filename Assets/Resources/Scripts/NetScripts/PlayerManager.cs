@@ -14,6 +14,8 @@ public class PlayerManager : PunBehaviour {
     public GameObject muzzleFlash;
     public ParticleSystem smoke;
     public float shootColdTime = 0;//射击冷却总时间
+    public GameObject Gun;
+    public GameObject Mappoint;
     #endregion
 
     #region private var
@@ -39,6 +41,7 @@ public class PlayerManager : PunBehaviour {
     #endregion
     // Use this for initialization
     void Start () {
+        Cursor.lockState = CursorLockMode.Locked;
         CurrentBullet = 20;
         bulletName = "NetBullet";
         tornadoName = "Nettornado";
@@ -48,8 +51,8 @@ public class PlayerManager : PunBehaviour {
         rigbody = GetComponent<Rigidbody>();
         _audioSource = GetComponent<AudioSource>();
         role = GetComponent<Role>();
-        Camera.main.transform.parent = this.transform;
-        Camera.main.transform.localPosition = new Vector3(0, 2, 0);
+        Camera.main.transform.parent = Gun.transform;
+        Camera.main.transform.localPosition = Vector3.zero;
         currentBulletType = 0;
         bullet_types = new List<string> { "foodTrash", "recyclableTrash", "otherTrash", "harmfulTrash" };
     }
@@ -82,6 +85,7 @@ public class PlayerManager : PunBehaviour {
     {
         setBulletType();
         directionCtrl();
+        GunMove();
         move();
         jump();
         shoot();
@@ -95,6 +99,19 @@ public class PlayerManager : PunBehaviour {
             float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * 2;
             float rotationY = transform.localEulerAngles.x;
             transform.localEulerAngles = new Vector3(rotationY, rotationX, 0);
+        }
+    }
+
+    void GunMove()
+    {
+        if(!isDied)
+        {
+            float rotationX = Gun.transform.localEulerAngles.y;
+            float rotationY = Gun.transform.localEulerAngles.x - Input.GetAxis("Mouse Y");
+            if (rotationY < 60 || rotationY > 325)
+            {
+                Gun.transform.localEulerAngles = new Vector3(rotationY, rotationX, 0);
+            }
         }
     }
 
@@ -318,18 +335,21 @@ public class PlayerManager : PunBehaviour {
 
     void useSkill()
     {
-        float Mp = role.mp;
-        if (Mp >= 100f)
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            useTornado();
-        }
-        else if (Mp >= 67f)
-        {
-            useTrashCar();
-        }
-        else if (Mp >= 34f)
-        {
-            useGrenade();
+            float Mp = role.mp;
+            if (Mp >= 100f)
+            {
+                useTornado();
+            }
+            else if (Mp >= 67f)
+            {
+                useTrashCar();
+            }
+            else if (Mp >= 34f)
+            {
+                useGrenade();
+            }
         }
     }
 
@@ -395,9 +415,15 @@ public class PlayerManager : PunBehaviour {
     {
         GameObject tornado1 = (GameObject)Instantiate(Resources.Load(tornadoName));
         GameObject tornado2 = (GameObject)Instantiate(Resources.Load(tornadoName));
-        tornado1.transform.position = this.transform.position + 6 * this.transform.forward.normalized + 3 * this.transform.right.normalized;
-        tornado2.transform.position = this.transform.position + 6 * this.transform.forward.normalized - 3 * this.transform.right.normalized;
-
+        tornado1.transform.position = this.transform.position + 0.5f * this.transform.forward.normalized + 0.2f * this.transform.right.normalized;
+        tornado2.transform.position = this.transform.position + 0.5f * this.transform.forward.normalized - 0.2f * this.transform.right.normalized;
+        Debug.Log(tornado1.transform.position);
+        Debug.Log(tornado2.transform.position);
+        if (tornado1.transform.position.y != 0.4)
+        {
+            tornado1.transform.position = new Vector3(tornado1.transform.position.x, 0.4f, tornado1.transform.position.z);
+            tornado2.transform.position = new Vector3(tornado2.transform.position.x, 0.4f, tornado2.transform.position.z);
+        }
         tornado1.transform.forward = this.transform.forward;
         Vector3 rotation1 = tornado1.transform.localEulerAngles;
         rotation1.x = -90;
@@ -413,8 +439,11 @@ public class PlayerManager : PunBehaviour {
     void useTrashCar()
     {
         GameObject trashcar = (GameObject)Instantiate(Resources.Load(trashcarName));
-        trashcar.transform.position = this.transform.position + 6 * this.transform.forward.normalized;
-
+        trashcar.transform.position = this.transform.position + 2 * this.transform.forward.normalized;
+        if(trashcar.transform.position.y != 0.4)
+        {
+            trashcar.transform.position = new Vector3(trashcar.transform.position.x, 0.4f, trashcar.transform.position.z);
+        }
         trashcar.transform.forward = this.transform.forward;
         Vector3 rotation = trashcar.transform.localEulerAngles;
         rotation.x = -90;
